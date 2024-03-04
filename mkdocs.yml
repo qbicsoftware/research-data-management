@@ -1,1 +1,7 @@
+theme:
+  name: material
+  palette:
+    primary: custom
 site_name: Research Data Management
+extra_css:
+  - stylesheets/extra.css
