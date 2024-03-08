@@ -4,6 +4,11 @@ This repo provides the documentation for the research data management processes 
 
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
+> #### Latest documentation
+>
+> [qbicsoftware.github.io/research-data-management](https://qbicsoftware.github.io/research-data-management)
+> 
+
 ## Local Development
 
 The documentation is written in pure Markdown, rendered and deployed with [MkDocs](https://www.mkdocs.org/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). Both can be installed with the Python tool [pip](https://pypi.org/project/pip/):
