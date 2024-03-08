@@ -44,3 +44,11 @@ The documentation source files themselves are located in this repository's `./do
 The deployment of the live side is implemented with Github actions, once a commit is done to the `main` branch.
 
 The live site of the build documentation can be then found on https://qbicsoftware.github.io/research-data-management. 
+
+## License
+
+Any **repository code** and configuration is licensed under the [MIT-license](https://mit-license.org/).
+
+The **creative work** of the documentation found in the `./docs` directory of this repository is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png" height=20px>.
+
+Attribution to *QBiC, University of Tübingen*
