@@ -7,8 +7,10 @@ nav:
   - Home: index.md
   - Download:
       - Introduction: download/introduction.md
-      - Create personal access token: download/create_pat.md
-      - Another step: download/preparations.md
+      - Generate personal access token: download/create_pat.md
 extra_css:
   - stylesheets/extra.css
-
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
