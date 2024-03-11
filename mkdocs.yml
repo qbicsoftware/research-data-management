@@ -3,5 +3,12 @@ theme:
   palette:
     primary: custom
 site_name: Research Data Management
+nav:
+  - Home: index.md
+  - Download:
+      - Introduction: download/introduction.md
+      - Create personal access token: download/create_pat.md
+      - Another step: download/preparations.md
 extra_css:
   - stylesheets/extra.css
+
