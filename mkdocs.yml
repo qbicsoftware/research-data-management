@@ -2,6 +2,21 @@ theme:
   name: material
   palette:
     primary: custom
+  features:
+    - content.code.copy
 site_name: Research Data Management
+nav:
+  - Home: index.md
+  - Download:
+      - Introduction: download/introduction.md
+      - Personal access token: download/create_pat.md
+      - Execute download: download/run_download.md
 extra_css:
   - stylesheets/extra.css
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+

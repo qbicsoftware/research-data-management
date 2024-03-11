@@ -1,6 +1,6 @@
-# Welcome to MkDocs
+# Research data management
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Documentation about data management with QBiC services.
 
 ## Commands
 
