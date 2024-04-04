@@ -34,7 +34,7 @@ The corresponding commands need to be adapted accordingly.
 === "curl"
     
     ``` bash
-    curl --remote-name-all -OJ -H "Authorization: Bearer <ACCESS_TOKEN" $(cat <file-with-urls>)
+    curl --remote-name-all -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" $(cat <file-with-urls>)
     ```
 
 
