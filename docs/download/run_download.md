@@ -19,7 +19,7 @@ The commands contain two placeholders, where you have to provide your custom inp
 === "wget"
 
     ``` bash
-    wget --content-disposition --trust-server-names --header "Authorization: Bearer <ACCESS_TOKEN>" https://rdm.qbic.uni-tuebingen.de/download/measurements/measurements/<MEASUREMENT_ID>
+    wget --content-disposition --trust-server-names --header "Authorization: Bearer <ACCESS_TOKEN>" https://rdm.qbic.uni-tuebingen.de/download/measurements/<MEASUREMENT_ID>
     ```
 
 
