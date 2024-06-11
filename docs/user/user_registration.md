@@ -26,7 +26,7 @@ Please provide the required information which consists of:
 > This email will receive the validation link necessary for the registration of your account, so make sure you have access to it
 3. A unique username which identifies you within the data manager platform
 
-> [!IMPORTANT] 
+> [!NOTE] 
 > This username is visible to other users within the platform
 
 4. A secure password consisting of at least 12 characters
