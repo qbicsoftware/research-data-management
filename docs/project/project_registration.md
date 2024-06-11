@@ -1,29 +1,4 @@
-# Project Management
-
-After a successful login you will be redirected to your personal landing page.
-From there, you can either [register a new project](#project-registration)
-or [navigate](#project-navigation) into your project of interest.
-To navigate into a project, click on its respective card in the list of cards.
-
-> [!IMPORTANT]
-> Should you not see your project of interest, 
-> please make sure that you have been granted access to it by the project owner
-
-Alternatively you're also able to register a new project.
-
-## Project Navigation
-
-From the landing page you can navigate into your project via the project list.
-Either click on the project card directly or make use of the search box
-to filter the project lists for the project of interest.
-![project_navigation_search](images/project_search.png)
-
-Once you've found the project you can navigate into it
-by clicking on its respective project card, which will take you into the project summary view.
-
-![project_summary](images/project_summary.png)
-
-## Project Registration
+# Project Registration
 
 To register a new project the following steps have to be taken:
 
@@ -36,21 +11,21 @@ To register a new project the following steps have to be taken:
 
 Following is detailed information for each of these steps:
 
-#### Project Design
+## Project Design
 
 The information provided in this step serves as the basic outline of your project.
 
 Therefore, it is mandatory that you have provided a concise project title and project description in
 this step.
-> [!NOTE]
->Each created project will be assigned a unique 5 letter project code, distinguishing it from other projects within the system.
+!!! info "project code"
+    Each created project will be assigned a unique 5 letter project code, distinguishing it from other projects within the system.
 
 Once all the required information has been provided you can navigate to the next step via the "next"
 button below
 
 ![project_design](images/project_design.png)
 
-#### Funding Information
+## Funding Information
 
 In this step provide the grant label and identifier if your project has been funded by a third party
 sponsor.
@@ -60,7 +35,7 @@ or go to the previous step via the "back button".
 
 ![funding_information](images/funding_information.png)
 
-#### Project Collaborators
+## Project Collaborators
 
 In this step you are able to specify the collaborating parties associated with your project.
 The minimum required information consists of declaring the name and email address of the principal
@@ -77,7 +52,7 @@ or go to the previous step via the "back button".
 
 ![project_collaborators](images/project_collaborators.png)
 
-#### Experimental Information
+## Experimental Information
 
 The final step during project creation consists of creating the basic outline of your first
 experiment
@@ -89,9 +64,9 @@ Start by providing at least 2 letters of your species, specimen or analyte in th
 fields and possible selection options will appear.
 ![experimental_information](images/experimental_information_search.png)
 
-> [!NOTE]
->Behind each selectable options within the species, specimen and analyte input fields
->is the unique ontology identifier from the providing ontology.
+!!! info "ontology id"
+    Behind each selectable options within the species, specimen and analyte input fields
+    is the unique ontology identifier from the providing ontology.
 
 Once all the required information has been provided you can create your project via the "confirm"
 button below or go to the previous step via the "back button".
@@ -101,4 +76,4 @@ button below or go to the previous step via the "back button".
 After successful project creation, your project should appear in the project listing on your landing
 page.
 To navigate into your project, you can follow the steps outlined
-in [project navigation](#project-navigation)
+in [project navigation](project_navigation.md)
