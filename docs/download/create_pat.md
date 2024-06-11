@@ -5,8 +5,8 @@ who you are. We enforce a token-based authentication (personal access token: PAT
 required to expose you password
 with anyone or with any system.
 
-> [!TIP]
-> You can create as many tokens as you like, however consider them as a secret.
+!!! tip "multiple tokens"
+    You can create as many tokens as you like, however consider them as a secret.
 
 ## Generate a token
 
@@ -23,9 +23,9 @@ expires automatically, there is nothing you have to do manually.
 
 ![generate token](images/generate_token.png)
 
-> [!WARNING]
-> A generated token will be only visible in its raw notation once! Make sure to store it safely in
-> your local password manager, you will not be able to access the token value again.
+!!! warning "token accessibility"
+    A generated token will be only visible in its raw notation once! Make sure to store it safely in
+    your local password manager, you will not be able to access the token value again.
 
 
 ## Manage tokens
@@ -36,6 +36,6 @@ so you remember for what purpose you have created them.
 
 ![token overview](images/token_overview.png)
 
-> [!IMPORTANT]
-> If you are unsure that your PAT got exposed or shared with untrusted parties, delete them right 
-> away.
+!!! danger "token security"
+    If you are unsure that your PAT got exposed or shared with untrusted parties, delete them right 
+    away.

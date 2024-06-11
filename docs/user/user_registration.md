@@ -22,12 +22,10 @@ Please provide the required information which consists of:
 
 1. Your full name consisting of your first name and surname
 2. Your email of choice which will be associated with your account
-> [!IMPORTANT] 
-> This email will receive the validation link necessary for the registration of your account, so make sure you have access to it
 3. A unique username which identifies you within the data manager platform
 
-> [!NOTE] 
-> This username is visible to other users within the platform
+!!! info "user name"
+    This username is visible to other users within the platform
 
 4. A secure password consisting of at least 12 characters
 
@@ -39,8 +37,8 @@ press the register button on the bottom to create your account.
 Before you can log into the data manager platform with your newly created account, 
 you need to validate that the created account indeed belongs to the provided email address.
 For this you will receive an email shortly after creating the account containing a validation link.
-> [!IMPORTANT]
-> Please check your spam folder if you didn't receive an email
+!!! note "spam folder"
+    Please check your spam folder if you didn't receive an email
 
 Click the link within the email, which 
 will automatically validate the email address and lead you to the registration page

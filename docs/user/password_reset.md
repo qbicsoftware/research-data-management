@@ -29,8 +29,8 @@ Before the password of the provided account can be reset,
 you need to validate that the account indeed belongs to you.
 For this you will receive an email shortly after triggering the password reset, containing a unique
 password reset link
-> [!IMPORTANT]
-> Please check your spam folder if you didn't receive an email
+!!! note "spam folder"
+    Please check your spam folder if you didn't receive an email
 
 Click the URL to follow the link, which will lead you to a page which allows you to set a new
 password for your account.
