@@ -76,4 +76,4 @@ button below or go to the previous step via the "back button".
 After successful project creation, your project should appear in the project listing on your landing
 page.
 To navigate into your project, you can follow the steps outlined
-in [project navigation](project_navigation.md)
+in [project navigation](project_introduction)

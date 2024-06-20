@@ -12,7 +12,7 @@ nav:
       - Personal access token: download/create_pat.md
       - Execute download: download/run_download.md
   - Project:
-      - Navigation: project/project_navigation.md
+      - Introduction: project/project_introduction.md
       - Registration: project/project_registration.md
 extra_css:
   - stylesheets/extra.css

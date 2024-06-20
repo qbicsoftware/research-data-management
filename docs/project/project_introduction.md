@@ -1,4 +1,4 @@
-# Project Navigation
+# Project Introduction
 
 After a successful login you will be redirected to your personal landing page.
 From there, you can either [navigate](#project-navigation) into your project of interest
