@@ -50,7 +50,7 @@ each role.
 
 Once all the required information has been provided you can navigate to the next step via the "next"
 button below
-or go to the previous step via the "back button".
+or go to the previous step via the "back" button.
 
 ![project_collaborators](images/project_collaborators.png)
 
