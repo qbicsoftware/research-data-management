@@ -20,7 +20,7 @@ Additionally, this view enables you to specify which users have access to your p
 To add a collaborator to your project press the "add people" button on the top right of the project access view which will open the "add collaborator" dialog
 ![add_collaborator](images/project_access_grant_access.png)
 
-Within this dialog you can select the user you want to grant access in the select person section via their respective username.
+You can now select the user from the select person section via their respective username.
 ![add_collaborator_opened](images/project_access_grant_access_opened.png)
 
 Afterward, you need to specify the kind of access the added collaborator should have to the project. 
