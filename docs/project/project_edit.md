@@ -16,7 +16,7 @@ Once the dialog has been opened you can edit the project attributes of interest
 within the dialog and save your changes via the "save" button on the bottom.
 ![project_navigation_search](images/project_edit.png)
 
-# Upload of Project related files
+# Upload of Project Related Files
 
 After successful project creation, navigate into your project of interest as outlined in
 [project navigation](project_introduction.md#project-navigation).
@@ -29,7 +29,7 @@ via their respective upload buttons to the right.
 Should you not see the upload button,
 please make sure that you have been granted the "write" or "admin" role to it by the project owner/admin!
 
-## Offer upload
+## Offer Upload
 
 To upload one or more offer files click the upload button within the offer component in the middle right of the project summary view, 
 which will open up the offer upload dialog.
@@ -53,7 +53,7 @@ Finally, save your uploaded files to the project via a pressing the save button 
 Your uploaded offer will then be shown in the offer component on the middle right of the project summary view.
 ![project_summary_with_offer](images/project_summary_with_offer.png)
 
-## Quality Control upload
+## Quality Control Upload
 
 To upload one or more quality control(qc) files click the upload button within the quality control component in the bottom right of the project summary view, 
 which will open up the offer upload dialog.
