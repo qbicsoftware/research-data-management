@@ -33,7 +33,7 @@ Keep in mind that a user that you grant admin privileges to your project can add
 Finally click on the "Confirm" button to add your collaborator with the chosen role to the project.
 ![add_collaborator_role_selection](images/project_access_with_new_user.png)
 
-!!! info "email notification"
+!!! info "Email notification"
 Once a user has been added to your project, the email address linked to the username will receive an email with a link to the project he has been added to.
 
 ## Change Project Role
