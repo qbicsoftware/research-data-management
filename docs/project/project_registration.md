@@ -18,7 +18,7 @@ Following is a detailed guide for each of these steps:
 
 The information provided in this step serves as the basic outline of your project.
 
-Therefore, it is mandatory that you have provided a concise project title and project description in
+Therefore, it is mandatory that you provide a concise project title and project description in
 this step.
 !!! info "project code"
     Each created project will be assigned a unique 5 letter project code, distinguishing it from other projects within the system.
