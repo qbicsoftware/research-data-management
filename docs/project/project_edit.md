@@ -2,7 +2,7 @@
 
 Start by [navigating](project_introduction.md#project-navigation) to the project summary view of your project of interest.
 
-!!! info "project access"
+!!! info "Project access"
     Should you not see your project of interest, 
     please make sure that you have been granted access to it by the project owner
 
