@@ -25,7 +25,7 @@ Within the project summary view, you are able to upload project related files su
 via their respective upload buttons to the right.
 
 
-!!! info "project role"
+!!! info "Project role"
 Should you not see the upload button,
 please make sure that you have been granted the "write" or "admin" role to it by the project owner/admin!
 
