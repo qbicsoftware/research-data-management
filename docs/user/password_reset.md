@@ -10,12 +10,11 @@ To reset your password the following steps have to be taken
 
 ## Trigger Password Reset
 
-From the login page you can navigate to a dedicated password reset site via the "Forgot password"
-link
-on the bottom of the login
+From the login page you can navigate to a dedicated password reset view via the "Forgot password"
+link on the bottom of the login
 ![login_password_reset](images/password_reset/password_reset.png)
 
-You should now be able to see the password reset site:
+You should now be able to see the password reset view:
 
 ![password_reset_email](images/password_reset/password_reset_email.png)
 
@@ -29,7 +28,7 @@ Before the password of the provided account can be reset,
 you need to validate that the account indeed belongs to you.
 For this you will receive an email shortly after triggering the password reset, containing a unique
 password reset link
-!!! note "spam folder"
+!!! note "Spam folder"
     Please check your spam folder if you didn't receive an email
 
 Click the URL to follow the link, which will lead you to a page which allows you to set a new

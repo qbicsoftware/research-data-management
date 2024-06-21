@@ -9,12 +9,12 @@ you need to create an account for the platform. For this you need to perform the
 
 ## Register Account
 
-From the login page you can navigate to a dedicated registration site via the "registration" button on the top right 
+From the login page you can navigate to the registration view via the "registration" button on the top right 
 or the registration link on the bottom of the login
 
 ![login_page_registration](images/user_registration/login_page.png)
 
-You should now be able to see the registration site:
+You should now be able to see the registration view:
 
 ![registration page](images/user_registration/registration_page.png)
 
@@ -24,7 +24,7 @@ Please provide the required information which consists of:
 2. A valid email address of choice which will be associated with your account
 3. A unique username which identifies you within the data manager platform
 
-!!! info "user name"
+!!! info "Username"
     This username is visible to other users within the platform
 
 4. A secure password consisting of at least 12 characters
@@ -37,7 +37,7 @@ press the register button on the bottom to create your account.
 Before you can log into the data manager platform with your newly created account, 
 you need to validate the provided email address.
 After creating the account, you will receive an email containing a validation link.
-!!! note "spam folder"
+!!! note "Spam folder"
     Please check your spam folder if you didn't receive an email
 
 Click the link within the email, which 
