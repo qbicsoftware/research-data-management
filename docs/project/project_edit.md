@@ -72,7 +72,7 @@ Currently, a qc file has to be in the PDF, docx, or xlsx file format with a maxi
 
 For each successful qc file upload you are then able to optionally link it to the experiment in question 
 within the link to an experiment section of the dialog.
-To do so, select the experiment linked to their respective quality control files via the combobox below the file name.
+To do so, select the experiment linked to their respective quality control files via the dropdown menu below the file name.
 ![qc_upload_with_qc_experiment_selected](images/qc_upload_with_qc_experiment_selected.png)
 
 Finally, save your uploaded files to the project via a pressing the save button on the bottom right of the dialog.
