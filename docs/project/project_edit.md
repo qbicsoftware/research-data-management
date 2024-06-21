@@ -46,7 +46,7 @@ Please adhere to the file format and maximum file size outlined in the dialog.
 Currently, an offer file has to be in the PDF file format with a maximum file size of 16Mb
 
 For each successful file upload you are then able to specify if the offer was signed already 
-via the checkbox next to the shown file in the set offer signed status section.
+via the checkbox shown next to the file name.
 ![offer_upload_with_offer_signed](images/offer_upload_with_offer_signed.png)
 
 Finally, save your uploaded files to the project via a pressing the save button on the bottom right of the dialog. 
