@@ -56,7 +56,7 @@ Your uploaded offer will then be shown in the offer component on the middle righ
 ## Quality Control Upload
 
 To upload one or more quality control(qc) files click the upload button within the quality control component in the bottom right of the project summary view, 
-which will open up the offer upload dialog.
+which will open up the QC upload dialog.
 ![qc_upload](images/qc_upload.png)
 
 Within the dialog you are able to upload your qc files either via clicking the upload files button and selecting the files of interest in your file system
