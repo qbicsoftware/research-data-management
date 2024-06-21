@@ -35,7 +35,7 @@ press the register button on the bottom to create your account.
 ## Validate the registered account
 
 Before you can log into the data manager platform with your newly created account, 
-you need to validate that the created account indeed belongs to the provided email address.
+you need to validate the provided email address.
 For this you will receive an email shortly after creating the account containing a validation link.
 !!! note "spam folder"
     Please check your spam folder if you didn't receive an email
