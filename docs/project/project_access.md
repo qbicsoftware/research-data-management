@@ -4,7 +4,7 @@ Start by [navigating](project_introduction#project-navigation) to the project su
 From there, switch to the access management view by clicking on the "users" tab in the application drawer 
 ![project_summary_with_drawer](images/project_summary_drawer.png)
 
-!!! info "admin privileges"
+!!! info "Admin privileges"
 You need to have a project role of "owner" or "admin" to see the users tab and access the project access view.   
 
 Within the project access view a table shows the username of all accounts currently having access to their project and their respective roles
