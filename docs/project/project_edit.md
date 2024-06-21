@@ -49,7 +49,7 @@ For each successful file upload you are then able to specify if the offer was si
 via the checkbox shown next to the file name.
 ![offer_upload_with_offer_signed](images/offer_upload_with_offer_signed.png)
 
-Finally, save your uploaded files to the project via a pressing the save button on the bottom right of the dialog. 
+Finally, save your uploaded files to the project via a pressing the "Save" button on the bottom right of the dialog. 
 Your uploaded offer will then be shown in the offer component on the middle right of the project summary view.
 ![project_summary_with_offer](images/project_summary_with_offer.png)
 
