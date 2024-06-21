@@ -16,7 +16,7 @@ Alternatively you can also select your experiment of interest via clicking on it
 application drawer to the left
 ![project_summary](images/project_summary_with_drawer.png)
 
-!!! info "application drawer"
+!!! info "Application drawer"
     The application drawer can be used to navigate between projects and experiments once a project has been selected.
     It can be opened and closed via it's button on the top left.
 

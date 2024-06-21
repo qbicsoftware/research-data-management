@@ -16,9 +16,9 @@ Start by providing an easily identifiable name and at least 2 letters of your sp
 fields and possible selection options will appear.
 ![experimental_information](images/create_experiment_search.png)
 
-!!! info "ontology id"
-    Behind each selectable options within the species, specimen and analyte input fields
-    is the unique ontology identifier from the providing ontology.
+!!! info "Ontology id"
+    Behind each selectable option within the species, specimen and analyte input fields
+    , the unique ontology identifier from one of several ontologies is stored.
 
 Optionally you can also select one of the provided icons most fitting for your selected species and specimen.
 
