@@ -5,7 +5,7 @@ From there, switch to the access management view by clicking on the "users" tab 
 ![project_summary_with_drawer](images/project_summary_drawer.png)
 
 !!! info "Admin privileges"
-You need to have a project role of "owner" or "admin" to see the users tab and access the project access view.   
+    You need to have a project role of "owner" or "admin" to see the users tab and access the project access view.   
 
 Within the project access view a table shows the username of all accounts currently having access to their project and their respective roles
 ![project_access](images/project_access.png)
@@ -28,13 +28,13 @@ Do so by clicking on the relevant radio button in the "Assign a role" section of
 ![add_collaborator_role_selection](images/project_access_grant_access_role_selection.png)
 
 !!! warning "Admin privileges"
-Keep in mind that a user that you grant admin privileges to your project can add and remove other collaborators to/from your project.   
+    Keep in mind that a user that you grant admin privileges to your project can add and remove other collaborators to/from your project.   
 
 Finally click on the "Confirm" button to add your collaborator with the chosen role to the project.
 ![add_collaborator_role_selection](images/project_access_with_new_user.png)
 
 !!! info "Email notification"
-Once a user has been added to your project, the email address linked to the username will receive an email with a link to the project they have been added to.
+    Once a user has been added to your project, the email address linked to the username will receive an email with a link to the project they have been added to.
 
 ## Change Project Role
 
@@ -48,8 +48,8 @@ This will change the user to the newly selected role for your project and close 
 ![project_access_change_role_changed](images/project_access_change_role_changed.png)
 
 !!! info "Project owner"
-The project owner is always the user registering the project for the first time. 
-The project owner cannot be removed from the project and their role cannot be changed.
+    The project owner is always the user registering the project for the first time. 
+    The project owner cannot be removed from the project and their role cannot be changed.
 
 ## Remove Collaborator
 To remove a collaborator press the cross icon next to the collaborator in question.

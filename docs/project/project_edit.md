@@ -9,8 +9,8 @@ Start by [navigating](project_introduction.md#project-navigation) to the project
 Within the project summary view, press the edit button on the top right to open up the edit dialog for your project.
 
 !!! info "Project role"
-Should you not see the edit button,
-please make sure that you have been granted the "write" or "admin" role to it by the project owner/admin!
+    Should you not see the edit button,
+    please make sure that you have been granted the "write" or "admin" role to it by the project owner/admin!
 
 Once the dialog has been opened you can edit the project attributes of interest 
 within the dialog and save your changes via the "save" button on the bottom.
@@ -24,10 +24,9 @@ After successful project creation, navigate into your project of interest as out
 Within the project summary view, you are able to upload project related files such as the offer or quality control reports,
 via their respective upload buttons to the right.
 
-
 !!! info "Project role"
-Should you not see the upload button,
-please make sure that you have been granted the "write" or "admin" role to it by the project owner/admin!
+    Should you not see the upload button,
+    please make sure that you have been granted the "write" or "admin" role to it by the project owner/admin!
 
 ## Offer Upload
 
@@ -42,8 +41,8 @@ Should you have uploaded one or more wrong files,
 you can easily delete them via a press of the cross icon next to the respective file names
 
 !!! warning "File constraints"
-Please adhere to the file format and maximum file size outlined in the dialog.
-Currently, an offer file has to be in the PDF file format with a maximum file size of 16Mb
+    Please adhere to the file format and maximum file size outlined in the dialog.
+    Currently, an offer file has to be in the PDF file format with a maximum file size of 16Mb
 
 For each successful file upload you are then able to specify if the offer was signed already 
 via the checkbox shown next to the file name.
@@ -67,8 +66,8 @@ Should you have uploaded one or more wrong files,
 you can easily delete them via a press of the cross icon next to their respective file names
 
 !!! warning "File constraints"
-Please adhere to the file format and maximum file size outlined in the dialog.
-Currently, a qc file has to be in the PDF, docx, or xlsx file format with a maximum file size of 16Mb
+    Please adhere to the file format and maximum file size outlined in the dialog.
+    Currently, a qc file has to be in the PDF, docx, or xlsx file format with a maximum file size of 16Mb
 
 For each successful qc file upload you are then able to optionally link it to the experiment in question 
 within the link to an experiment section of the dialog.

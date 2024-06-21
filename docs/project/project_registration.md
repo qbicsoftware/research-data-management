@@ -20,7 +20,7 @@ The information provided in this step serves as the basic outline of your projec
 
 Therefore, it is mandatory that you provide a concise project title and project description in
 this step.
-!!! info "project code"
+!!! info "Project code"
     Each created project will be assigned a unique 5 letter project code, distinguishing it from other projects within the system.
 
 Once all the required information has been provided you can navigate to the next step via the "next"
@@ -66,7 +66,7 @@ Start by providing at least 2 letters of your species, specimen or analyte in th
 fields and possible selection options will appear. You are also able to select icons for the main species and specimen in your experiment. Otherwise, default icons will be shown.
 ![experimental_information](images/experimental_information_search.png)
 
-!!! info "ontology id"
+!!! info "Ontology id"
     Behind each selectable option within the species, specimen and analyte input fields
     , the unique ontology identifier from one of several ontologies is stored.
 
