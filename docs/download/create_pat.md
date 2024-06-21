@@ -37,5 +37,5 @@ so you remember for what purpose you have created them.
 ![token overview](images/token_overview.png)
 
 !!! danger "token security"
-    If you are unsure that your PAT got exposed or shared with untrusted parties, delete them right 
+    If you are unsure, if your PAT got exposed or shared with untrusted parties, delete them right 
     away.
