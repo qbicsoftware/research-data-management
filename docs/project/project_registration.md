@@ -68,7 +68,7 @@ fields and possible selection options will appear. You are also able to select i
 
 !!! info "ontology id"
     Behind each selectable option within the species, specimen and analyte input fields
-    is the unique ontology identifier from the providing ontology.
+    , the unique ontology identifier from one of several ontologies is stored.
 
 Once all the required information has been provided you can create your project via the "confirm"
 button below or go to the previous step via the "back button".
