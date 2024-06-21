@@ -27,7 +27,7 @@ Afterward, you need to specify the kind of access the added collaborator should 
 Do so by clicking on the relevant radio button in the "Assign a role" section of the dialog.
 ![add_collaborator_role_selection](images/project_access_grant_access_role_selection.png)
 
-!!! warning "admin privileges"
+!!! warning "Admin privileges"
 Keep in mind that a user that you grant admin privileges to your project can add and remove other collaborators to your project.   
 
 Finally click on the "Confirm" button to add your collaborator with the chosen role to the project.
