@@ -21,7 +21,7 @@ You should now be able to see the registration site:
 Please provide the required information which consists of: 
 
 1. Your full name consisting of your first name and surname
-2. Your email of choice which will be associated with your account
+2. A valid email address of choice which will be associated with your account
 3. A unique username which identifies you within the data manager platform
 
 !!! info "user name"
