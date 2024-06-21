@@ -27,6 +27,6 @@ Alternatively you can use the application drawer to go to your most recent proje
 The application drawer can be used to navigate between projects and experiments once a project has been selected.
 It can be opened and closed via it's button on the top left.
 
-To navigate between projects via the application drawer select your project of interest via the combobox on the top right 
+To navigate between projects via the application drawer select your project of interest from the menu on the left 
 or select "go to projects" to go back to your landing page
 ![project_summary](images/project_summary_drawer_opened.png)
