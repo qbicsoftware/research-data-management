@@ -2,7 +2,7 @@
 
 After a successful login you will be redirected to your personal landing page.
 From there, [navigate](#project-navigation) into your project of interest to see the project summary.
-In the project summary you can either [navigate](#experiment-navigation) into an experiment
+In the project summary view you can either [navigate](#experiment-navigation) into an experiment
 or [create a new experiment](experiment_creation.md).
 
 ## Experiment Navigation
@@ -17,8 +17,8 @@ application drawer to the left
 ![project_summary](images/project_summary_with_drawer.png)
 
 !!! info "application drawer"
-The application drawer can be used to navigate between projects and experiments once a project has been selected.
-It can be opened and closed via it's button on the top left.
+    The application drawer can be used to navigate between projects and experiments once a project has been selected.
+    It can be opened and closed via it's button on the top left.
 
 This will take you to the experiment summary view
-![experiment_summary](images/experiment_summary.png)
+![experiment_summary](images/experimental_summary_no_variables.png)
