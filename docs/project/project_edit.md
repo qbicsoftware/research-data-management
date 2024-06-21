@@ -8,7 +8,7 @@ Start by [navigating](project_introduction.md#project-navigation) to the project
 
 Within the project summary view, press the edit button on the top right to open up the edit dialog for your project.
 
-!!! info "project role"
+!!! info "Project role"
 Should you not see the edit button,
 please make sure that you have been granted the "write" or "admin" role to it by the project owner/admin!
 
