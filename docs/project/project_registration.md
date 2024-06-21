@@ -33,8 +33,7 @@ button below
 In this step provide the grant label and identifier if your project has been funded by a third party
 sponsor.
 If this is not applicable for your project, you can go directly to the next step via the "next"
-button below
-or go to the previous step via the "back button".
+button below. If you want change any adde information, previous steps in the dialog can always be reached by clicking the "back" button.
 
 ![funding_information](images/funding_information.png)
 
