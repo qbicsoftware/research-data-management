@@ -49,7 +49,7 @@ This will change the user to the newly selected role for your project and close 
 
 !!! info "Project owner"
 The project owner is always the user registering the project for the first time. 
-The project owner cannot be removed from the project and his role cannot be changed.
+The project owner cannot be removed from the project and their role cannot be changed.
 
 ## Remove Collaborator
 To remove a collaborator press the cross icon next to the collaborator in question.
