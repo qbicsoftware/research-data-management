@@ -47,7 +47,7 @@ Click on the selection box within the role column to open up the possible select
 This will change the user to the newly selected role for your project and close the selection within the role column.
 ![project_access_change_role_changed](images/project_access_change_role_changed.png)
 
-!!! info "project owner"
+!!! info "Project owner"
 The project owner is always the user registering the project for the first time. 
 The project owner cannot be removed from the project and his role cannot be changed.
 
