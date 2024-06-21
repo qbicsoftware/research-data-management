@@ -41,7 +41,7 @@ or by drag and dropping the files into the dashed box saying "drop your files he
 Should you have uploaded one or more wrong files, 
 you can easily delete them via a press of the cross icon next to the respective file names
 
-!!! warning "file constraints"
+!!! warning "File constraints"
 Please adhere to the file format and maximum file size outlined in the dialog.
 Currently, an offer file has to be in the PDF file format with a maximum file size of 16Mb
 
