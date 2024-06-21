@@ -67,7 +67,7 @@ fields and possible selection options will appear. You are also able to select i
 ![experimental_information](images/experimental_information_search.png)
 
 !!! info "ontology id"
-    Behind each selectable options within the species, specimen and analyte input fields
+    Behind each selectable option within the species, specimen and analyte input fields
     is the unique ontology identifier from the providing ontology.
 
 Once all the required information has been provided you can create your project via the "confirm"
