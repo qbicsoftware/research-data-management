@@ -18,3 +18,10 @@ Once all the required information has been provided you can create your experime
 button below.
 
 ![experimental_information](images/create_experiment.png)
+
+## Experimental Variable Creation
+
+
+
+
+## Experimental Group Creation
