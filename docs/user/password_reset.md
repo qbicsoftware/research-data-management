@@ -20,7 +20,7 @@ You should now be able to see the password reset site:
 ![password_reset_email](images/password_reset/password_reset_email.png)
 
 Please provide the email address of the account for which the password should be reset
-and press the "Send" button which will email the provided account with further instructions
+and press the "Send" button. You will receive an email with further instructions.
 ![password_reset_email_sent](images/password_reset/password_reset_email_sent.png)
 
 ## Validate the Password Reset Trigger
