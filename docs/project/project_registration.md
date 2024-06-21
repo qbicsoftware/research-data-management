@@ -9,7 +9,10 @@ To register a new project the following steps have to be taken:
     3. [Project Collaborators](#project-collaborators)
     4. [Experimental Information](#experimental-information)
 
-Following is detailed information for each of these steps:
+You can start the project registration process by clicking the create button on top of your project list within your personal landing page.
+This will open the project registration dialog which will guide you through the individual steps necessary to successfully register a new project.
+
+Following is a detailed guide for each of these steps:
 
 ## Project Design
 
@@ -76,4 +79,7 @@ button below or go to the previous step via the "back button".
 After successful project creation, your project should appear in the project listing on your landing
 page.
 To navigate into your project, you can follow the steps outlined
-in [project navigation](project_introduction)
+in [project navigation](project_introduction.md#project-navigation)
+
+Finally, after successful project registration you can also upload project related files such as quality control and offers as outlined
+in [project edit](project_edit.md#upload-of-project-related-files)

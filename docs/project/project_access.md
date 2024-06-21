@@ -1,8 +1,8 @@
-# Project Introduction
+# Project Access Management
 
-After a successful login you will be redirected to your personal landing page.
-From there, you can either [navigate](#project-navigation) into your project of interest
-or [register a new project](project_registration.md).
+Start by [navigating](#project-navigation) to the project summary view of your project of interest.
+From there, switch to the access management view via the application drawer 
+![project_navigation_search](images/project_search.png)
 
 !!! info "project access"
     Should you not see your project of interest, 
@@ -19,7 +19,7 @@ Once you've found the project you can navigate into it
 by clicking on its respective project card, which will take you into the project summary view.
 ![project_summary](images/project_summary.png)
 
-To navigate between projects you can go back to the landing page via the home button on the top right.
+To navigate into between projects you can either go back to the landing page via the home button on the top right 
 Alternatively you can use the application drawer to go to your most recent projects or switch back to your landing page.
 ![project_summary](images/project_summary_drawer.png)
 
@@ -27,6 +27,4 @@ Alternatively you can use the application drawer to go to your most recent proje
 The application drawer can be used to navigate between projects and experiments once a project has been selected.
 It can be opened and closed via it's button on the top left.
 
-To navigate between projects via the application drawer select your project of interest via the combobox on the top right 
-or select "go to projects" to go back to your landing page
-![project_summary](images/project_summary_drawer_opened.png)
+To navigate between projects or g via the application drawer select your project of interest via the combobox on the top right or
