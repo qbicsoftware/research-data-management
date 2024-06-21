@@ -71,7 +71,7 @@ fields and possible selection options will appear. You are also able to select i
     , the unique ontology identifier from one of several ontologies is stored.
 
 Once all the required information has been provided you can create your project via the "confirm"
-button below or go to the previous step via the "back button".
+button below or go to the previous step via the "back" button.
 
 ![experimental_information](images/experimental_information.png)
 
