@@ -14,6 +14,9 @@ nav:
   - Experiment:
       - Introduction: experiment/introduction.md
       - Creation: experiment/experiment_creation.md
+  - User:
+      - User Registration: user/user_registration.md
+      - Password Reset: user/password_reset.md
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:
