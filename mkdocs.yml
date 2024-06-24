@@ -7,14 +7,18 @@ theme:
 site_name: Research Data Management
 nav:
   - Home: index.md
-  - Download:
-      - Introduction: download/download_introduction.md
-      - Personal access token: download/download_create_pat.md
-      - Execute download: download/download_run_download.md
   - Batch:
       - Introduction: batch/batch_introduction.md
       - Register: batch/batch_registration.md
       - Edit: batch/batch_edit.md
+  - Download:
+      - Introduction: download/download_introduction.md
+      - Personal access token: download/download_create_pat.md
+      - Execute download: download/download_run_download.md
+  - User:
+      - User Registration: user/user_registration.md
+      - Password Reset: user/password_reset.md
+
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:
