@@ -8,9 +8,9 @@ site_name: Research Data Management
 nav:
   - Home: index.md
   - Download:
-      - Introduction: download/batch_introduction.md
-      - Personal access token: download/create_pat.md
-      - Execute download: download/run_download.md
+      - Introduction: download/download_introduction.md
+      - Personal access token: download/download_create_pat.md
+      - Execute download: download/download_run_download.md
   - Batch:
       - Introduction: batch/batch_introduction.md
       - Register: batch/batch_registration.md
