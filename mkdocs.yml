@@ -8,9 +8,13 @@ site_name: Research Data Management
 nav:
   - Home: index.md
   - Download:
-      - Introduction: download/introduction.md
+      - Introduction: download/batch_introduction.md
       - Personal access token: download/create_pat.md
       - Execute download: download/run_download.md
+  - Batch:
+      - Introduction: batch/batch_introduction.md
+      - Register: batch/batch_registration.md
+      - Edit: batch/batch_edit.md
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:
@@ -19,4 +23,3 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
-
