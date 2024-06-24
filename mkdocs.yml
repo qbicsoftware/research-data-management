@@ -12,8 +12,13 @@ nav:
       - Personal access token: download/create_pat.md
       - Execute download: download/run_download.md
   - Experiment:
-      - Introduction: experiment/introduction.md
+      - Introduction: experiment/experiment_introduction.md
       - Creation: experiment/experiment_creation.md
+  - Project:
+      - Introduction: project/project_introduction.md
+      - Registration: project/project_registration.md
+      - Editing: project/project_edit.md
+      - Access Management: project/project_access.md
   - User:
       - User Registration: user/user_registration.md
       - Password Reset: user/password_reset.md

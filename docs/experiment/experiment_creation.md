@@ -1,9 +1,9 @@
 # Experiment Creation
 
-Start by [navigating](project_introduction#project-navigation) 
+Start by [navigating](../project/project_introduction.md#project-navigation) 
 to the project summary view of your project of interest.
 To create an experiment in the selected project, click the add button within the experiment component on the top right.
-[project_summary](images/project_summary.png)
+![project_summary](../project/images/project_summary.png)
 
 !!! info "Project role"
     Should you not see the add button,
