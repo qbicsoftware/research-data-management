@@ -11,6 +11,10 @@ nav:
       - Introduction: download/introduction.md
       - Personal access token: download/create_pat.md
       - Execute download: download/run_download.md
+  - Measurement:
+      - Introduction: measurement/measurement_introduction.md
+      - Registration: measurement/measurement_registration.md
+      - Editing: measurement/measurement_edit.md
   - Project:
       - Introduction: project/project_introduction.md
       - Registration: project/project_registration.md
