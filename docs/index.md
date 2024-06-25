@@ -1,17 +1,15 @@
 # Research data management
 
-Documentation about data management with QBiC services.
+Behind every great research project should be great research data management! 
+Start your voyage towards a FAIR and open data future with the help of our [data manager](https://rdm.qbic.uni-tuebingen.de/login)! 
 
-## Commands
+## Quick start
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+1. Register an [account](user/user_registration.md) 
+2. Register your first [project](project/project_introduction.md)
+3. Specify the [experimental design](experiment/experiment_introduction.md)
+4. Register [Sample Batches](batch/batch_introduction.md)
+5. Specify the performed [measurements](measurement/measurement_introduction.md)
+6. Upload your [raw data](rawdata/raw_data_upload.md).  
+7. Fine tune the accessibility of your project to [collaborators](project/project_access.md)!
+8. Share your measurement data [easily](rawdata/raw_data_download_introduction.md)
