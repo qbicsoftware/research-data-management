@@ -61,7 +61,7 @@ In this tab press the "Add groups" button within the disclaimer.
     Should you not see the add button,
     ensure that you have been granted the "write" or "admin" project role by the project owner/admin!
 
-Once clicked the add experimental group dialog will appear, in which one or more groups can be defined via a selection of the previously defined experimental variable and linked to your experiment.
+Once clicked, the add experimental group dialog will appear, in which one or more groups can be defined via a selection of the previously defined experimental variable and linked to your experiment.
 ![add_experimental_variable](images/add_experimental_groups.png)
 
 Defined groups can also be deleted easily via a click on the cross icon next to the group
