@@ -37,7 +37,7 @@ One or more of these variables can be added in the experiment summary screen by 
     Should you not see the add button,
     ensure that you have been granted the "write" or "admin" project role by the project owner/admin!
 
-Once clicked the add variables dialog will appear, in which one or more variables can be defined and linked to your experiment.
+Once clicked, the add variables dialog will appear, in which one or more variables can be defined and linked to your experiment.
 ![add_experimental_variables](images/add_experimental_variables.png)
 
 Defined variables can also be deleted easily via a click on the cross icon next to the variable
