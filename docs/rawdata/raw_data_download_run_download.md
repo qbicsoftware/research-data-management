@@ -1,4 +1,4 @@
-# Download datasets
+# Download Raw Data
 
 We show how to run the download via the two popular command line clients [cURL](https://curl.se/docs/manpage.html) and [GNU Wget](https://www.gnu.org/software/wget/).
 Of course, you can use any other software that supports HTTP.
