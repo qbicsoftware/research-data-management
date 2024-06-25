@@ -117,7 +117,7 @@ The changed measurement metadata will be shown in the grid within their domain s
 
 # Delete Metadata
 
-To delete measurement metadata, start by [navigating](measurement_introduction.md#measurement-navigation)into the measurement summary view.
+To delete measurement metadata, start by [navigating](measurement_introduction.md#measurement-navigation) into the measurement summary view.
 ![measurement_summary](images/measurement_summary_with_measurements.png)
 
 Once within the measurement summary view, start the measurement metadata deletion process by selecting the measurements within the domain of interest.
