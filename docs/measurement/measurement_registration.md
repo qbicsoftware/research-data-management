@@ -1,15 +1,18 @@
 # Measurement Registration
 
-To register measurements, start by [navigating](measurement_introduction.md#measurement-navigation)
-into the measurement summary view.
+To register measurements, start by [navigating](measurement_introduction.md#measurement-navigation) into the measurement summary view.
 ![measurement_summary](images/measurement_summary_no_measurements.png)
 Once within the measurement summary view, measurements can be registered via the following steps:
 
-1. [Download](#download-domain-specific-template) the domain specific metadata template spreadsheet
-2. [Prepare](#prepare-domain-specific-metadata) the downloaded metadata sheet with the domain specific mandatory information
+1. [Download](#download-template) the domain specific metadata template spreadsheet
+2. [Prepare](#prepare-metadata) the downloaded metadata sheet with the domain specific mandatory information
 3. [Upload](#measurement-upload) the filled in measurement metadata sheet
 
-## Download Domain Specific Template
+!!! info "Project role"
+    Should you not see the registration and download buttons,
+    please make sure that you have been granted the "write" or "admin" role to it by the project owner/admin!
+
+## Download Template
 
 ### Proteomics
 
@@ -25,7 +28,7 @@ on the download icon(down arrow).
 Once downloaded open the template file in Microsoft Excel, which contains the two sheets "Property Information" and "Metadata".
 ![register_measurements_ngs_measurement_template.png](images/measurement_registration_ngs_measurement_template.png)
 
-## Prepare Domain Specific Metadata
+## Prepare Metadata
 
 ### Proteomics
 
@@ -55,7 +58,7 @@ Once the mandatory measurement metadata has been provided, export "Metadata" she
 
 Finally, [upload](#measurement-upload) the exported text file into the data manager application.
 
-## Genomics
+### Genomics
 
 Start by opening the downloaded genomic template file in Microsoft Excel, which contains the two sheets "Property Information" and "Metadata".
 ![register_measurements_ngs_measurement_template.png](images/measurement_registration_ngs_measurement_template.png)
@@ -85,12 +88,13 @@ Finally, [upload](#measurement-upload) the exported text file into the data mana
 
 ## Measurement Upload
 
-Once the measurement metadata has been [prepared](#prepare-domain-specific-metadata) according to the domain specifications, 
+Once the measurement metadata has been [prepared](#prepare-metadata) according to the domain specifications, 
 the exported _txt_ file can be uploaded into the data manager application. 
-To start the measurement registration process press the "Register Measurements" button to open the measurement registration dialog.
+To start the measurement registration process press the "Register Measurements" button within the measurement summary view. 
 ![measurement_summary](images/measurement_summary_no_measurements.png)
 
-![register_measurements_proteomics_upload_template.png](images/measurement_registration_proteomics_upload_template.png)
+This will open the measurement registration dialog with which the metadata can be registered. 
+![register_measurements_upload_template.png](images/measurement_registration_upload_template.png)
 
 Within the dialog you are able to upload your measurement files either via clicking the upload files button and selecting the files of interest in your file system
 or by drag and dropping the files into the dashed box saying "drop your files here".
@@ -105,6 +109,11 @@ Should you have uploaded one or more wrong files, you can easily delete them via
 The registration dialog will validate the provided information and show invalid properties in below the file name. 
 
 Finally, upload the measurement metadata files to the experiment via pressing the "Register" button on the bottom right of the dialog.
+
+!!! note "Measurement ID"
+    During measurement registration each measurement will be assigned a unique measurement ID,
+    distinguishing it from other measurement within the system.
+
 Your uploaded measurement metadata will be shown in the grid within their domain specific tab in the measurement summary view.
 ![measurement_summary](images/measurement_summary_with_measurements.png)
 
