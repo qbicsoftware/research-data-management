@@ -84,8 +84,8 @@ One registration task can register data for multiple measurements. The `metadata
 previous example would look like this:
 
 !!! note
-Please ensure that measurement identifier and filename are separated by a TAB `\t` character and not
-by spaces.
+    Please ensure that measurement identifier and filename are separated by a TAB `\t` character and not
+    by spaces.
 
 ```text
 NGSQTEST001AE-1234512312  file1_1.fastq.gz
