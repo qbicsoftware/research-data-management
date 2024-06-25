@@ -61,7 +61,7 @@ experiment
 associated with your project.
 For this you need to specify the name of the experiment, and species, specimen and analyte
 information of the involved organisms.
-To provide these details you can select one or more entries via the provided combo boxes.
+To provide these details you can select one or more entries via the provided search fields.
 Start by providing at least 2 letters of your species, specimen or analyte in their respective inputs
 fields and possible selection options will appear. You are also able to select icons for the main species and specimen in your experiment. Otherwise, default icons will be shown.
 ![experimental_information](images/experimental_information_search.png)
