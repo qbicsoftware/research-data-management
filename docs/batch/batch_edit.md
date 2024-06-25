@@ -15,7 +15,7 @@ Once the dialog has been opened you can edit the sample or batch attributes of i
 ![batch_edit_dialog_edited](images/batch_edit_dialog_edited.png)
 
 Since each row within this spreadsheet represents one sample within your batch you can also add or remove 
-sample specific metadata via the dedicated control buttons on top right of the spreadsheet.
+samples via the dedicated control buttons on top right of the spreadsheet.
 
 Finally, save your changes via the "Save" button on the bottom of the dialog. 
 ![batch_edit_summary_edited.png](images/batch_edit_summary_edited.png)
