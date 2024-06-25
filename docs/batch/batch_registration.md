@@ -5,7 +5,7 @@ into the batch summary view.
 ![batch_summary](images/batch_summary_no_batches.png)
 
 !!! info "Email Notification"
-    Upon successful batch registration, all project collaborators
+    Upon successful batch registration, all [project collaborators](../project/project_access.md#add-collaborator)
     will automatically receive an email with a link to the created batch.
 
 Within this view, click on the register button within the batch registration component on the top right to 
@@ -44,7 +44,7 @@ Mandatory metadata properties can be recognized via the asterisk next to the col
     Cells within the "Species", "Specimen" and "Analyte" columns provide the values specified during [experiment creation](experiment_creation.md). They can be automatically prefilled, if only one species, specimen, analyte was chosen, respectively.
     Cells within the "Condition" column provide a selection of the values specified during [experimental group creation](experiment_creation.md#experimental-group-creation)
 
-Optionally, feel free to also store a comment of your choosing and the ontology specific [Organism ID](ontology#ontology-search) metadata properties for each sample.
+Optionally, feel free to also store a comment of your choosing and an Organism ID properties for each sample.
 
 ![batch_registration_dialog_filled.png](images/batch_registration_dialog_filled.png)
 
