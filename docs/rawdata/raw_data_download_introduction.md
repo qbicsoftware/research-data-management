@@ -2,7 +2,7 @@
 
 The raw data summary view shows detailed information about the raw data already [registered](raw_data_upload.md) for the measurements within your experiment.
 Additionally, it enables you to generate the [URLs](raw_data_download_acquire_urls.md) necessary
-to facilitate the command line based [raw data download](raw_data_download_run_download.md). 
+to start the command line based [raw data download](raw_data_download_run_download.md). 
 
 ## Process
 
