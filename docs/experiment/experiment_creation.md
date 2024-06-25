@@ -50,6 +50,10 @@ Finally, already defined experimental variables can be edited by clicking on the
 which will open the edit experimental variable dialog in which the necessary changes can be made and saved via a click on the save button. 
 ![edit_experimental_variables](images/edit_experimental_variables.png)
 
+!!! info "Editing Variables"
+    Keep in mind, that variables can only be edited/deleted if no experimental groups are defined within the experiment.
+    Otherwise, you need to delete the experimental groups before the variables can be edited.
+
 ## Experimental Group Creation
 
 Experimental groups contain the biological replicates which experienced the same condition defined by its experimental variables within your experiment.  
@@ -73,3 +77,7 @@ Once all variables have been defined, they can be linked to the experiment by cl
 Finally, already defined experimental groups can be edited by clicking on the edit button within the Experimental Groups tab,
 which will open the edit experimental groups dialog in which the necessary changes can be made and saved via a click on the save button.
 ![edit_experimental_groups](images/edit_experimental_groups.png)
+
+!!! info "Editing Groups"
+    Keep in mind, that groups can only be edited/deleted if no samples have been registered to the experiment.
+    Otherwise, you need to remove the registered samples from the experiment before the groups can be edited.
