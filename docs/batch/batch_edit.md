@@ -31,7 +31,7 @@ into the batch summary view.
 ![batch_deletion_summary](images/batch_deletion_summary.png)
 
 Within this view, click on the delete icon (trashcan symbol) within the action column of the grid in the batch component
-which will open up a dialog requiring validation of the batch deletion trigger. 
+which will open up a dialog requiring validation of the batch deletion. 
 ![batch_deletion_triggered](images/batch_deletion_triggered.png)
 
 !!! info "Project role"
