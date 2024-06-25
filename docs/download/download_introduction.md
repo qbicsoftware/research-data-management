@@ -10,7 +10,6 @@ This section gives an overview of how to download big chunks of measurement data
 
 ## Process
 
-1. Create a [personal access token](create_pat.md) (PAT)
+1. Create a [personal access token](download_create_pat.md) (PAT)
 2. Acquire download URL(s)
-3. [Start the download](run_download.md) and get a coffee
-
+3. [Start the download](download_run_download.md) and get a coffee

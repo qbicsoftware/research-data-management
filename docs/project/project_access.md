@@ -1,6 +1,6 @@
 # Project Access Management
 
-Start by [navigating](project_introduction#project-navigation) to the project summary view of your project of interest.
+Start by [navigating](project_introduction.md#project-navigation) to the project summary view of your project of interest.
 From there, switch to the access management view by clicking on the "users" tab in the application drawer 
 ![project_summary_with_drawer](images/project_summary_drawer.png)
 
@@ -42,7 +42,7 @@ To change the project role of a project collaborator press the edit button in th
 ![project_access_change_role](images/project_access_with_new_user.png)
 This will make the role of the user selectable in the role column of the access table
 ![project_access_change_role_selectable](images/project_access_change_role.png)
-Click on the selection box within the role column to open up the possible selections for the user in question and select the role you want to grant to the collaborator.
+Click on the selection field within the role column to open up the possible selections for the user in question and select the role you want to grant to the collaborator.
 ![project_access_change_role_opened](images/project_access_change_role_opened.png)
 This will change the user to the newly selected role for your project and close the selection within the role column.
 ![project_access_change_role_changed](images/project_access_change_role_changed.png)
