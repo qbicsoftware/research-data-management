@@ -81,7 +81,7 @@ You can use our [ontology search](../ontology_search/ontology_search_introductio
 The "Organisation Id" column expects the full [RoR Id](https://ror.org/about/) URL of the organisation.
 Use the [ROR registry search](https://ror.org/search) to determine the URL of the organisation RoR Id.
 
-Once the mandatory measurement metadata has been provided, export "Metadata" sheet into a tab seperated UTF-16BE Unicode Text (*.txt) text file.
+Once the mandatory measurement metadata has been provided, export "Metadata" sheet into a tab seperated UTF-16BE Unicode Text (*.txt) text file. This encoding ensures that special symbols like 'μ' (think volumes in sample preparation) are correctly transferred and can be displayed with your sample information.
 ![register_measurement_proteomics_measurement_export.png](images/measurement_registration_proteomics_measurement_export.png)
 
 Finally, [upload](#measurement-upload) the exported text file into the data manager application. 
