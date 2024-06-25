@@ -104,7 +104,7 @@ Within the dialog you are able to upload your measurement files either via click
 or by drag and dropping the files into the dashed box saying "drop your files here".
 ![measurement_edit_upload_metadata_filled.png](images/measurement_edit_upload_metadata_filled.png)
 
-Should you have uploaded one or more wrong files, you can easily delete them via a press of the cross icon next to their respective file names
+Should you have uploaded one or more files by accident, you can easily delete them via a press of the cross icon next to their respective file names
 
 !!! warning "File constraints"
     Please adhere to the file format and maximum file size outlined in the dialog.
