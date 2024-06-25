@@ -20,6 +20,12 @@ nav:
   - Experiment:
       - Introduction: experiment/experiment_introduction.md
       - Creation: experiment/experiment_creation.md
+  - Measurement:
+      - Introduction: measurement/measurement_introduction.md
+      - Registration: measurement/measurement_registration.md
+      - Editing: measurement/measurement_edit.md
+  - Ontology:
+      - Introduction: ontology_search/ontology_search_introduction.md
   - Project:
       - Introduction: project/project_introduction.md
       - Registration: project/project_registration.md
@@ -28,7 +34,6 @@ nav:
   - User:
       - User Registration: user/user_registration.md
       - Password Reset: user/password_reset.md
-
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:
