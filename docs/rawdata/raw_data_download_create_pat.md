@@ -23,7 +23,7 @@ expires automatically, there is nothing you have to do manually.
 
 ![generate token](images/raw_data_create_pat_generate_token.png)
 
-!!! warning "token accessibility"
+!!! warning "Token accessibility"
     A generated token will be only visible in its raw notation once! Make sure to store it safely in
     your local password manager, you will not be able to access the token value again.
 
