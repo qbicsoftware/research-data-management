@@ -106,7 +106,7 @@ Should you have uploaded one or more wrong files, you can easily delete them via
     Please adhere to the file format and maximum file size outlined in the dialog.
     Currently, we support the _txt_ or _tsv_ file formats with a maximum file size of 16Mb
 
-The registration dialog will validate the provided information and show invalid properties in below the file name. 
+The registration dialog will validate the provided information and show invalid properties below the file name. 
 
 Finally, upload the measurement metadata files to the experiment via pressing the "Register" button on the bottom right of the dialog.
 
