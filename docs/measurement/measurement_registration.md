@@ -100,7 +100,7 @@ Within the dialog you are able to upload your measurement files either via click
 or by drag and dropping the files into the dashed box saying "drop your files here".
 ![register_measurements_proteomics_upload_template_filled.png](images/measurement_registration_upload_template_filled.png)
 
-Should you have uploaded one or more wrong files, you can easily delete them via a press of the cross icon next to their respective file names
+Should you have uploaded one or more files in error, you can easily delete them via a press of the cross icon next to their respective file names
 
 !!! warning "File constraints"
     Please adhere to the file format and maximum file size outlined in the dialog.
