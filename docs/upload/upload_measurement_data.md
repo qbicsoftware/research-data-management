@@ -45,7 +45,7 @@ enter `upload.qbic.uni-tuebingen.de` into the `Host` field.
 You can log in with your _University of Tübingen_ credentials. Enter your university user account
 into the `User` field.
 
-![](./images/initial-user-directory.png)
+![An image showing the users home folder. You can see three directories named registration, error and upload.](./images/initial-user-directory.png)
 **Connect to the server:** Once you set up the site, you can connect to it by pressing `Connect` in
 the _Site Manager_.
 After connecting to the server, _FileZilla_ shows you the contents of your home directory.
@@ -110,6 +110,6 @@ Our system will then transfer the folder and proceed with data registration.
 
 Uploading data to a measurement can fail in certain cases. When an upload fails, a folder is created
 in  `/home/<your-user>/error`.
-![](./images/error-directory.png)
+![An image showing the error folder. It contains a directory with a long name.](./images/error-directory.png)
 In this new folder, you can find an `error.txt` file describing the error, and the data you tried to upload.
 You can then try to fix the error and upload again.
