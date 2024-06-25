@@ -11,7 +11,7 @@ Click on the name of an experiment to load the respective experiment.
 ![project_summary](../project/images/project_summary.png)
 
 Alternatively you can also select your experiment of interest via clicking on its name in the 
-application drawer to the left
+application drawer to the left. All of the project's experiments are also available when you are already in one of the experiments.
 ![project_summary_drawer](../project/images/project_summary_drawer.png)
 
 !!! info "Application drawer"
