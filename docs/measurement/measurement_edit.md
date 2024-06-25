@@ -126,6 +126,8 @@ Once within the measurement summary view, start the measurement metadata deletio
 Alternatively, can also select all measurements of a domain via a press of the checkbox within the column header. 
 ![measurement_deletion_all_selection.png](images/measurement_deletion_all_selection.png)
 
+You are also able to use the Search field above to filter measurements before selection. Keep in mind that changing the filter will reset the selection of measurements.
+
 !!! Note "Domain Specific Selection"
     The selected measurements are reset if a different domain tab is clicked.
     Therefore, delete the measurements for each domain individually.
