@@ -17,7 +17,7 @@ Within this dialog you have the possibility to provide the minimal required batc
 The minimal batch information consists of:
 
 1. Batch name
-2. The [sample specific mandatory metadata information](#sample-registration) for at least one sample.
+2. The [sample metadata information](#sample-registration) for at least one sample.
 
 ## Sample Registration
 
@@ -25,11 +25,11 @@ The sample specific mandatory metadata information has to be defined within the 
 Each row within this spreadsheet represents one sample within your batch. 
 You can add or remove rows via the dedicated control buttons on top right of the spreadsheet. 
 For a high amount of samples, we recommend to click on the "Prefill spreadsheet" button 
-to trigger an automatic prefilling of the spreadsheet with the information provided during [experiment creation](experiment_creation.md)
+to trigger an automatic prefilling of the spreadsheet with the information provided during [experiment creation](../experiment/experiment_creation.md)
 
 !!! tip "Prefill Sample Information"
     The "Prefill Spreadsheet" functionality will generate one row each according to the number of biological replicates and conditions defined during
-    [experimental group creation](experiment_creation.md#experimental-group-creation).
+    [experimental group creation](../experiment/experiment_creation.md#experimental-group-creation).
 
 Mandatory metadata properties can be recognized via the asterisk next to the column header and consist of:
 
@@ -41,8 +41,8 @@ Mandatory metadata properties can be recognized via the asterisk next to the col
 6. Analyte
 
 !!! note "Preselected Information"
-    Cells within the "Species", "Specimen" and "Analyte" columns provide the values specified during [experiment creation](experiment_creation.md). They can be automatically prefilled, if only one species, specimen, analyte was chosen, respectively.
-    Cells within the "Condition" column provide a selection of the values specified during [experimental group creation](experiment_creation.md#experimental-group-creation)
+    Cells within the "Species", "Specimen" and "Analyte" columns provide the values specified during [experiment creation](../experiment/experiment_creation.md). They can be automatically prefilled, if only one species, specimen, analyte was chosen, respectively.
+    Cells within the "Condition" column provide a selection of the values specified during [experimental group creation](../experiment/experiment_creation.md#experimental-group-creation)
 
 Optionally, feel free to also store a comment of your choosing and an Organism ID properties for each sample.
 
