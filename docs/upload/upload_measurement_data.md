@@ -70,7 +70,7 @@ For every registration task, the data needs to reside in a folder with the follo
  |- metadata.txt  // mandatory!
 ```
 
-!!! note
+!!! info
     You can upload folders in the same way. Everything at the top level of your created folder is
     considered. For uploading folders, specify the name of the folder instead of a file name. 
     Uploading only specific files from a sub directory is not supported at the moment.
