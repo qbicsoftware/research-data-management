@@ -41,7 +41,7 @@ Mandatory metadata properties can be recognized via the asterisk next to the col
 6. Analyte
 
 !!! note "Preselected Information"
-    Cells within the "Species", "Specimen" and "Analyte" columns provide the values specified during [experiment creation](experiment_creation.md).
+    Cells within the "Species", "Specimen" and "Analyte" columns provide the values specified during [experiment creation](experiment_creation.md). They can be automatically prefilled, if only one species, specimen, analyte was chosen, respectively.
     Cells within the "Condition" column provide a selection of the values specified during [experimental group creation](experiment_creation.md#experimental-group-creation)
 
 Optionally, feel free to also store a comment of your choosing and the ontology specific [Organism ID](ontology#ontology-search) metadata properties for each sample.
