@@ -32,7 +32,7 @@ Once downloaded open the template file in Microsoft Excel, which contains the tw
 
 ### Proteomics
 
-Start by opening the downloaded proteomics template file in Microsoft Excel, which contains the two sheets "Property Information" and "Metadata".
+Start by opening the downloaded proteomics template file in Microsoft Excel. It contains the two sheets "Property Information" and "Metadata".
 ![register_measurement_proteomics_measurement_template.png](images/measurement_registration_proteomics_measurement_template.png)
 
 The "Property Information" Sheet provides detailed information about which properties are required and what values are permitted for each property within the sheet.
