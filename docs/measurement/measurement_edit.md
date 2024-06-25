@@ -95,7 +95,7 @@ Finally, [upload](#upload-metadata) the exported text file into the data manager
 Once the measurement metadata has been [prepared](#prepare-metadata) according to the domain specifications,
 the exported _txt_ file can be uploaded into the data manager application.
 
-To start the measurement registration process press the "Edit" button within the measurement summary view.
+To start the update process press the "Edit" button within the measurement summary view.
 ![measurement_summary](images/measurement_summary_with_measurements.png)
 
 This will open the measurement edit dialog with which the edited metadata can be uploaded.
