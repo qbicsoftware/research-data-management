@@ -3,7 +3,7 @@
 To edit the information of a batch, start by [navigating](batch_introduction.md#batch-navigation)
 into the batch summary view.
 ![batch_summary](images/batch_summary_with_batch.png)
-Within this view, click on the edit icon(pen symbol) within the action column of the grid in the batch component
+Within this view, click on the edit icon (pen symbol) within the action column of the grid in the batch component
 to open the edit batch dialog.
 ![batch_edit_dialog](images/batch_edit_dialog.png)
 
