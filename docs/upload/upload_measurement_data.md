@@ -46,9 +46,8 @@ You can log in with your _University of Tübingen_ credentials. Enter your unive
 into the `User` field.
 
 ![An image showing the users home folder. You can see three directories named registration, error and upload.](./images/initial-user-directory.png)
-**Connect to the server:** Once you set up the site, you can connect to it by pressing `Connect` in
-the _Site Manager_.
-After connecting to the server, _FileZilla_ shows you the contents of your home directory.
+**Connect to the server:** Make sure you are in the network of the _University of Tübingen_. You can connect to the server by pressing `Connect` in
+the _Site Manager_. After connecting to the server, _FileZilla_ shows you the contents of your home directory.
 
 !!! warning
     When you first log in, the server will create some folders. Do not delete these folders!
