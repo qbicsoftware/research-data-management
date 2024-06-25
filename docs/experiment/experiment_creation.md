@@ -11,7 +11,7 @@ To create an experiment in the selected project, click the add button within the
 
 This will open the create experiment dialog, in which you can specify the name of the experiment and the included species, specimen and analyte
 information of the involved organisms.
-To provide these details you can select one or more entries via the provided combo boxes.
+To provide these details you can select one or more entries via the provided search fields.
 Start by providing an easily identifiable name and at least 2 letters of your species, specimen or analyte in their respective inputs
 fields and possible selection options will appear.
 ![experimental_information](images/create_experiment_search.png)
