@@ -11,6 +11,9 @@ nav:
       - Introduction: download/introduction.md
       - Personal access token: download/create_pat.md
       - Execute download: download/run_download.md
+  - Experiment:
+      - Introduction: experiment/experiment_introduction.md
+      - Creation: experiment/experiment_creation.md
   - Project:
       - Introduction: project/project_introduction.md
       - Registration: project/project_registration.md
