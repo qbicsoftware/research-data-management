@@ -60,7 +60,7 @@ Finally, [upload](#measurement-upload) the exported text file into the data mana
 
 ### Genomics
 
-Start by opening the downloaded genomic template file in Microsoft Excel, which contains the two sheets "Property Information" and "Metadata".
+Start by opening the downloaded genomic template file in Microsoft Excel. It contains the two sheets "Property Information" and "Metadata".
 ![register_measurements_ngs_measurement_template.png](images/measurement_registration_ngs_measurement_template.png)
 
 The "Property Information" Sheet provides detailed information about which properties are required and what values are permitted for each property within the sheet.
