@@ -16,8 +16,8 @@ Once within the measurement summary view, measurements can be registered via the
 
 ### Proteomics
 
-Within this view download the proteomic specific templates _.xlsx_ file via the template component on the top right by clicking
-on the download icon(down arrow).
+Within this view download the proteomic specific template's _.xlsx_ file via the template component on the top right by clicking
+on the download icon (down arrow).
 ![register_measurements_proteomics_download_template.png](images/measurement_registration_proteomics_download_template.png)
 
 ### Genomics
