@@ -25,7 +25,7 @@ The commands contain two placeholders, where you have to provide your custom inp
     ```
 
 
-You can download multiple measurements. All you have to do is provide the URLs in separate lines.
+To download multiple measurements using one command, you can provide a file containing one measurement URL per line (as in the one you can download in the raw data summary!).
 ```txt
 <MEASUREMENT_URL_1>
 <MEASUREMENT_URL_2>
