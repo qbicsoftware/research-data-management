@@ -22,8 +22,8 @@ on the download icon (down arrow).
 
 ### Genomics
 
-Within this view download the genomic specific templates xlsx file via the template component on the top right by clicking
-on the download icon(down arrow).
+Within this view download the genomic specific template's xlsx file via the template component on the top right by clicking
+on the download icon (down arrow).
 
 Once downloaded open the template file in Microsoft Excel, which contains the two sheets "Property Information" and "Metadata".
 ![register_measurements_ngs_measurement_template.png](images/measurement_registration_ngs_measurement_template.png)
