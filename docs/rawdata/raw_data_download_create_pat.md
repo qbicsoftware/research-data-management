@@ -36,6 +36,6 @@ so you remember for what purpose you have created them.
 
 ![token overview](images/raw_data_create_pat_token_overview.png)
 
-!!! danger "token security"
+!!! danger "Token security"
     If you are unsure, if your PAT got exposed or shared with untrusted parties, delete them right 
     away.
