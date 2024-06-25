@@ -48,7 +48,7 @@ Use these Guidelines to fill in the "Metadata" sheet with the mandatory necessar
 Mandatory metadata properties are marked with an asterisk next to the column header
 
 The "Instrument" column expects an ontology [CURIE](https://link.springer.com/article/10.1007/s12599-022-00744-0) of the instrument.
-You can use our [ontology search](ontology#ontology-search) to find the CURIE
+You can use our [ontology search](../ontology_search/ontology_search_introduction.md#ontology-search) to find the CURIE
 
 The "Organisation Id" column expects the full [RoR Id](https://ror.org/about/) URL of the organisation.
 Use the [ROR registry search](https://ror.org/search) to determine the URL of the organisation RoR Id.
@@ -76,7 +76,7 @@ Use these Guidelines to fill in the "Metadata" sheet with the mandatory necessar
 Mandatory metadata properties are marked with an asterisk next to the column header
 
 The "Instrument" column expects an ontology [CURIE](https://link.springer.com/article/10.1007/s12599-022-00744-0) of the instrument.
-You can use our [ontology search](ontology#ontology-search) to find the CURIE
+You can use our [ontology search](../ontology_search/ontology_search_introduction.md#ontology-search) to find the CURIE
 
 The "Organisation Id" column expects the full [RoR Id](https://ror.org/about/) URL of the organisation.
 Use the [ROR registry search](https://ror.org/search) to determine the URL of the organisation RoR Id.
@@ -110,7 +110,7 @@ The registration dialog will validate the provided information and show invalid 
 
 Finally, upload the measurement metadata files to the experiment via pressing the "Register" button on the bottom right of the dialog.
 
-!!! note "Measurement ID"
+!!! note "Measurement Id"
     During measurement registration each measurement will be assigned a unique measurement ID,
     distinguishing it from other measurement within the system.
 

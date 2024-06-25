@@ -1,6 +1,6 @@
 # Project Access Management
 
-Start by [navigating](project_introduction#project-navigation) to the project summary view of your project of interest.
+Start by [navigating](project_introduction.md#project-navigation) to the project summary view of your project of interest.
 From there, switch to the access management view by clicking on the "users" tab in the application drawer 
 ![project_summary_with_drawer](images/project_summary_drawer.png)
 
