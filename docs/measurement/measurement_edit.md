@@ -136,7 +136,7 @@ Afterwards, press the "Delete" button to start the measurement deletion. A dialo
 ![measurement_deletion_confirm_dialog.png](images/measurement_deletion_confirm_dialog.png)
 
 Press the "Confirm" button to trigger the measurement deletion. 
-If all measurements for a specific domain have been deleted, the domain specific tab will disappear as well. 
+If all measurements for a specific domain have been deleted, the domain specific tab will disappear as well until new measurements are registered.
 ![measurement_deletion_all_selection_deleted.png](images/measurement_deletion_all_selection_deleted.png)
 
 !!! warning "Attached Raw Data"
