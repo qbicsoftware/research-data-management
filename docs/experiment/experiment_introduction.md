@@ -6,9 +6,8 @@ In the project summary view you can either [navigate](#experiment-navigation) in
 or [create a new experiment](experiment_creation.md).
 ## Experiment Navigation
 
-From the project summary you can navigate into your experiment via the experiment list.
-To do so, click on the name of the experiment you want to navigate into 
-in the experiment list on the top right.
+From the project summary you can find your experiments via the experiment list on the top right.
+Click on the name of an experiment to load the respective experiment.
 ![project_summary](../project/images/project_summary.png)
 
 Alternatively you can also select your experiment of interest via clicking on its name in the 
