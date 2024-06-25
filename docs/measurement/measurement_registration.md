@@ -10,7 +10,7 @@ Once within the measurement summary view, measurements can be registered via the
 
 !!! info "Project role"
     Should you not see the registration and download buttons,
-    please make sure that you have been granted the "write" or "admin" role to it by the project owner/admin!
+    please make sure that you have been granted the "write" or "admin" role to the project by the owner/admin!
 
 ## Download Template
 
