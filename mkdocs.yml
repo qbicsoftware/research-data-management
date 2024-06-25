@@ -15,10 +15,14 @@ nav:
       - Introduction: download/download_introduction.md
       - Personal access token: download/download_create_pat.md
       - Execute download: download/download_run_download.md
+  - Project:
+      - Introduction: project/project_introduction.md
+      - Registration: project/project_registration.md
+      - Editing: project/project_edit.md
+      - Access Management: project/project_access.md
   - User:
       - User Registration: user/user_registration.md
       - Password Reset: user/password_reset.md
-
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:
