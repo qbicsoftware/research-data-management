@@ -4,6 +4,7 @@ After a successful login you will be redirected to your personal landing page.
 From there, [navigate](../project/project_introduction.md#project-navigation) into your project of interest to see the project summary.
 In the project summary view you can either [navigate](#experiment-navigation) into an experiment
 or [create a new experiment](experiment_creation.md).
+
 ## Experiment Navigation
 
 From the project summary you can find your experiments via the experiment list on the top right.

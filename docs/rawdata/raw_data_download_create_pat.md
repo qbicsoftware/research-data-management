@@ -12,16 +12,16 @@ with anyone or with any system.
 
 First of all, navigate to your PAT overview page in your profile overview (top-right corner)
 
-![profile menu](images/profile_menu.png)
+![profile menu](images/raw_data_create_pat_profile_menu.png)
 
 You should now be able to see the PAT token overview page:
 
-![pat overview](images/pat_overview.png)
+![pat overview](images/raw_data_create_pat_overview_no_pats.png)
 
 Personal access tokens have a life-time, which can be set based on your requirements. Your token
 expires automatically, there is nothing you have to do manually.
 
-![generate token](images/generate_token.png)
+![generate token](images/raw_data_create_pat_generate_token.png)
 
 !!! warning "token accessibility"
     A generated token will be only visible in its raw notation once! Make sure to store it safely in
@@ -34,7 +34,7 @@ You can see your created tokens in the overview, however since they are instantl
 you cannot access their raw value anymore. We encourage you to use meaningful descriptions for your tokens, 
 so you remember for what purpose you have created them.
 
-![token overview](images/token_overview.png)
+![token overview](images/raw_data_create_pat_token_overview.png)
 
 !!! danger "token security"
     If you are unsure, if your PAT got exposed or shared with untrusted parties, delete them right 

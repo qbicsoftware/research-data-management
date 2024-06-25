@@ -11,10 +11,12 @@ nav:
       - Introduction: batch/batch_introduction.md
       - Register: batch/batch_registration.md
       - Edit: batch/batch_edit.md
-  - Download:
-      - Introduction: download/download_introduction.md
-      - Personal access token: download/download_create_pat.md
-      - Execute download: download/download_run_download.md
+  - RawData:
+      - Introduction: rawdata/raw_data_download_introduction.md
+      - Acquire Urls: rawdata/raw_data_download_acquire_urls.md
+      - Personal access token: rawdata/raw_data_download_create_pat.md
+      - Execute download: rawdata/raw_data_download_run_download.md
+      - Upload Data: rawdata/raw_data_upload.md
   - Experiment:
       - Introduction: experiment/experiment_introduction.md
       - Creation: experiment/experiment_creation.md
@@ -26,7 +28,7 @@ nav:
   - User:
       - User Registration: user/user_registration.md
       - Password Reset: user/password_reset.md
-  - Upload Measurement Data: upload/upload_measurement_data.md
+
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:
