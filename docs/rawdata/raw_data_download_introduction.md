@@ -1,13 +1,13 @@
 # Raw Data Introduction
 
-The raw data summary view shows detailed information about the raw data registered to the measurements within your experiment.
+The raw data summary view shows detailed information about the raw data already [registered](raw_data_upload.md) to the measurements within your experiment.
 Additionally, it enables you to generate the [URLs](raw_data_download_acquire_urls.md) necessary
 to facilitate the command line based [raw data download](raw_data_download_run_download.md). 
 
 ## Process
 
 1. Create a [personal access token](raw_data_download_create_pat.md) (PAT)
-2. Acquire [download URLs](raw_data_download_acquire_urls.md)
+2. Acquire [download URLs](raw_data_download_acquire_urls.md) for the registered measurement raw data. 
 3. Start the measurement raw data [download](raw_data_download_run_download.md) measurement and get a coffee :coffee:
 
 ## Raw Data Navigation
