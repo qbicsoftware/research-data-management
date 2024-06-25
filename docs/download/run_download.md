@@ -12,21 +12,21 @@ The commands contain two placeholders, where you have to provide your custom inp
 === "curl"
     
     ``` bash
-    curl -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" https://rdm.qbic.uni-tuebingen.de/download/measurements/<MEASUREMENT_ID>
+    curl -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" https://download.qbic.uni-tuebingen.de/measurements/<MEASUREMENT_ID>
     ```
 
 
 === "wget"
 
     ``` bash
-    wget --content-disposition --trust-server-names --header "Authorization: Bearer <ACCESS_TOKEN>" https://rdm.qbic.uni-tuebingen.de/download/measurements/<MEASUREMENT_ID>
+    wget --content-disposition --trust-server-names --header "Authorization: Bearer <ACCESS_TOKEN>" https://download.qbic.uni-tuebingen.de/measurements/<MEASUREMENT_ID>
     ```
 
 
 You can download multiple measurements. All you have to do is provide the URLs in separate lines.
 ```txt
-https://rdm.qbic.uni-tuebingen.de/download/measurements/<MEASUREMENT_ID_1>
-https://rdm.qbic.uni-tuebingen.de/download/measurements/<MEASUREMENT_ID_2>
+https://download.qbic.uni-tuebingen.de/measurements/<MEASUREMENT_ID_1>
+https://download.qbic.uni-tuebingen.de/measurements/<MEASUREMENT_ID_2>
 ```
 
 The corresponding commands need to be adapted accordingly.
@@ -34,7 +34,7 @@ The corresponding commands need to be adapted accordingly.
 === "curl"
     
     ``` bash
-    curl --remote-name-all -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" $(cat <file-with-urls>)
+    curl --remote-name-all --parallel -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" $(cat <file-with-urls>)
     ```
 
 
@@ -43,4 +43,3 @@ The corresponding commands need to be adapted accordingly.
     ``` bash
     wget --content-disposition --trust-server-names --header "Authorization: Bearer <ACCESS_TOKEN>" -i <file-with-urls>
     ```
-
