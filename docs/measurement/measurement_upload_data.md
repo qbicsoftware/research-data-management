@@ -35,17 +35,17 @@ support uploading files to us.
 In this section we will go through the process of connecting to our server
 using [FileZilla](https://filezilla-project.org) as an example.
 
-![An image showing the button leading to the site manager](./images/open-site-manager.png)
+![An image showing the button leading to the site manager](./images/measurement_upload_open_site_manager.png)
 **Open the Site Manager:** You need to add QBiC's upload server as a site to _FileZilla_.
 
-![An image showing the input fields for a new site. upload.qbic.uni-tuebingen.de is entered in the Host field and SFTP is selected as protocol.](./images/add-qbic-site.png)
+![An image showing the input fields for a new site. upload.qbic.uni-tuebingen.de is entered in the Host field and SFTP is selected as protocol.](./images/measurement_upload_add_qbic_site.png)
 **Add the upload server:** In the _Site Manager_ you can add sites to which you want to connect. For
 measurement data registration, select `SFTP - SSH File Transfer Protocol` and
 enter `upload.qbic.uni-tuebingen.de` into the `Host` field.
 You can log in with your _University of Tübingen_ credentials. Enter your university user account
 into the `User` field.
 
-![An image showing the users home folder. You can see three directories named registration, error and upload.](./images/initial-user-directory.png)
+![An image showing the users home folder. You can see three directories named registration, error and upload.](./images/measurement_upload_initial_user_directory.png)
 **Connect to the server:** Make sure you are in the network of the _University of Tübingen_. You can connect to the server by pressing `Connect` in
 the _Site Manager_. After connecting to the server, _FileZilla_ shows you the contents of your home directory.
 
@@ -109,6 +109,6 @@ Our system will then transfer the folder and proceed with data registration.
 
 Uploading data to a measurement can fail in certain cases. When an upload fails, a folder is created
 in  `/home/<your-user>/error`.
-![An image showing the error folder. It contains a directory with a long name.](./images/error-directory.png)
+![An image showing the error folder. It contains a directory with a long name.](./images/measurement_upload_error_directory.png)
 In this new folder, you can find an `error.txt` file describing the error, and the data you tried to upload.
 You can then try to fix the error and upload again.

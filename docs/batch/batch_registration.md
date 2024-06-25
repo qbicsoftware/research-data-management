@@ -58,7 +58,7 @@ button below, which will register the metadata information for your batch in our
 The batch information for each batch is shown in the top right batch component, while the sample specific information is shown in the grid of the center sample component.
 ![batch_summary_with_batch.png](images/batch_summary_with_batch.png)
 
-Should you notice any issues with your registered batches, you can always [edit](batch_edit.md) or [delete](batch_edit.md#delete-batch) 
+Should you notice any issues with your registered batches, you can always [edit](batch_edit.md) or [delete](batch_edit.md#batch-deletion) 
 via their respective icons within the action column of grid in the batch component.
 
 ## Batch Metadata Download
