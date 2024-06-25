@@ -9,7 +9,7 @@ by the project owner to download the associated measurement data.
 The commands contain two placeholders, where you have to provide your custom input:
 
 - *ACCESS_TOKEN*: your generated [personal access token](raw_data_download_create_pat.md)
-- *MEASUREMENT_URL*: the [URL](raw_data_download_acquire_urls.md) of the to be downloaded measurement
+- *MEASUREMENT_URL*: the [URL](raw_data_download_acquire_urls.md) associated with the data of the measurement
 
 === "curl"
     
