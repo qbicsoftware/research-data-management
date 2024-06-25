@@ -132,7 +132,7 @@ You are also able to use the Search field above to filter measurements before se
     The selected measurements are reset if a different domain tab is clicked.
     Therefore, delete the measurements for each domain individually.
 
-Afterwards, press the "Delete" button to start the measurement deletion, opening the confirmation button informing you about the number of measurements and their domain of the to be deleted measurements.
+Afterwards, press the "Delete" button to start the measurement deletion. A dialog will open asking you to confirm the deletion and informing you about the number and domain of the measurements that will be deleted.
 ![measurement_deletion_confirm_dialog.png](images/measurement_deletion_confirm_dialog.png)
 
 Press the "Confirm" button to trigger the measurement deletion. 
