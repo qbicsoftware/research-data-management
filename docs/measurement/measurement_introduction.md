@@ -6,6 +6,6 @@ From there [navigate](../experiment/experiment_introduction.md#experiment-naviga
 ## Measurement Navigation
 
 From the experiment summary you can navigate into the measurement summary view.
-![experiment_summary](../experiment/images/experiment_summary.png)
+![experiment_summary](../experiment/images/experimental_summary.png)
 To do so, click on the "View Measurements" tab within the experiment navigation bar on the top.
 ![measurement_summary](images/measurement_summary_no_measurements.png)
