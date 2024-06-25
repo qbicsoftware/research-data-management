@@ -28,7 +28,7 @@ For a high amount of samples, we recommend to click on the "Prefill spreadsheet"
 to trigger an automatic prefilling of the spreadsheet with the information provided during [experiment creation](experiment_creation.md)
 
 !!! tip "Prefill Sample Information"
-    The "Prefill Spreadsheet" functionality will generate one row according to the number of biological replicates and condition defined during
+    The "Prefill Spreadsheet" functionality will generate one row each according to the number of biological replicates and conditions defined during
     [experimental group creation](experiment_creation.md#experimental-group-creation).
 
 Mandatory metadata properties can be recognized via the asterisk next to the column header and consist of:
