@@ -35,10 +35,20 @@ support uploading files to us.
 In this section we will go through the process of connecting to our server
 using [FileZilla](https://filezilla-project.org) as an example.
 
-1. Open the Site Manager
-2. Add a site
-3. Connect to the site
-4. You can see the directories
+![An image showing the button leading to the site manager](./images/open-site-manager.png)
+**Open the Site Manager:** You need to add QBiC's upload server as a site to _FileZilla_.
+
+![An image showing the input fields for a new site. upload.qbic.uni-tuebingen.de is entered in the Host field and SFTP is selected as protocol.](./images/add-qbic-site.png)
+**Add the upload server:** In the _Site Manager_ you can add sites to which you want to connect. For
+measurement data registration, select `SFTP - SSH File Transfer Protocol` and
+enter `upload.qbic.uni-tuebingen.de` into the `Host` field.
+You can log in with your _University of Tübingen_ credentials. Enter your university user account
+into the `User` field.
+
+![](./images/initial-user-directory.png)
+**Connect to the server:** Once you set up the site, you can connect to it by pressing `Connect` in
+the _Site Manager_.
+After connecting to the server, _FileZilla_ shows you the contents of your home directory.
 
 !!! warning
     When you first log in, the server will create some folders. Do not delete these folders!
@@ -60,13 +70,22 @@ For every registration task, the data needs to reside in a folder with the follo
  |- metadata.txt  // mandatory!
 ```
 
+!!! note
+    You can upload folders in the same way. Everything at the top level of your created folder is
+    considered. For uploading folders, specify the name of the folder instead of a file name. 
+    Uploading only specific files from a sub directory is not supported at the moment.
+
+
 The folder `my-registration-batch` represents an atomic registration unit and must contain the
-`metadata.txt` with information about the measurements identifier and the files belonging to this measurement
+`metadata.txt` with information about the measurements identifier and the files belonging to this
+measurement
 dataset.
-One registration task can register data for multiple measurements. The `metadata.txt` file for the previous example would look like this:
+One registration task can register data for multiple measurements. The `metadata.txt` file for the
+previous example would look like this:
 
 !!! note
-    Please ensure that measurement identifier and filename are separated by a TAB character and not by spaces.
+Please ensure that measurement identifier and filename are separated by a TAB `\t` character and not
+by spaces.
 
 ```text
 NGSQTEST001AE-1234512312  file1_1.fastq.gz
@@ -77,8 +96,10 @@ NGSQTEST002BC-3321314441  file2_2.fastq.gz
 
 ## Upload your data
 
-Once you have prepared your folder, upload it to your user directory on our server. Please do not upload directly to the registration folder but stage it instead in your user directory.
-Once your folder is prepared and uploaded to `upload.qbic.uni-tuebingen.de`, move it to the `registration` folder.
+Once you have prepared your folder, upload it to your user directory on our server. Please do not
+upload directly to the registration folder but stage it instead in your user directory.
+Once your folder is prepared and uploaded to `upload.qbic.uni-tuebingen.de`, move it to
+the `registration` folder.
 
 Our system will then transfer the folder and proceed with data registration.
 
@@ -87,4 +108,8 @@ Our system will then transfer the folder and proceed with data registration.
 
 ## Handle failed uploads
 
-[//]: # (TODO)
+Uploading data to a measurement can fail in certain cases. When an upload fails, a folder is created
+in  `/home/<your-user>/error`.
+![](./images/error-directory.png)
+In this new folder, you can find an `error.txt` file describing the error, and the data you tried to upload.
+You can then try to fix the error and upload again.
