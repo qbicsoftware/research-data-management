@@ -21,7 +21,7 @@ The minimal batch information consists of:
 
 ## Sample Registration
 
-The sample specific mandatory metadata information hast to be defined within the spreadsheet of the dialog.
+The sample specific mandatory metadata information has to be defined within the spreadsheet of the dialog.
 Each row within this spreadsheet represents one sample within your batch. 
 You can add or remove rows via the dedicated control buttons on top right of the spreadsheet. 
 For a high amount of samples, we recommend to click on the "Prefill spreadsheet" button 
