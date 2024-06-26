@@ -10,7 +10,7 @@ nav:
   - Batch:
       - Introduction: batch/batch_introduction.md
       - Register: batch/batch_registration.md
-      - Edit: batch/batch_edit.md
+      - Editing: batch/batch_edit.md
   - RawData:
       - Introduction: rawdata/raw_data_download_introduction.md
       - Download Data: rawdata/raw_data_download_run_download.md
@@ -32,8 +32,9 @@ nav:
       - Editing: project/project_edit.md
       - Access Management: project/project_access.md
   - User:
-      - User Registration: user/user_registration.md
+      - Registration: user/user_registration.md
       - Password Reset: user/password_reset.md
+      - Editing: user/user_edit.md
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:

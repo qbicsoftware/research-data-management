@@ -1,7 +1,8 @@
 # Batch Introduction
 
 Start by [navigating](../project/project_introduction.md#project-navigation) to the project summary view of your project of interest.
-From there [navigate](../experiment/experiment_introduction.md#experiment-navigation) into the experiment of interest and within the experiment [navigate](#batch-navigation) into the batch summary view. 
+[Navigate](../experiment/experiment_introduction.md#experiment-navigation) into the experiment of interest and within the experiment [navigate](#batch-navigation) into the batch summary view.
+Within this view you are able to [register](batch_registration.md) or [edit](batch_edit.md) your sample batches.
 
 ## Batch Navigation
 
