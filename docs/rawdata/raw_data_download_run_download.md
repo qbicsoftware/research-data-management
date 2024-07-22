@@ -4,7 +4,7 @@ We show how to run the download via the two popular command line clients [cURL](
 Of course, you can use any other software that supports HTTP.
 
 Keep in mind that you need to be [granted access](../project/project_access.md)
-by the project owner to download the associated measurement data.
+by the project owner and have a non-expired [personal access token](raw_data_download_create_pat.md) to download the associated measurement data.
 
 The commands contain two placeholders, where you have to provide your custom input:
 
@@ -14,7 +14,7 @@ The commands contain two placeholders, where you have to provide your custom inp
 === "curl"
     
     ``` bash
-    curl -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" <MEASUREMENT_URL>
+    curl -OJ -H —parallel —fail "Authorization: Bearer <ACCESS_TOKEN>" <MEASUREMENT_URL>
     ```
 
 
@@ -30,13 +30,15 @@ To download multiple measurements using one command, you can provide a file cont
 <MEASUREMENT_URL_1>
 <MEASUREMENT_URL_2>
 ```
+!!! warning "File format"
+    The provided file should be formatted in the UTF-8 format to ensure character validity.
 
 The corresponding commands need to be adapted accordingly.
 
 === "curl"
     
     ``` bash
-    curl --remote-name-all -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" $(cat <file-with-urls>)
+    curl --remote-name-all -OJ -H —parallel —fail "Authorization: Bearer <ACCESS_TOKEN>" $(cat <file-with-urls>)
     ```
 
 
