@@ -10,7 +10,9 @@ you need to create an account for the platform. We currently support 2 modes of 
 
 ### Login to orcid
 
-We recommend to register to the data manager via your existing [orcid](https://orcid.org) account.
+We recommend to register to the data manager via an [orcid](https://orcid.org) account.
+This will allow you to log in to the data manager application as long as as you keep being logged into your orcid account, 
+removing the necessity of a separate login step.
   
 To do so press on the "login with ORCiD" registration card on the bottom of the login page. 
 
@@ -22,7 +24,7 @@ This will redirect you to the orcid login page
 
 Login to your orcid account and grant the data manager application to access your publicly available orcid by pressing the "authorize access" button. 
 
-![orcid_registration_authorize_access.png](images/user_registration/orcid/orcid_registration_authorize_access.png).
+![orcid_registration_authorize_access.png](images/user_registration/orcid/orcid_registration_authorize_access.png)
 
 Should you not have an orcid account press the "register_now" link 
 within the orcid login and follow the provided steps to register a new orcid account.
@@ -43,7 +45,7 @@ This additional information consists of
 
 Press the register button to register an account within the data manager application and navigate to the login page.
 Finally, press on the "login with ORCiD" registration card on the bottom of the login page to login into the data manager application via your orcid credentials. 
-![registration page](images/user_registration/registration_page.png)
+![registration page](images/user_registration/login_page.png)
 
 ## Register an account via email
 
