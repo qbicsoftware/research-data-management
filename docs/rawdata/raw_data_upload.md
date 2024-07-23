@@ -8,7 +8,7 @@ This section gives an overview of how to upload data to measurements from QBiC's
 The following is required in order to successfully execute the measurement data upload.
 
 - Access to the project of interest
-- A SFTP client software (e.g. [FileZilla](https://filezilla-project.org)
+- A SFTP **client** software (e.g. [FileZilla](https://filezilla-project.org/download.php?type=client)
   or [WinSCP](https://winscp.net))
 - A LDAP account of the University Of Tübingen
 - A connection to the University Of Tübingen network (
@@ -33,7 +33,7 @@ Uploading your files to us was never this easy! SFTP is a broadly used file tran
 wide-spread use ensures that there exists many client software products that
 support uploading files to us.
 In this section we will go through the process of connecting to our server
-using [FileZilla](https://filezilla-project.org) as an example.
+using the [FileZilla](https://filezilla-project.org/download.php?type=client) client as an example.
 
 ![An image showing the button leading to the site manager](./images/raw_data_upload_open_site_manager.png)
 **Open the Site Manager:** You need to add QBiC's upload server as a site to _FileZilla_.
