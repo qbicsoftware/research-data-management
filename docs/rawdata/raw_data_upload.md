@@ -35,23 +35,23 @@ support uploading files to us.
 In this section we will go through the process of connecting to our server
 using the [FileZilla](https://filezilla-project.org/download.php?type=client) client as an example.
 
-
-**Open the Site Manager:** You need to add QBiC's upload server as a site to _FileZilla_.
+**Open the Site Manager:** You need to add the QBiC's upload server as a site to _FileZilla_ within its site manager.
+To open the site manager select it from the menu or press on the highlighted icon.
 ![An image showing the button leading to the site manager](./images/upload/raw_data_upload_open_site_manager.png)
 
 **Add the upload server:** In the _Site Manager_ you can add sites to which you want to connect. For
 measurement data registration, select `SFTP - SSH File Transfer Protocol` and
 enter `upload.qbic.uni-tuebingen.de` into the `Host` field.
+![An image showing the users site manager highlighting the host and connection field](images/upload/raw_data_upload_host_field.png)
+
 You can log in with your _University of Tübingen_ credentials. Enter your university user account
 into the `User` field.
-![An image showing the input fields for a new site. upload.qbic.uni-tuebingen.de is entered in the Host field and SFTP is selected as protocol.](./images/upload/raw_data_upload_add_qbic_site.png)
-
+![An image showing the users site manager highlighting the user and password field](images/upload/raw_data_upload_user_field.png)
 **Connect to the server:** Make sure you are in the network of the _University of Tübingen_. You can connect to the server by pressing `Connect` in
-the _Site Manager_. After connecting to the server, _FileZilla_ shows you the contents of your home directory.
-
-![An image showing the users home folder. You can see three directories named registration, error and upload.](./images/upload/raw_data_upload_initial_user_directory.png)
+the _Site Manager_. After connecting to the server, _FileZilla_ shows you the contents of your home directory on the server side.
+![An image showing the users home folder. You can see three directories named registration, error and upload.](images/upload/raw_data_upload_remote_filesystem.png))
 !!! warning
-When you first log in, the server will create some folders. Do not delete these folders!
+    When you first log in, the server will create some folders. Do not delete these folders!
 
 
 ## Prepare your data for upload
@@ -64,23 +64,25 @@ For every registration task, the data needs to reside in a folder with the follo
 
 ```text
 |- my-registration-batch  // folder name is irrelevant
- |- file1_1.fastq.gz
+ |- metadata.txt  // mandatory!
+ |- file1_1.fastq.gz // all files except for metadata.txt serve as examples
  |- file1_2.fastq
  |- report.pdf
  |- summary.html
- |- metadata.txt  // mandatory!
 ```
 
-!!! info
-    You can upload folders in the same way. Everything at the top level of your created folder is
-    considered. For uploading folders, specify the name of the folder instead of a file name. 
-    Uploading only specific files from a sub directory is not supported at the moment.
 
+
+!!! warning
+    Ensure that the uploaded folder name and files do not have a whitespace within their name
+
+You can upload folders in the same way. Everything at the top level of your created folder is
+considered. For uploading folders, specify the name of the folder instead of a file name. 
+Uploading only specific files from a subdirectory is not supported at the moment.
 
 The folder `my-registration-batch` represents an atomic registration unit and must contain the
 `metadata.txt` with information about the measurements identifier and the files belonging to this
-measurement
-dataset.
+measurement dataset.
 One registration task can register data for multiple measurements. The `metadata.txt` file for the
 previous example would look like this:
 
