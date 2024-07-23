@@ -12,4 +12,4 @@ Start your voyage towards a FAIR and open data future with the help of our [data
 5. Specify the performed [measurements](measurement/measurement_introduction.md)
 6. Upload your [raw data](rawdata/raw_data_upload.md).  
 7. Fine tune the accessibility of your project to [collaborators](project/project_access.md)!
-8. Share your measurement data [easily](rawdata/raw_data_download_introduction.md)
+8. Share your measurement data [easily](rawdata/raw_data_download.md)

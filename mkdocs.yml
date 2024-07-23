@@ -12,11 +12,8 @@ nav:
       - Register: batch/batch_registration.md
       - Editing: batch/batch_edit.md
   - RawData:
-      - Introduction: rawdata/raw_data_download_introduction.md
-      - Download Data: rawdata/raw_data_download_run_download.md
-      - Personal Access Token: rawdata/raw_data_download_create_pat.md
+      - Download Data: rawdata/raw_data_download.md
       - Upload Data: rawdata/raw_data_upload.md
-      - URL Generation: rawdata/raw_data_download_acquire_urls.md
   - Experiment:
       - Introduction: experiment/experiment_introduction.md
       - Creation: experiment/experiment_creation.md
