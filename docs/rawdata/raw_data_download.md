@@ -15,8 +15,8 @@ to start the command line based [raw data download](#download-raw-data).
 
 Before you can begin with downloading any data via HTTPS, you need to tell the download server
 who you are. We enforce a token-based authentication (personal access token: PAT) so you are not
-required to expose you password
-with anyone or with any system.
+required to expose your password
+to anyone or to any system.
 
 !!! tip "multiple tokens"
     You can create as many tokens as you like, however consider them as a secret.
