@@ -65,9 +65,9 @@ For every registration task, the data needs to reside in a folder with the follo
 ```text
 |- my-registration-batch  // folder name is irrelevant
  |- file1_1.fastq.gz
- |- file1_2.fastq.gz
- |- file2_1.fastq.gz
- |- file2_2.fastq.gz
+ |- file1_2.fastq
+ |- report.pdf
+ |- summary.html
  |- metadata.txt  // mandatory!
 ```
 
@@ -90,9 +90,9 @@ previous example would look like this:
 
 ```text
 NGSQTEST001AE-1234512312  file1_1.fastq.gz
-NGSQTEST001AE-1234512312  file1_2.fastq.gz
-NGSQTEST002BC-3321314441  file2_1.fastq.gz
-NGSQTEST002BC-3321314441  file2_2.fastq.gz
+NGSQTEST001AE-1234512312  file1_2.fastq
+NGSQTEST002BC-3321314441  report.pdf
+NGSQTEST002BC-3321314441  summary.html
 ```
 
 ## Upload your data
