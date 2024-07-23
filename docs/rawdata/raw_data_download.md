@@ -43,7 +43,7 @@ expires automatically, there is nothing you have to do manually.
 ### Manage tokens
 
 You can see your created tokens in the overview, however since they are instantly encrypted after generation,
-you cannot access their raw value anymore. We encourage you to use meaningful descriptions for your tokens,
+you cannot access the actual token text anymore. We encourage you to use meaningful descriptions for your tokens,
 so you remember for what purpose you have created them.
 
 ![token overview](images/raw_data_create_pat_token_overview.png)
@@ -70,7 +70,7 @@ To acquire the URLS necessary for the measurement data download the following st
 1. Navigate to the [raw data summary view](#raw-data-navigation)
 2. Select the measurements for which the raw data URLs should be generated.
    ![raw_data_download_measurement_selection.png](images/raw_data_download_URL_generation_measurement_selection.png)
-3. Press the "Generate URL List" button to download a text file containing the URLs of the selected measurements
+3. Press the "Download URL List" button to download a text file containing the URLs of the selected measurements
    ![raw_data_download_URL_downloaded.png](images/raw_data_download_URL_downloaded.png)
 
 ### Download Raw Data
@@ -155,7 +155,7 @@ The corresponding commands need to be adapted accordingly.
 !!! warning
     To ensure character validity in the text file, please format it in the *UTF-8* format
 
-The easiest way to generate such a text file is to navigate into the raw data view and select the measurements for which you want to download the raw data for and click the "download url list" button.
+The easiest way to generate such a text file is to generate it in the [raw data view](#raw-data-url-generation).
 
 ![data_download_selected_measurements.png](images/data_download_selected_measurements.png)
 
