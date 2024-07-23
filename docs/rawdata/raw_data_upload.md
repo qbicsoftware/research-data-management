@@ -53,7 +53,6 @@ the _Site Manager_. After connecting to the server, _FileZilla_ shows you the co
 !!! warning
     When you first log in, the server will create some folders. Do not delete these folders!
 
-
 ## Prepare your data for upload
 
 You need to prepare your data for us to know to which measurement to attach it. Uploading data to a
@@ -80,22 +79,36 @@ You can upload folders in the same way. Everything at the top level of your crea
 considered. For uploading folders, specify the name of the folder instead of a file name. 
 Uploading only specific files from a subdirectory is not supported at the moment.
 
+To register a folder the data needs to reside in a folder with the following structure:
+
+```text
+|- upload-example  // folder name is irrelevant
+ |- metadata.txt  // mandatory!
+ |- my-registration-batch/
+```
+
+The `metadata.txt` file for the folder example would look like this: 
+
+```text
+NGSQTN23015AS-1225978199074484 my-registration-batch
+```
+
 The folder `my-registration-batch` represents an atomic registration unit and must contain the
 `metadata.txt` with information about the measurements identifier and the files belonging to this
 measurement dataset.
 One registration task can register data for multiple measurements. The `metadata.txt` file for the
 previous example would look like this:
 
-!!! note
-    Please ensure that measurement identifier and filename are separated by a TAB `\t` character and not
-    by spaces.
-
 ```text
-NGSQTEST001AE-1234512312  file1_1.fastq.gz
-NGSQTEST001AE-1234512312  file1_2.fastq
-NGSQTEST002BC-3321314441  report.pdf
-NGSQTEST002BC-3321314441  summary.html
+NGSQTN23015AS-1225978199074484  file1_1.fastq.gz
+NGSQTN23015AS-1225978199074484  file1_2.fastq
+NGSQTN23015AS-1225978199074484  report.pdf
+NGSQTN23015AS-1225978199074484  summary.html
 ```
+
+!!! note
+    Ensure that measurement identifier and filename are separated by a TAB `\t` character and not
+    by spaces.
 
 ## Upload your data
 
@@ -104,15 +117,22 @@ upload directly to the registration folder but stage it instead in your user dir
 Once your folder is prepared and uploaded to `upload.qbic.uni-tuebingen.de`, move it to
 the `registration` folder.
 
+!!! tip
+    You can easily drag and drop the folder via your mouse 
+    from your local filesystem to our server within filezilla
+
 Our system will then transfer the folder and proceed with data registration.
 
 !!! success
     Congratulations you have uploaded your data!
 
+Finally, you can view summarized information for your uploaded data within the raw data view of the data manager.
+![raw_data_upload_shown_in_view.png](images/upload/raw_data_upload_shown_in_view.png)
+
 ## Handle failed uploads
 
 Uploading data to a measurement can fail in certain cases. When an upload fails, a folder is created
 in  `/home/<your-user>/error`.
-![An image showing the error folder. It contains a directory with a long name.](./images/upload/raw_data_upload_error_directory.png)
+![An image showing the error folder. It contains a directory with a long name.](./images/upload/raw_data_upload_error_folder.png)
 In this new folder, you can find an `error.txt` file describing the error, and the data you tried to upload.
-You can then try to fix the error and upload again.
+You can then try to fix the error and upload it again by moving it into the registration folder..
