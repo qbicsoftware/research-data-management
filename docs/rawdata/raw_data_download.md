@@ -50,7 +50,7 @@ so you remember for what purpose you have created them.
 
 !!! danger "Token security"
     If you are unsure, if your PAT got exposed or shared with untrusted parties, delete them right
-    away.
+    away. You can create new, safe tokens at any time.
 
 ## Raw Data Navigation
 
