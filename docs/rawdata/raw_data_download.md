@@ -75,7 +75,7 @@ To acquire the URLS necessary for the measurement data download the following st
 
 ### Download Raw Data
 
-To download the raw data for your measurements basic command line/terminal knowledge is required. 
+To download the raw data for your measurements, basic command line/terminal knowledge is required. 
 First start by opening the command line in your operating system of choice. 
 
 #### Open command line on Mac
