@@ -49,7 +49,7 @@ into the `User` field.
 ![An image showing the users site manager highlighting the user and password field](images/upload/raw_data_upload_user_field.png)
 **Connect to the server:** Make sure you are in the network of the _University of Tübingen_. You can connect to the server by pressing `Connect` in
 the _Site Manager_. After connecting to the server, _FileZilla_ shows you the contents of your home directory on the server side.
-![An image showing the users home folder. You can see three directories named registration, error and upload.](images/upload/raw_data_upload_remote_filesystem.png))
+![An image showing the users home folder. You can see three directories named registration, error and upload.](images/upload/raw_data_upload_remote_filesystem.png)
 !!! warning
     When you first log in, the server will create some folders. Do not delete these folders!
 
@@ -135,4 +135,4 @@ Uploading data to a measurement can fail in certain cases. When an upload fails,
 in  `/home/<your-user>/error`.
 ![An image showing the error folder. It contains a directory with a long name.](./images/upload/raw_data_upload_error_folder.png)
 In this new folder, you can find an `error.txt` file describing the error, and the data you tried to upload.
-You can then try to fix the error and upload it again by moving it into the registration folder..
+You can then try to fix the error. To retry the upload of the fixed folder, move it to the registration folder again.
