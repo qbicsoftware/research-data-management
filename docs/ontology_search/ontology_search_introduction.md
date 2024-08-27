@@ -29,11 +29,11 @@ letters will appear.
     complete [tree of life](https://www.ncbi.nlm.nih.gov/taxonomy) provided by NCBI.
     If activated, only the species taxonomy is queried. 
 
-??? note "Why not including species in on search?" 
-    We currently host an own database instance for efficient queries of species to support
+??? note "Why does the search not include species?" 
+    We currently host our own database instance for efficient queries of species to support
     faster lookups. Also, the TIB terminology service, which we have integrated for all other term lookups,
-    does not provide the tree of life yet.
-    So they are completely two independent systems that are requested here.
+    does not provide the tree of life, yet.
+    So they are two independent systems that we request information from here.
 
 Additionally, it allows you to copy the
 ontology [CURIE](https://link.springer.com/article/10.1007/s12599-022-00744-0),
