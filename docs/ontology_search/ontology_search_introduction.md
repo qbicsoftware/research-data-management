@@ -31,9 +31,9 @@ letters will appear.
 
 ??? note "Why not including species in on search?" 
     We currently host an own database instance for efficient queries of species to support
-    faster lookups. Also, the TIB terminology service currently does not provide
-    the tree of life, which we have integrated for all other term lookups.
-    So they are completely to different systems that are requested here.
+    faster lookups. Also, the TIB terminology service, which we have integrated for all other term lookups,
+    does not provide the tree of life yet.
+    So they are completely two independent systems that are requested here.
 
 Additionally, it allows you to copy the
 ontology [CURIE](https://link.springer.com/article/10.1007/s12599-022-00744-0),
