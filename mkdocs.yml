@@ -9,6 +9,7 @@ theme:
 site_url: 'https://qbicsoftware.github.io/research-data-management/'
 site_name: Research Data Management
 repo_url: https://github.com/qbicsoftware/data-manager-app
+repo_name: qbicsoftware/data-manager-app
 nav:
   - Home: index.md
   - Batch:
