@@ -4,8 +4,11 @@ theme:
     primary: custom
   features:
     - content.code.copy
+    - navigation.footer
+    - header.autohide
 site_url: 'https://qbicsoftware.github.io/research-data-management/'
 site_name: Research Data Management
+repo_url: https://github.com/qbicsoftware/data-manager-app
 nav:
   - Home: index.md
   - Batch:
@@ -38,6 +41,10 @@ extra_css:
 extra:
   version:
     provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/qbicsoftware/data-manager-app
+      name: data manager app on Github
 markdown_extensions:
   - admonition
   - pymdownx.details
