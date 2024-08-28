@@ -28,5 +28,5 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-material mike
       - run: git fetch
+      - run: mike set-default --allow-undefined ${{ github.event.inputs.versionTag }}
       - run: mike deploy --push --update-aliases ${{ github.event.inputs.versionTag }} latest
-      - run: mike set-default ${{ github.event.inputs.versionTag }}
