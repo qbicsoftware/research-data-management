@@ -26,7 +26,7 @@ mkdocs serve
 If you want to see the live preview with versioning activated, run:
 
 ```bash
-mike deploy --update-aliases <version> latest --ignore-remote-status
+mike deploy --update-aliases <version> latest
 mike serve
 ```
 
