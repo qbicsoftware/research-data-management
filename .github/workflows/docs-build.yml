@@ -1,8 +1,10 @@
 name: ci
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+    inputs:
+      versionTag:
+        description: 'Version Tag (semantic version)'
+        required: true
 permissions:
   contents: write
 jobs:
@@ -24,5 +26,5 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material
-      - run: mkdocs gh-deploy --force
+      - run: pip install mkdocs-material mike
+      - run: mike deploy --update-aliases ${{ github.event.inputs.versionTag }} latest --ignore-remote-status

@@ -41,6 +41,7 @@ extra_css:
 extra:
   version:
     provider: mike
+    alias: true
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/qbicsoftware/data-manager-app
