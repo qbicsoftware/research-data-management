@@ -1,5 +1,10 @@
 # Measurement Registration
 
+!!! tip "Excel file support"
+    The data manager now supports measurement registration and updates with Excel files (*.xlsx).
+    
+    __Only requirement__: metadata must be in the first sheet of your workbook.
+
 To register measurements, start by [navigating](measurement_introduction.md#measurement-navigation) into the measurement summary view.
 ![measurement_summary](images/measurement_summary_no_measurements.png)
 Once within the measurement summary view, measurements can be registered via the following steps:
