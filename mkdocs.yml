@@ -4,6 +4,7 @@ theme:
     primary: custom
   features:
     - content.code.copy
+site_url: 'https://qbicsoftware.github.io/research-data-management/'
 site_name: Research Data Management
 nav:
   - Home: index.md
