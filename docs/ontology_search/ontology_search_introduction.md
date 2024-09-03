@@ -22,18 +22,21 @@ Start by providing at least 2 letters in the ontology search field of the entity
 to retrieve the ontology information.
 Once done so a card list showing information for all ontology entries which contain the provided
 letters will appear.
-![ontology_search_triggered.png](images/ontology_search_triggered.png)
+![ontology_search_triggered_without_species.png](images/ontology_search_triggered_without_species.png)
 
-!!! note "Enable species search"
-    The application provides access to species terminologies for the
-    complete [tree of life](https://www.ncbi.nlm.nih.gov/taxonomy) provided by NCBI.
-    If activated, only the species taxonomy is queried. 
+Alternatively the ontology search can also be limited to only look for species specific information.
+![ontology_search_triggered_with_species.png](images/ontology_search_triggered_with_species.png)
 
-??? note "Why does the search not include species?" 
-    We currently host our own database instance for efficient queries of species to support
-    faster lookups. Also, the TIB terminology service, which we have integrated for all other term lookups,
-    does not provide the tree of life, yet.
-    So they are two independent systems that we request information from here.
+!!! note "Enable species specific search"
+The application provides access to species terminologies for the
+complete [tree of life](https://www.ncbi.nlm.nih.gov/taxonomy) provided by NCBI.
+If activated, only the species taxonomy is queried.
+
+??? note "Why does the search not include species?"
+We currently host our own database instance for efficient queries of species to support
+faster lookups. Also, the TIB terminology service, which we have integrated for all other term lookups,
+does not provide the tree of life, yet.
+So they are two independent systems that we request information from here
 
 Additionally, it allows you to copy the
 ontology [CURIE](https://link.springer.com/article/10.1007/s12599-022-00744-0),
