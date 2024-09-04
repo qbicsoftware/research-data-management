@@ -1,5 +1,11 @@
 # Measurement Edit
 
+!!! tip "Excel file support"
+    The data manager now supports measurement registration and updates with Excel files (*.xlsx).
+
+    __Only requirement__: metadata must be in the first sheet of your workbook.
+
+
 To edit measurement metadata, start by [navigating](measurement_introduction.md#measurement-navigation) into the measurement summary view.
 ![measurement_summary](images/measurement_summary_with_measurements.png)
 
@@ -51,7 +57,7 @@ The _xlsx_ lists the registered measurements according to their measurement Ids 
 Within this sheet make the necessary property changes for the measurements.
 ![measurement_edit_proteomics_measurement_edited.png](images/measurement_edit_proteomics_measurement_edited.png)
 
-Finally, export the sheet into a tab seperated UTF-16BE Unicode Text (*.txt) text file.
+Finally, use your workbook directly (xlsx file) or export the sheet into a tab seperated UTF-16BE Unicode Text (*.txt) text file.
 ![edit_measurement_proteomics_measurement_export.png](images/measurement_edit_proteomics_measurement_export.png)
 
 **Notes:**
@@ -78,7 +84,7 @@ The _xlsx_ file lists the registered measurements according to their measurement
 Within this sheet make the necessary property changes for the measurements.
 ![measurement_edit_ngs_measurement_edited.png](images/measurement_edit_ngs_measurement_edited.png)
 
-Finally, export the sheet into a tab seperated UTF-16BE Unicode Text (*.txt) text file.
+Finally, use your workbook directly (xlsx file) or export the sheet into a tab seperated UTF-16BE Unicode Text (*.txt) text file.
 ![edit_measurement_ngs_measurement_export.png](images/measurement_edit_ngs_measurement_export.png)
 
 **Notes:**
@@ -108,7 +114,7 @@ Should you have uploaded one or more files by accident, you can easily delete th
 
 !!! warning "File constraints"
     Please adhere to the file format and maximum file size outlined in the dialog.
-    Currently, we support the _txt_ or _tsv_ file formats with a maximum file size of 16Mb
+    Currently, we support the _txt_, _tsv_ or _xlsx_ file formats with a maximum file size of 16Mb
 
 The edit dialog will validate the provided metadata information and show invalid properties below the file name.
 
