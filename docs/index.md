@@ -15,7 +15,7 @@ the [data manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
 - Sample metadata: the term `Organism ID` has been renamed to `Biological Replicate` to match its
   purpose of use.
 - The data manager is now connected to the [TIB terminology service](https://terminology.tib.eu).  
-  The queried ontologies are restricted to life science specific ones. You miss one? Please let us
+  The [queried ontologies](ontology_search/ontology_search_introduction.md) are restricted to life science specific ones. You miss one? Please let us
   know and submit
   a [feature request](https://github.com/qbicsoftware/data-manager-app/issues/new/choose). Currently
   included ontologies are:
