@@ -4,6 +4,7 @@ This repo provides the documentation for the research data management processes 
 
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
+
 > #### Latest documentation
 >
 > [qbicsoftware.github.io/research-data-management](https://qbicsoftware.github.io/research-data-management)
@@ -11,16 +12,23 @@ This repo provides the documentation for the research data management processes 
 
 ## Local Development
 
-The documentation is written in pure Markdown, rendered and deployed with [MkDocs](https://www.mkdocs.org/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). Both can be installed with the Python tool [pip](https://pypi.org/project/pip/):
+The documentation is written in pure Markdown, rendered and deployed with [MkDocs](https://www.mkdocs.org/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/), versioning is realised with [mike](https://github.com/jimporter/mike). All can be installed with the Python tool [pip](https://pypi.org/project/pip/):
 
 ```bash
-pip install mkdocs mkdocs-material
+pip install mkdocs mkdocs-material mike
 ```
 
 If you want to see the live preview, run:
 
 ```bash
 mkdocs serve
+```
+
+If you want to see the live preview with versioning activated, run:
+
+```bash
+mike deploy --update-aliases <version> latest
+mike serve
 ```
 
 In the default configuration, you can see a live preview following the URL displayed in the console log, e.g. http://127.0.0.1:8000:
