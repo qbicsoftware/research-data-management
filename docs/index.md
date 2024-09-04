@@ -4,9 +4,11 @@ Behind every great research project should be great research data management!
 Start your voyage towards a __FAIR__ and __Open Data__ future and include
 the [data manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in your research!
 
-## What's new in 4th September 2024
+## What's new?
+<div style="font-size: smaller; color: rgba(122,122,122,1)">September 4th, 2024 </div>
 
-- Sample metadata: the term `Organism ID` has been renamed to `Biological Replicate` to match its purpose of use.
+- Sample metadata: the term `Organism ID` has been renamed to `Biological Replicate` to match its
+  purpose of use.
 - Measurements can now be registered and updated
   directly [with XLSX spreadsheets](measurement/measurement_introduction.md). TSV is still
   supported.
@@ -31,4 +33,7 @@ the [data manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
   from [NCBI's tree of life](https://doi.org/10.1371/journal.pgen.1005912).
 - Some smaller [bug fixes](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.4.0).
 
+## Update notes
+
+Former update announcements coming soon.
 
