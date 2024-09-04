@@ -5,13 +5,15 @@ Start your voyage towards a __FAIR__ and __Open Data__ future and include
 the [data manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in your research!
 
 ## What's new?
+
+### Excel spreadsheets now supported for measurements
 <div style="font-size: smaller; color: rgba(122,122,122,1)">September 4th, 2024 </div>
 
-- Sample metadata: the term `Organism ID` has been renamed to `Biological Replicate` to match its
-  purpose of use.
 - Measurements can now be registered and updated
   directly [with XLSX spreadsheets](measurement/measurement_introduction.md). TSV is still
   supported.
+- Sample metadata: the term `Organism ID` has been renamed to `Biological Replicate` to match its
+  purpose of use.
 - The data manager is now connected to the [TIB terminology service](https://terminology.tib.eu).  
   The queried ontologies are restricted to life science specific ones. You miss one? Please let us
   know and submit
