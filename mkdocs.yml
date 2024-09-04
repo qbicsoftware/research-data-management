@@ -4,14 +4,16 @@ theme:
     primary: custom
   features:
     - content.code.copy
-site_name: Research Data Management
+site_name: Life Science Data Management
 nav:
   - Home: index.md
+  - Get Started:
+      Process Overview: get_started/process_overview.md
   - Batch:
       - Introduction: batch/batch_introduction.md
       - Register: batch/batch_registration.md
       - Editing: batch/batch_edit.md
-  - RawData:
+  - Raw Data:
       - Download Data: rawdata/raw_data_download.md
       - Upload Data: rawdata/raw_data_upload.md
   - Experiment:
