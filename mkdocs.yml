@@ -8,8 +8,8 @@ theme:
     - header.autohide
 site_url: 'https://qbicsoftware.github.io/research-data-management/'
 site_name:  Life Science Data Management
-repo_url: https://github.com/qbicsoftware/data-manager-app
-repo_name: qbicsoftware/data-manager-app
+repo_url: https://github.com/qbicsoftware/research-data-management
+repo_name: qbicsoftware/research-data-management
 nav:
   - What's new: index.md
   - Get started:
@@ -47,8 +47,8 @@ extra:
     alias: true
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/qbicsoftware/data-manager-app
-      name: data manager app on Github
+      link: https://github.com/qbicsoftware/research-data-management
+      name: research-data-management on Github
 markdown_extensions:
   - admonition
   - pymdownx.details
