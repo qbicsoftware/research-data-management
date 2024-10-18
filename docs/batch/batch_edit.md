@@ -1,5 +1,7 @@
 # Batch Edit
 
+[//]: # (TODO)
+
 To edit the information of a batch, start by [navigating](batch_introduction.md#batch-navigation)
 into the batch summary view.
 ![batch_summary](images/batch_summary_with_batch.png)
