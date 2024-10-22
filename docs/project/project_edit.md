@@ -77,3 +77,8 @@ To do so, select the experiment linked to their respective quality control files
 Finally, save your uploaded files to the project via a pressing the save button on the bottom right of the dialog.
 Your uploaded qc reports will then be shown in the qc component on the bottom right of the project summary view.
 ![project_summary_with_qc](images/project_summary_with_qc.png)
+
+## Download Project Metadata
+
+To **download** the project metadata stored within the project summary as an RO-Crate click on the **`Export as RO-Crate`** button.
+This will export the metadata as a `.zip` container to your local download directory. 
