@@ -98,7 +98,7 @@ To **start** with the sample batch deletion process, click on the **`delete`** b
     Should you not see the action column,   
     please make sure that you have been granted the "write" or "admin" role to it by the project owner/admin.
 
-This will open the batch deletion dialog requiring **validation** of the batch deletion process by clicking the **`Confirm`** button.
+This will open the batch deletion dialog requiring **confirmation** of the batch deletion process by clicking the **`Confirm`** button.
 
 !!! warning "Attached Measurements"
     Keep in mind, that batches can only be deleted if none of the samples within the batch have been used in a measurement.)
