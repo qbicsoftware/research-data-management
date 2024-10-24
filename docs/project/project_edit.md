@@ -80,5 +80,9 @@ Your uploaded qc reports will then be shown in the qc component on the bottom ri
 
 ## Download Project Metadata
 
+The project metadata stored within the project summary is currently downloadable as a research object crate(RO-crate) container.
+This ensures that the project data can be accessed as a machine-readable and structured archive of the information stored in the data manager. 
+For more information visit the official Research Object [documentation](https://www.researchobject.org/ro-crate/about_ro_crate)
+
 To **download** the project metadata stored within the project summary as an RO-Crate click on the **`Export as RO-Crate`** button.
-This will export the metadata as a `.zip` container to your local download directory. 
+This will export the metadata as a `.zip` container to your local download directory.
