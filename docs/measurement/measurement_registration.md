@@ -47,7 +47,7 @@ Use these Guidelines to fill in the "Metadata" sheet with the mandatory necessar
 ![register_measurement_proteomics_measurement_filled.png](images/measurement_registration_proteomics_measurement_filled.png)
 
 !!! tip "Sample Id"
-    You can copy the Sample IDs from the [downloadable](../batch/batch_registration.md#batch-metadata-download) batch metadata sheet
+    You can copy the Sample IDs from the [downloadable](../batch/sample-batch.md#download-sample-metadata) batch metadata sheet
 
 **Notes:**
 Mandatory metadata properties are marked with an asterisk next to the column header
@@ -75,7 +75,7 @@ Use these Guidelines to fill in the "Metadata" sheet with the mandatory necessar
 ![register_measurement_proteomics_measurement_filled.png](images/measurement_registration_proteomics_measurement_filled.png)
 
 !!! tip "Sample Id"
-    You can copy the Sample IDs from the [downloadable](../batch/batch_registration.md#batch-metadata-download) batch metadata sheet
+    You can copy the Sample IDs from the [downloadable](../batch/sample-batch.md#download-sample-metadata) batch metadata sheet
 
 **Notes:**
 Mandatory metadata properties are marked with an asterisk next to the column header
