@@ -108,4 +108,4 @@ This will open the batch deletion dialog requiring **confirmation** of the batch
 ## Download sample metadata
 
 To **download** the sample metadata for all registered samples click on the **`Download sample metadata`** button.
-This will export the provided registered metadata as an `.xlsx` file to your local download directory.
+This will export all registered metadata as an `.xlsx` file to your local download directory.
