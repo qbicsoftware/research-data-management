@@ -14,10 +14,7 @@ nav:
   - What's new: index.md
   - Get started:
       Process Overview: get_started/process_overview.md
-  - Batch:
-      - Introduction: batch/batch_introduction.md
-      - Register: batch/batch_registration.md
-      - Editing: batch/batch_edit.md
+  - Batch: batch/sample-batch.md
   - Raw data:
       - Download Data: rawdata/raw_data_download.md
       - Upload Data: rawdata/raw_data_upload.md
