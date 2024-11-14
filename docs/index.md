@@ -6,6 +6,15 @@ the [data manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
 
 ## What's new?
 
+### New project summary layout
+<div style="font-size: smaller; color: rgba(122,122,122,1)">November 14th, 2024 </div>
+
+- A completely new design of the project summary, that targets many improvements for accessing and updating high level project information
+- Enhances the spreadsheet templates with examples using what Microsoft calls [Input Messages](https://support.microsoft.com/en-us/office/more-on-data-validation-f38dee73-9900-4ca6-9301-8a5f6e1f0c4c) and links to further information resources 
+- Spreadsheet templates are no static documents anymore, but generated dynamically
+
+## Update notes
+
 ### Excel spreadsheets now supported for sample batch registration
 <div style="font-size: smaller; color: rgba(122,122,122,1)">October 23rd, 2024 </div>
 
@@ -15,8 +24,6 @@ the [data manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
   RO-Crate to your local filesystem within the project summary.
   For more information on RO-Crates visit [here](https://www.researchobject.org/ro-crate/).
 - Some smaller [bug fixes](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.5.0).
-
-## Update notes
 
 ### Excel spreadsheets now supported for measurements
 <div style="font-size: smaller; color: rgba(122,122,122,1)">September 4th, 2024 </div>
