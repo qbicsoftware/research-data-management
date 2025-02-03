@@ -4,6 +4,9 @@ The raw data summary view shows detailed information about the raw data already 
 Additionally, it enables you to generate the [URLs](#raw-data-url-generation) necessary
 to start the command line based [raw data download](#download-raw-data). 
 
+!!! info "Are you a developer?"
+    Read about Swagger API docs in the [developer](../developers/api.md) section.
+
 ## Process
 
 1. Create a [personal access token](#personal-access-token) (PAT)
