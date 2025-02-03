@@ -36,6 +36,8 @@ nav:
       - Registration: user/user_registration.md
       - Password Reset: user/password_reset.md
       - Editing: user/user_edit.md
+  - Developers:
+      - API: developers/api.md
 extra_css:
   - stylesheets/extra.css
 extra:
