@@ -6,14 +6,25 @@ the [data manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
 
 ## What's new?
 
+### Confounding variable support
+<div style="font-size: smaller; color: rgba(122,122,122,1)">February 12th, 2025 </div>
+
+- Experimental design: The management of confounding variables on experiment and sample level is now possible
+- Ontology: Ontology terms are now queried from TIB's new [APIv3](https://terminology.tib.eu/ts/api) by default, which uses the improved OLS4 backend
+- Measurements: Technical replicate information is now shown for measurements
+- Measurements: Sample pool names are now displayed in the measurement overview
+- Metadata: Improved Excel file export that also displays the ontology terms CURIE
+
+Check out the full [release notes](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.8.0) on GitHub.
+
+## Update notes
+
 ### New project summary layout
 <div style="font-size: smaller; color: rgba(122,122,122,1)">November 14th, 2024 </div>
 
 - A completely new design of the project summary, that targets many improvements for accessing and updating high level project information
-- Enhances the spreadsheet templates with examples using what Microsoft calls [Input Messages](https://support.microsoft.com/en-us/office/more-on-data-validation-f38dee73-9900-4ca6-9301-8a5f6e1f0c4c) and links to further information resources 
+- Enhances the spreadsheet templates with examples using what Microsoft calls [Input Messages](https://support.microsoft.com/en-us/office/more-on-data-validation-f38dee73-9900-4ca6-9301-8a5f6e1f0c4c) and links to further information resources
 - Spreadsheet templates are no static documents anymore, but generated dynamically
-
-## Update notes
 
 ### Excel spreadsheets now supported for sample batch registration
 <div style="font-size: smaller; color: rgba(122,122,122,1)">October 23rd, 2024 </div>
