@@ -1,18 +1,20 @@
 # Confounding Variables
 
-> "Confounding, sometimes referred to as confounding bias, is mostly described as a ‘mixing’ or ‘blurring’ of effects.1 It occurs when an investigator tries to determine the effect of an exposure on the occurrence of a disease (or other outcome), but then actually measures the effect of another factor, a confounding variable."
+> "Confounding, sometimes referred to as confounding bias, is mostly described as a ‘mixing’ or 
+> ‘blurring’ of effects.1 It occurs when an investigator tries to determine the effect of an 
+> exposure on the occurrence of a disease (or other outcome), but then actually measures the effect 
+> of another factor, a confounding variable."
 > 
 > Jager, K. J., Zoccali, C., MacLeod, A., & Dekker, F. W. (2008). Confounding: What it is and how to deal with it. Kidney International, 73(3), 256-260. https://doi.org/10.1038/sj.ki.5002650
 
 ### Define confounding variables in your experiment
 
-In order to work with confounding variables, first you must define them in your experiment. 
-Confounding variables are experiment specific. Confounding variables do not interact with
-information outside your experiment.
+In order to work with confounding variables, first you must define them in your experiment.
+Confounding variables are experiment-specific. Currently, it is not possible to reuse the same 
+variable in other experiments metadata in Data Manager.
 
 To define a new confounding variable, navigate to your experiment, open the _Confounding Variables_, click on **Add confounding variables**. In case confounding variables are defined already, click **Add** in the top right corner of the tab.
-
-After clicking the button, a dialog opens where you can **enter the names of your confounding variables**. Confirm your changes and the confounding variables are now defined in your experiment.
+A dialog opens where you can **enter the names of your confounding variables**. Confirm your changes and the confounding variables are now defined in your experiment.
 
 ### Assign levels of a confounding variable to your sample
 
