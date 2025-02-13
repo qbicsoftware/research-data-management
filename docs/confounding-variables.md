@@ -9,31 +9,32 @@
 
 ### Define confounding variables in your experiment
 
-In order to work with confounding variables, first you must define them in your experiment.
+In order to work with confounding variables, first you must define them.
 Confounding variables are experiment-specific. Currently, it is not possible to reuse the same 
 variable in other experiments metadata in Data Manager.
 
-To define a new confounding variable, navigate to your experiment, open the _Confounding Variables_, click on **Add confounding variables**. In case confounding variables are defined already, click **Add** in the top right corner of the tab.
-A dialog opens where you can **enter the names of your confounding variables**. Confirm your changes and the confounding variables are now defined in your experiment.
+Confounding variables are defined in your experiment, so navigate to your experiment first.
+There you can find the controls to add new confounding variables.
 
 ### Assign levels of a confounding variable to your sample
 
-To get the full potential and account for effects of confounding variables in your experiment, you can now annotate the samples with your observation of the variables manifestation.
+To get the full potential and account for effects of confounding variables in your experiment, you 
+can now annotate the samples with your observation of the variables manifestation.
 In contrast to experimental variables, not all samples need to have a level in one confounding variable.
 
 After [defining the confounding variables in your experiment](#define-confounding-variables-in-your-experiment), 
-the confounding variables are added as columns in the sample registration and sample editing process.
-You can now edit your sample metadata and add missing levels of a confounding variable for your sample.
+the confounding variables are added in the sample registration and sample editing process. 
+In the sample registration and sample editing processes, you have the possibility to annotate 
+samples with levels for the confounding variables.
 
 ### Rename a confounding variable
 
-To remove a confounding variable, navigate to your experiment, open the _Confounding Variables_ and click on **Edit** in the top right corner. Each row corresponds to one confounding variable.
-When you change the name of a confounding variable, the variable levels are kept and only the variable name changes.
+To remove a confounding variable, navigate to your experiment, locate the confounding variables editing and rename your confounding variable.
+After renaming a variable, the levels are preserved and only the name of the confounding variable are changed.
 
 ### Delete a confounding variable
 
-To remove a confounding variable, navigate to your experiment, open the _Confounding Variables_ and click on **Edit** in the top right corner. Each row corresponds to one confounding variable.
-By removing a row and clicking on **Confirm**, you can delete the confounding variable. 
+To remove a confounding variable, navigate to your experiment, locate the confounding variables editing and remove the variables you want to delete.
 
 !!!warning
     Removing a confounding variable, will delete all annotated levels of that variable on all samples in your experiment.
