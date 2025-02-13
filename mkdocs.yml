@@ -21,6 +21,7 @@ nav:
   - Experiment:
       - Introduction: experiment/experiment_introduction.md
       - Creation: experiment/experiment_creation.md
+      - Confounding Variables: confounding-variables.md
   - Measurement:
       - Introduction: measurement/measurement_introduction.md
       - Registration: measurement/measurement_registration.md
