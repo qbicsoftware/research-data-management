@@ -25,14 +25,12 @@ You can now edit your sample metadata and add missing levels of a confounding va
 
 ### Rename a confounding variable
 
-To remove a confounding variable, navigate to your experiment, open the _Confounding Variables_
-tab and click on **Edit** in the top right corner. Each row corresponds to one confounding variable.
+To remove a confounding variable, navigate to your experiment, open the _Confounding Variables_ and click on **Edit** in the top right corner. Each row corresponds to one confounding variable.
 When you change the name of a confounding variable, the variable levels are kept and only the variable name changes.
 
 ### Delete a confounding variable
 
-To remove a confounding variable, navigate to your experiment, open the _Confounding Variables_ 
-tab and click on **Edit** in the top right corner. Each row corresponds to one confounding variable.
+To remove a confounding variable, navigate to your experiment, open the _Confounding Variables_ and click on **Edit** in the top right corner. Each row corresponds to one confounding variable.
 By removing a row and clicking on **Confirm**, you can delete the confounding variable. 
 
 !!!warning
