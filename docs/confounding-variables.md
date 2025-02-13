@@ -1,11 +1,12 @@
 # Confounding Variables
 
-> "Confounding, sometimes referred to as confounding bias, is mostly described as a ‘mixing’ or 
-> ‘blurring’ of effects.1 It occurs when an investigator tries to determine the effect of an 
-> exposure on the occurrence of a disease (or other outcome), but then actually measures the effect 
-> of another factor, a confounding variable."
-> 
-> Jager, K. J., Zoccali, C., MacLeod, A., & Dekker, F. W. (2008). Confounding: What it is and how to deal with it. Kidney International, 73(3), 256-260. https://doi.org/10.1038/sj.ki.5002650
+!!!info
+    "Confounding, sometimes referred to as confounding bias, is mostly described as a ‘mixing’ or 
+    ‘blurring’ of effects. It occurs when an investigator tries to determine the effect of an 
+    exposure on the occurrence of a disease (or other outcome), but then actually measures the effect 
+    of another factor, a confounding variable."
+    
+    Jager, K. J., Zoccali, C., MacLeod, A., & Dekker, F. W. (2008). Confounding: What it is and how to deal with it. Kidney International, 73(3), 256-260. https://doi.org/10.1038/sj.ki.5002650
 
 ### Define confounding variables in your experiment
 
