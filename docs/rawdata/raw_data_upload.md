@@ -156,7 +156,6 @@ Our system will then transfer the folder and proceed with data registration.
     Congratulations you have uploaded your data!
 
 Finally, you can view summarized information for your uploaded data within the raw data view of the data manager.
-![raw_data_upload_shown_in_view.png](images/upload/raw_data_upload_shown_in_view.png)
 
 Should your files not appear check the error directory as outlined in the [failed upload section](#handle-failed-uploads)
 
@@ -193,8 +192,6 @@ sftp <your-user>@upload.qbic.uni-tuebingen.de
 ```
 Upon successful connection you will be prompted for your ZDV password.
 
-![raw_data_upload_SFTP_connect_With_password.png](images/upload/raw_data_upload_SFTP_connect_With_password.png)
-
 !!! Warning
     Keep in mind that you need to be within the university network and 
     have a valid ZDV account to connect to our upload server 
@@ -205,8 +202,6 @@ You can check out the directory structure of your home directory with the follow
 ``` bash
 ls -ll
 ```
-
-![raw_data_upload_SFTP_list_remote_home_directory.png](images/upload/raw_data_upload_SFTP_list_remote_home_directory.png)
 
 From there navigate to the **Upload** folder within your home directory via the **cd** command:
 
@@ -221,8 +216,6 @@ with the directory name of your dataset:
 put -r <your-dataset>
 ```
 
-![raw_data_upload_SFTP_successful_upload.png](images/upload/raw_data_upload_SFTP_successful_upload.png)
-
 After your dataset has been successfully uploaded, you can move it to the **registration** folder via the **rename** command, 
 replacing the `<your-dataset>` with the folder name of your dataset:
 
@@ -230,15 +223,12 @@ replacing the `<your-dataset>` with the folder name of your dataset:
 rename <your-dataset> ../registration/<your-dataset>
 ```
 
-![raw_data_upload_SFTP_move_to_registration.png](images/upload/raw_data_upload_SFTP_move_to_registration.png)
-
 Our system will then transfer the folder and proceed with data registration.
 
 !!! success
     Congratulations you have uploaded your data!
 
 Finally, you can view summarized information for your uploaded dataset within the raw data view of the data manager.
-![raw_data_upload_shown_in_view.png](images/upload/raw_data_upload_shown_in_view.png)
 
 Should your files not appear check the error directory as outlined in the [failed upload section](#handle-failed-uploads)
 
