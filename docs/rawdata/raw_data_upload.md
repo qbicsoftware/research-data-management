@@ -101,7 +101,7 @@ MSQTEST002AT-437845764676875  my-registration-batch2
 ```
 
 The example metadata file is provided [here](templates/metadata_multiple_measurements_example/metadata.txt), 
-please keep in mind you need to adjust the measurement Ids and dataset names as outlined in this section.
+please keep in mind you need to adjust the measurement Ids and dataset names to your specific upload.
 
 !!! note
     Ensure that measurement identifier and filename are separated by a TAB `\t` character and not
