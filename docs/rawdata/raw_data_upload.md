@@ -184,7 +184,7 @@ We recommend to get in contact with your local IT department should you need ass
     Check the OpenSSH sftp [manpage](https://man.openbsd.org/sftp) for information on how to use the sftp program.
 
 Start by opening the command line within your operating system of choice. 
-Next navigate to the directory containing the dataset you wish to upload.
+Next navigate to the local working directory containing the dataset you wish to upload.
 From within this directory connect to our upload server with the **sftp** command, replacing <your-user> with your ZDV credentials:
 
 ``` bash
@@ -196,14 +196,14 @@ Upon successful connection you will be prompted for your ZDV password.
     Keep in mind that you need to be within the university network and 
     have a valid ZDV account to connect to our upload server 
 
-If everything goes well, you'll be connected to your home directory within our upload server.
-You can check out the directory structure of your home directory with the following **ls** command:
+If everything goes well, you'll be connected to the remote working directory within our upload server.
+You can check out the directory structure of this directory with the following **ls** command:
 
 ``` bash
 ls -ll
 ```
 
-From there navigate to the **Upload** folder within your home directory via the **cd** command:
+From there navigate to the **Upload** folder on the remote working directory via the **cd** command:
 
 ``` bash
 cd upload
@@ -215,6 +215,13 @@ with the directory name of your dataset:
 ``` bash
 put -r <your-dataset>
 ```
+
+!!! Info
+    Keep in mind that the **put** commands uploads the files and folders within the working directory of your local filesystem.
+    You can check the content of your local working directory cia the **lls** command
+    ``` bash
+    lls
+    ```
 
 After your dataset has been successfully uploaded, you can move it to the **registration** folder via the **rename** command, 
 replacing the `<your-dataset>` with the folder name of your dataset:
