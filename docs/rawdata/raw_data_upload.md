@@ -130,11 +130,11 @@ To open the site manager select it from the menu or press on the highlighted ico
 **Add the upload server:** In the _Site Manager_ you can add sites to which you want to connect. For
 measurement data registration, select `SFTP - SSH File Transfer Protocol` and
 enter `upload.qbic.uni-tuebingen.de` into the `Host` field.
-![An image showing the users site manager highlighting the host and connection field](images/upload/raw_data_upload_host_field.png)
+![An image showing the users site manager highlighting the host and connection field](images/upload/raw_data_upload_site_manager_host-fields.png)
 
 You can log in with your _University of Tübingen_ credentials. Enter your university user account
 into the `User` field.
-![An image showing the users site manager highlighting the user and password field](images/upload/raw_data_upload_user_field.png)
+![An image showing the users site manager highlighting the user and password field](images/upload/raw_data_upload_site_manager_credential-fields.png)
 **Connect to the server:** Make sure you are in the network of the _University of Tübingen_. You can connect to the server by pressing `Connect` in
 the _Site Manager_. After connecting to the server, _FileZilla_ shows you the contents of your home directory on the server side.
 ![An image showing the users home folder. You can see three directories named registration, error and upload.](images/upload/raw_data_upload_remote_filesystem.png)
@@ -185,16 +185,16 @@ We recommend to get in contact with your local IT department should you need ass
 
 Start by opening the command line within your operating system of choice. 
 Next navigate to the local working directory containing the dataset you wish to upload.
-From within this directory connect to our upload server with the **sftp** command, replacing <your-user> with your ZDV credentials:
+From within this directory connect to our upload server with the **sftp** command, replacing <your-user> with your university account credentials:
 
 ``` bash
 sftp <your-user>@upload.qbic.uni-tuebingen.de
 ```
-Upon successful connection you will be prompted for your ZDV password.
+Upon successful connection you will be prompted for your university account password.
 
 !!! Warning
     Keep in mind that you need to be within the university network and 
-    have a valid ZDV account to connect to our upload server 
+    have a valid university account to connect to our upload server 
 
 If everything goes well, you'll be connected to the remote working directory within our upload server.
 You can check out the directory structure of this directory with the following **ls** command:
