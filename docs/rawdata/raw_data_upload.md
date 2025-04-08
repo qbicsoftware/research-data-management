@@ -243,6 +243,11 @@ Should your files not appear check the error directory as outlined in the [faile
 
 Uploading data to a measurement can fail in certain cases. When an upload fails, a folder is created
 in  `/home/<your-user>/error`.
-![An image showing the error folder. It contains a directory with a long name.](./images/upload/raw_data_upload_error_folder.png)
+
+!!! info
+    A failed upload will be contained within a directory named after a universally unique identifier 
+    to ensure data integrity during the registration process within our system.
+
+![An image showing the error folder. It contains a directory with an automatically assigned process ID.](./images/upload/raw_data_upload_error_folder.png)
 In this new folder, you can find an `error.txt` file describing the error, and the data you tried to upload.
 You can then try to fix the error. To retry the upload of the fixed folder, move it to the registration folder again.
