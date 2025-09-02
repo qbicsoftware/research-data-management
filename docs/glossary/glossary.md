@@ -104,18 +104,18 @@ and [edit](../experiment/experiment_creation.md) an experiment within the data m
 Below you can find an overview of the information associated with an experiment within the Data
 Manager.
 
-| Section               | Description                                                                                                     | Example                              |                            
-|-----------------------|-----------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| Analytes              | One or more substances or compounds of interest, whose expression changes are of interest within the experiment | RNA                                  |
-| BiologicalReplicates  | Number of biologically distinct samples subjected to the same treatment during the experiment                   | 20                                   |
-| ConfoundingVariables  | A variable possibly influencing independent and dependent experimental variables.                               | - (Dependent on Experiment Setup)    |
-| ExperimentalGroups    | Group of subjects exposed to a unique combination (condition) of experimental variables                         | control, treatment_cohort_1          |
-| ExperimentalVariables | An Experimental factor defined to observe its effect on the subjects of an experiment.                          | temperature, time                    |
-| Id                    | UUID of the experiment automatically assigned by the data manager                                               | dfcd156d-eb17-4cb0-99e1-68c5b1683237 |
-| ModificationDate      | Timestamp when the experiment was last modified                                                                 | 01.02.9876                           |
-| Name                  | Unique name of the experiment                                                                                   | Pilot Experiment                     |
-| Specimen              | One or more specific parts of the species from which the analytes are collected.                                | Liver                                |
-| Species               | One ore more Organisms from which the samples were collected                                                    | Homo Sapiens                         |
+| Section               | Description                                                                                                     | Example                                                                        |                            
+|-----------------------|-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| Analytes              | One or more substances or compounds of interest, whose expression changes are of interest within the experiment | RNA                                                                            |
+| BiologicalReplicates  | Number of biologically distinct samples subjected to the same treatment during the experiment                   | 20                                                                             |
+| ConfoundingVariables  | A variable possibly influencing independent and dependent experimental variables.                               | Varies See [here](../experiment/confounding-variables.md) for more information |
+| ExperimentalGroups    | Group of subjects exposed to a unique combination (condition) of experimental variables                         | control, treatment_cohort_1                                                    |
+| ExperimentalVariables | An Experimental factor defined to observe its effect on the subjects of an experiment.                          | temperature, time                                                              |
+| Id                    | UUID of the experiment automatically assigned by the data manager                                               | dfcd156d-eb17-4cb0-99e1-68c5b1683237                                           |
+| ModificationDate      | Timestamp when the experiment was last modified                                                                 | 01.02.9876                                                                     |
+| Name                  | Unique name of the experiment                                                                                   | Pilot Experiment                                                               |
+| Specimen              | One or more specific parts of the species from which the analytes are collected.                                | Liver                                                                          |
+| Species               | One ore more Organisms from which the samples were collected                                                    | Homo Sapiens                                                                   |
 
 #### Experimental Variables
 
