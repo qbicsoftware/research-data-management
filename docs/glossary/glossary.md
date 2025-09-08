@@ -2,7 +2,7 @@
 
 ## Quick Reference Table
 
-| Section                     | Description                                                                  |                           
+| Concept                     | Description                                                                  |                           
 |-----------------------------|------------------------------------------------------------------------------|
 | [User](#user)               | Learn more about the metadata of your user account and its authentication    | 
 | [Project](#project)         | Information about a projects metadata such as contact, funding and objective | 
@@ -16,12 +16,12 @@
 
 In our documentation you can find detailed information on how
 to [register](../user/user_registration.md)
-and [edit](../user/user_edit.md) your account within the data manager.
+and [edit](../user/user_edit.md) your account within the Data Manager.
 
 Below you can find an overview of the information associated with a user account within the Data
 Manager
 
-| Section           | Description                                                             | Example                              | Mandatory          |                          
+| Concept           | Description                                                             | Example                              | Mandatory          |                          
 |-------------------|-------------------------------------------------------------------------|--------------------------------------|--------------------|
 | Email             | Email address associated with the account                               | John.Doe@example.mail                | :white_check_mark: |
 | Full name         | First and last name of the user                                         | John Doe                             | :white_check_mark: |
@@ -42,17 +42,17 @@ and [edit](../rawdata/raw_data_download.md#manage-tokens) your personal access t
 
 For detailed information visit the [project documentation](../project/project_introduction.md)
 There you will find detailed information on how to [register](../project/project_registration.md)
-and [edit](../project/project_edit.md) a project within the data manager.
+and [edit](../project/project_edit.md) a project within the Data Manager.
 Additionally, it outlines how to grant or revoke [access](../project/project_access.md) to your
-project to other users within the data manager.
+project to other users within the Data Manager.
 
 Below you can find an overview of the information associated with a project within the Data
 Manager
 
-| Section                              | Description                                                                                         | Example                                                           | Mandatory          |               
+| Concept                              | Description                                                                                         | Example                                                           | Mandatory          |               
 |--------------------------------------|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|--------------------|
 | Code                                 | Human Readable unique Project Code of the project                                                   | Q2ABCD                                                            | :white_check_mark: |
-| Id                                   | Type 4 uniquely random generated Id(UUID) of the project automatically assigned by the data manager | cdd81764-db7c-4635-b7f4-6e711b411e3c                              | :white_check_mark: |
+| Id                                   | Type 4 uniquely random generated Id(UUID) of the project automatically assigned by the Data Manager | cdd81764-db7c-4635-b7f4-6e711b411e3c                              | :white_check_mark: |
 | Modification date                    | Timestamp when the project was last modified                                                        | 01.02.9876                                                        | :white_check_mark: |
 | Objective                            | Objective detailing the purpose and goal of the project                                             | Investigating the substance of interest with XXX to determine YYY | :white_check_mark: |
 | Principal investigator full name     | Full name of the principal investigator handling the project                                        | John Doe                                                          | :white_check_mark: |
@@ -67,7 +67,17 @@ Manager
 
 #### Offer
 
-| Section    | Description                                          | Example                              | Mandatory          |                              
+For detailed information visit
+the [project editing documentation](../project/project_edit.md)
+
+There you will find detailed information on how
+to [register](../project/project_edit.md#offer-upload)
+and [edit](../project/project_edit.md#offer-upload) your offer file within the Data Manager.
+
+Below you can find an overview of the information associated with an offer file within the Data
+Manager.
+
+| Concept    | Description                                          | Example                              | Mandatory          |                              
 |------------|------------------------------------------------------|--------------------------------------|--------------------|
 | Name       | Filename of the uploaded offer                       | Q2ABCD_Offer.pdf                     | :white_check_mark: |
 | Project id | UUID of the project to which this offer was uploaded | cdd81764-db7c-4635-b7f4-6e711b411e3c | :white_check_mark: |
@@ -75,7 +85,18 @@ Manager
 
 #### Sample QC
 
-| Section       | Description                                            | Example                              | Mandatory          |                             
+For detailed information visit
+the [project editing documentation](../project/project_edit.md)
+
+There you will find detailed information on how
+to [register](../project/project_edit.md#quality-control-upload)
+and [edit](../project/project_edit.md#quality-control-upload) your sample qc file within the Data
+Manager.
+
+Below you can find an overview of the information associated with a quality control file within the
+Data Manager.
+
+| Concept       | Description                                            | Example                              | Mandatory          |                             
 |---------------|--------------------------------------------------------|--------------------------------------|--------------------|
 | Experiment id | UUID of the Experiment to which this sample QC belongs | dfcd156d-eb17-4cb0-99e1-68c5b1683237 | :white_check_mark: |
 | Name          | Filename of the uploaded Sample QC report              | Q2ABCD_SampleQC.pdf                  | :white_check_mark: |
@@ -87,18 +108,18 @@ For detailed information visit
 the [experiment documentation](../experiment/experiment_introduction.md)
 
 There you will find detailed information on how to [register](../experiment/experiment_creation.md)
-and [edit](../experiment/experiment_creation.md) an experiment within the data manager.
+and [edit](../experiment/experiment_creation.md) an experiment within the Data Manager.
 
 Below you can find an overview of the information associated with an experiment within the Data
 Manager.
 
-| Section                | Description                                                                                                     | Example                                                                        | Mandatory          |                                  
+| Concept                | Description                                                                                                     | Example                                                                        | Mandatory          |                                  
 |------------------------|-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|--------------------|
 | Analytes               | One or more substances or compounds of interest, whose expression changes are of interest within the experiment | RNA                                                                            | :white_check_mark: |
 | Biological replicates  | Number of biologically distinct samples subjected to the same treatment during the experiment                   | 20                                                                             | :white_check_mark: |
 | Experimental groups    | Group of subjects exposed to a unique combination (condition) of experimental variables                         | control, treatment_cohort_1                                                    | :white_check_mark: |
 | Experimental variables | An Experimental factor defined to observe its effect on the subjects of an experiment.                          | temperature, time                                                              | :white_check_mark: |
-| Id                     | UUID of the experiment automatically assigned by the data manager                                               | dfcd156d-eb17-4cb0-99e1-68c5b1683237                                           | :white_check_mark: |
+| Id                     | UUID of the experiment automatically assigned by the Data Manager                                               | dfcd156d-eb17-4cb0-99e1-68c5b1683237                                           | :white_check_mark: |
 | Modification date      | Timestamp when the experiment was last modified                                                                 | 01.02.9876                                                                     | :white_check_mark: |
 | Name                   | Unique name of the experiment                                                                                   | Pilot Experiment                                                               | :white_check_mark: |
 | Specimen               | One or more specific parts of the species from which the analytes are collected.                                | Liver                                                                          | :white_check_mark: |
@@ -107,26 +128,61 @@ Manager.
 
 #### Experimental Variables
 
-| Section       | Description                                                                                      | Example                              | Mandatory          |                        
+For detailed information visit
+the [experiment documentation](../experiment/experiment_introduction.md)
+
+There you will find detailed information on how
+to [register](../experiment/experiment_creation.md#experimental-variable-creation)
+and [edit](../experiment/experiment_creation.md#experimental-variable-creation) your experimental
+variables within the Data Manager.
+
+Below you can find an overview of the information associated with an experiment variable within the
+Data
+Manager.
+
+| Concept       | Description                                                                                      | Example                              | Mandatory          |                        
 |---------------|--------------------------------------------------------------------------------------------------|--------------------------------------|--------------------|
-| Experiment id | UUID of the experiment with the experimental variable automatically assigned by the data manager | dfcd156d-eb17-4cb0-99e1-68c5b1683237 | :white_check_mark: |
+| Experiment id | UUID of the experiment with the experimental variable automatically assigned by the Data Manager | dfcd156d-eb17-4cb0-99e1-68c5b1683237 | :white_check_mark: |
 | Levels        | One or more specific expression settings to which the variable can be set.                       | 0, 10, 100                           | :white_check_mark: |
 | Name          | Unique name of the experimental variable                                                         | Temperature                          | :white_check_mark: |
 | Unit          | Measurement Unit representing the specific setting of the variable                               | °C                                   | :x:                |
 
 #### Experimental Groups
 
-| Section               | Description                                                                                   | Example                              | Mandatory          |                       
+For detailed information visit
+the [experiment documentation](../experiment/experiment_introduction.md)
+
+There you will find detailed information on how
+to [register](../experiment/experiment_creation.md#experimental-group-creation)
+and [edit](../experiment/experiment_creation.md#experimental-group-creation) your experimental
+variables within the Data Manager.
+
+Below you can find an overview of the information associated with an experiment group within the
+Data
+Manager.
+
+| Concept               | Description                                                                                   | Example                              | Mandatory          |                       
 |-----------------------|-----------------------------------------------------------------------------------------------|--------------------------------------|--------------------|
 | Biological replicates | Number of biologically distinct samples subjected to the same treatment during the experiment | 20                                   | :white_check_mark: |
 | Condition             | Unique combination of experimental variables                                                  | control, treatment_cohort_1          | :white_check_mark: |
-| Experiment id         | UUID of the experiment automatically assigned by the data manager                             | dfcd156d-eb17-4cb0-99e1-68c5b1683237 | :white_check_mark: |
+| Experiment id         | UUID of the experiment automatically assigned by the Data Manager                             | dfcd156d-eb17-4cb0-99e1-68c5b1683237 | :white_check_mark: |
 
 #### Confounding Variables
 
-| Section       | Description                                                                                     | Example                              | Mandatory          |                           
+For detailed information visit
+the [experiment documentation](../experiment/confounding-variables.md)
+
+There you will find detailed information on how
+to [register](../experiment/confounding-variables.md#define-confounding-variables-in-your-experiment)
+and [edit](../experiment/confounding-variables.md#rename-a-confounding-variable) your experimental
+variables within the Data Manager.
+
+Below you can find an overview of the information associated with a confounding variable within the
+Data Manager.
+
+| Concept       | Description                                                                                     | Example                              | Mandatory          |                           
 |---------------|-------------------------------------------------------------------------------------------------|--------------------------------------|--------------------|
-| Experiment id | UUID of the experiment with the confounding variable automatically assigned by the data manager | dfcd156d-eb17-4cb0-99e1-68c5b1683237 | :white_check_mark: |
+| Experiment id | UUID of the experiment with the confounding variable automatically assigned by the Data Manager | dfcd156d-eb17-4cb0-99e1-68c5b1683237 | :white_check_mark: |
 | Name          | Unique name of the experimental variable                                                        | Time                                 | :white_check_mark: |
 
 ### Ontology
@@ -140,7 +196,7 @@ the [ontology service API](https://www.ebi.ac.uk/ols4/)
 Below you can find an overview of the information associated with an ontology within the Data
 Manager.
 
-| Section               | Description                                                          | Example                                                                     | Mandatory          |                          
+| Concept               | Description                                                          | Example                                                                     | Mandatory          |                          
 |-----------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------------|--------------------|
 | Class iri             | Unique resource identifier (IRI) for the term                        | http://purl.obolibrary.org/obo/NCIT_C105979                                 | :white_check_mark: |
 | Description           | Description providing explanation for the term                       | A protein complex that plays a role in neurotransmitter-gated ion transport | :white_check_mark: |
@@ -160,15 +216,15 @@ Below you can find an overview of the information associated with a sample withi
 Manager. This information can also be found in the "property information" tab within the sample
 registration template sheet.
 
-| Section              | Description                                                                                                                                                | Example                              | Mandatory          |                         
+| Concept              | Description                                                                                                                                                | Example                              | Mandatory          |                         
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|--------------------|
 | Analysis method      | The test performed on samples for the purpose of finding and measuring chemical substances.                                                                | PROTEOMICS                           | :white_check_mark: |
 | Analyte              | The chemical substance extracted from the biological material that is identified and measured. Selection from the ones defined within the experiment       | RNA                                  | :white_check_mark: |
-| Batch id             | UUID of the batch the sample belonged to during its registration automatically assigned by the data manager                                                | 01422b86-407e-47e3-9cf6-093c4882d6b2 | :white_check_mark: |
+| Batch id             | UUID of the batch the sample belonged to during its registration automatically assigned by the Data Manager                                                | 01422b86-407e-47e3-9cf6-093c4882d6b2 | :white_check_mark: |
 | Condition            | Condition to which the sample was subjected to. Selectable from the experimental groups within the experiment with each variable seperated by a semicolon. | Temperature: 0°C; Time: 100s;        | :white_check_mark: |
-| Id                   | UUID of the sample automatically assigned by the data manager                                                                                              | 00058431-df92-48a6-891b-671d714bb723 | :white_check_mark: |
+| Id                   | UUID of the sample automatically assigned by the Data Manager                                                                                              | 00058431-df92-48a6-891b-671d714bb723 | :white_check_mark: |
 | Label                | Common human-readable name of the sample. Can also be internal lab identifier                                                                              | Lab_Id_01                            | :white_check_mark: |
-| Sample code          | Human readable unique sample code, automatically assigned by the data manager                                                                              | Q2ABCD001AA                          | :white_check_mark: |
+| Sample code          | Human readable unique sample code, automatically assigned by the Data Manager                                                                              | Q2ABCD001AA                          | :white_check_mark: |
 | Species              | Scientific name of the organism(s) from which the biological material is derived.  Selection from the ones defined within the experiment                   | Homo Sapiens                         | :white_check_mark: |
 | Specimen             | Name of the biological material from which the analytes would be extracted.       Selection from the ones defined within the experiment                    | Liver                                | :white_check_mark: |
 | Biological Replicate | Specifiy if the samples belong to the same biological source within your experiment.                                                                       | "Mouse_WT_1"                         | :x:                |
@@ -184,13 +240,13 @@ experimental conditions with the aim to minimize technical variation.
 Below you can find an overview of the information associated with a sample batch within the Data
 Manager.
 
-| Section           | Description                                                                                                                                        | Example                              | Mandatory          |                         
+| Concept           | Description                                                                                                                                        | Example                              | Mandatory          |                         
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|--------------------|
-| Id                | UUID of the batch the sample belonged to during its registration automatically assigned by the data manager                                        | 01422b86-407e-47e3-9cf6-093c4882d6b2 | :white_check_mark: |
+| Id                | UUID of the batch the sample belonged to during its registration automatically assigned by the Data Manager                                        | 01422b86-407e-47e3-9cf6-093c4882d6b2 | :white_check_mark: |
 | Modification date | Timestamp when the batch was last modified                                                                                                         | 01.02.9876                           | :white_check_mark: |
 | Name              | Common human-readable label of the batch                                                                                                           | Pxp_Analysis_Trial_1                 | :white_check_mark: |
-| Registration date | Timestamp when the batch was created within the data manager                                                                                       | 01.02.9876                           | :white_check_mark: |
-| Sample count      | Number of samples contained within the batch, automatically determined by the data manager from the number of samples provided during registration | 20                                   | :white_check_mark: |
+| Registration date | Timestamp when the batch was created within the Data Manager                                                                                       | 01.02.9876                           | :white_check_mark: |
+| Sample count      | Number of samples contained within the batch, automatically determined by the Data Manager from the number of samples provided during registration | 20                                   | :white_check_mark: |
 
 ### Measurement
 
@@ -208,16 +264,16 @@ Data Manager. This information can also be found in the "property information" t
 genomic measurement
 registration template sheet.
 
-| Section            | Description                                                                                                                         | Example                                   | Mandatory                              |                          
+| Concept            | Description                                                                                                                         | Example                                   | Mandatory                              |                          
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|----------------------------------------|
 | Facility           | The facilities name within the organisation (group name, etc.)                                                                      | Quantitative Biology Center               | :white_check_mark:                     |
-| Id                 | UUID of the measurement automatically assigned by the data manager                                                                  | 001d7e11-55a3-4d8f-82e6-04466e868a64      | :white_check_mark:                     |
+| Id                 | UUID of the measurement automatically assigned by the Data Manager                                                                  | 001d7e11-55a3-4d8f-82e6-04466e868a64      | :white_check_mark:                     |
 | Instrument         | Ontology Curie of the instrument that has been used for the measurement, usually in the form PREFIX:CODE                            | OBI:0002750                               | :white_check_mark:                     |
-| Measurement code   | Human readable unique measurement code, automatically assigned by the data manager,usually in the form "NGS"SAMPLECODE"-"Timestamp" | NGSQ2ABCD001AA-118569093700875            | :white_check_mark:                     |
+| Measurement code   | Human readable unique measurement code, automatically assigned by the Data Manager,usually in the form "NGS"SAMPLECODE"-"Timestamp" | NGSQ2ABCD001AA-118569093700875            | :white_check_mark:                     |
 | Organization iri   | Research organization registry identifier([RoR Id](https://ror.org/)) of the organisation where the measurement has been conducted  | https://ror.org/03a1kwz48                 | :white_check_mark:                     |
 | Organization label | Human Readable Name of the organization, automatically received from the RoR by the OrganizationIRI                                 | University Tuebingen                      | :white_check_mark:                     |
 | Read type          | The sequencing read type used to generate the sequence data.                                                                        | paired-end                                | :white_check_mark:                     |
-| Registration date  | Timestamp when the batch was created within the data manager                                                                        | 01.02.9876                                | :white_check_mark:                     |
+| Registration date  | Timestamp when the batch was created within the Data Manager                                                                        | 01.02.9876                                | :white_check_mark:                     |
 | Sample id          | UUID of the sample employed within the measurement                                                                                  | 00058431-df92-48a6-891b-671d714bb723      | :white_check_mark:                     |
 | Comment            | Free Text, can contain any notes related to a measurement in question with up to 500 characters                                     | Repeated Measurement after Bad QC         | :x:                                    |
 | Flow cell          | The flow cell type used for sequencing.                                                                                             | S4                                        | :x:                                    |
@@ -242,18 +298,18 @@ the Data Manager. This information can also be found in the "property informatio
 proteomics measurement
 registration template sheet.
 
-| Section            | Description                                                                                                                                      | Example                              | Mandatory          |                              
+| Concept            | Description                                                                                                                                      | Example                              | Mandatory          |                              
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|--------------------|
 | Digestion enzyme   | Information about the enzymes used for the proteolytic step.                                                                                     | Trypsin                              | :white_check_mark: |
 | Digestion method   | Method that has been used to break proteins into peptides, Selectable from the methods "in gel", "in solution", "iST proteomics kit", "on beads" | in gel                               | :white_check_mark: |
 | Facility           | The facilities name within the organisation (group name, etc.)                                                                                   | "Quantitative Biology Center"        | :white_check_mark: |
-| Id                 | UUID of the measurement automatically assigned by the data manager                                                                               | 001d7e11-55a3-4d8f-82e6-04466e868a64 | :white_check_mark: |
+| Id                 | UUID of the measurement automatically assigned by the Data Manager                                                                               | 001d7e11-55a3-4d8f-82e6-04466e868a64 | :white_check_mark: |
 | Instrument         | Ontology Curie of the instrument that has been used for the measurement, usually in the form PREFIX:CODE                                         | BAO:0002733                          | :white_check_mark: |
 | Lc column          | The type of column that has been used.                                                                                                           | ProteoSil_100-C18                    | :white_check_mark: |
-| Measurement code   | Human readable unique measurement code, automatically assigned by the data manager,usually in the form "MS"SAMPLECODE"-"Timestamp"               | MSQ2ABCD001AA-118569093700875        | :white_check_mark: |
+| Measurement code   | Human readable unique measurement code, automatically assigned by the Data Manager,usually in the form "MS"SAMPLECODE"-"Timestamp"               | MSQ2ABCD001AA-118569093700875        | :white_check_mark: |
 | Organization iri   | Research organization registry identifier([RoR Id](https://ror.org/)) of the organisation where the measurement has been conducted               | https://ror.org/03a1kwz48            | :white_check_mark: |
 | Organization label | Human Readable Name of the organization, automatically received from the RoR by the OrganizationIRI                                              | University Tuebingen                 | :white_check_mark: |
-| Registration date  | Timestamp when the batch was created within the data manager                                                                                     | 01.02.9876                           | :white_check_mark: |
+| Registration date  | Timestamp when the batch was created within the Data Manager                                                                                     | 01.02.9876                           | :white_check_mark: |
 | Sample id          | UUID of the sample employed within the measurement                                                                                               | 00058431-df92-48a6-891b-671d714bb723 | :white_check_mark: |
 | Comment            | Free Text, can contain any notes related to a measurement in question with up to 500 characters                                                  | Repeated Measurement after Bad QC    | :x:                |
 | Enrichment method  | Enrichment of proteins or peptides of different characteristics.                                                                                 | Phosphopeptide Enrichment            | :x:                |
@@ -280,14 +336,14 @@ or [download](../rawdata/raw_data_download.md) your raw data.
 Below you can find an overview of the information associated with a raw data dataset within the Data
 Manager
 
-| Section           | Description                                                                                                         | Example                              | Mandatory          |                         
+| Concept           | Description                                                                                                         | Example                              | Mandatory          |                         
 |-------------------|---------------------------------------------------------------------------------------------------------------------|--------------------------------------|--------------------|
-| File count        | Number of Files contained within the raw data upload, automatically determined by the data manager                  | 20                                   | :white_check_mark: |
-| File size         | Size of all Files within the raw data upload, automatically determined by the data manager                          | 2000Mb                               | :white_check_mark: |
-| File suffixes     | List of File suffixes for all files within a raw data upload, automatically determined by the data manager          | fastq, tar, txt                      | :white_check_mark: |
+| File count        | Number of Files contained within the raw data upload, automatically determined by the Data Manager                  | 20                                   | :white_check_mark: |
+| File size         | Size of all Files within the raw data upload, automatically determined by the Data Manager                          | 2000Mb                               | :white_check_mark: |
+| File suffixes     | List of File suffixes for all files within a raw data upload, automatically determined by the Data Manager          | fastq, tar, txt                      | :white_check_mark: |
 | Measurement code  | Human readable unique measurement code for which the raw data upload is associated with                             | NGSQ2ABCD001AA-118569093700875       | :white_check_mark: |
 | Measurement id    | UUID of the measurement with which the raw data upload is associated with                                           | 001d7e11-55a3-4d8f-82e6-04466e868a64 | :white_check_mark: |
-| Registration date | Timestamp when the raw data was uploaded within the data manager                                                    | 01.02.9876                           | :white_check_mark: |
+| Registration date | Timestamp when the raw data was uploaded within the Data Manager                                                    | 01.02.9876                           | :white_check_mark: |
 | Sample ids        | List of UUIDs of the samples which were measured resulting in the raw data generation and upload.                   | 00058431-df92-48a6-891b-671d714bb723 | :white_check_mark: |
 | Sample name       | List of the human-readable name of the samples which were measured resulting in the raw data generation and upload. | Lab_Id_01, Lab_Id_02                 | :white_check_mark: |
 
