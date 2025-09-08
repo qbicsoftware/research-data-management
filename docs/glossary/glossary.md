@@ -33,21 +33,10 @@ Manager
 
 #### Personal Access Token
 
-In our documentation you can find detailed information on how
+Downloading your data is handled via the registration of a personal access token. Check out our
+dedicated sections to find out how
 to [register](../rawdata/raw_data_download.md#generate-a-token)
 and [edit](../rawdata/raw_data_download.md#manage-tokens) your personal access tokens.
-
-Below you can find an overview of the information associated with a personal access token within the
-Data Manager
-
-| Section           | Description                                                                  | Example                              |                           
-|-------------------|------------------------------------------------------------------------------|--------------------------------------|
-| Description       | Description identifying the personal access token                            | Project XXX Data Download            |
-| Duration          | Timeframe for which the access token is valid                                | 30 days                              |
-| Id                | Unique Id for the personal access token automatically assigned by the system | 449c5bd7-3674-4797-98b7-ae2c2eb40e75 |
-| Registration date | Date when the access token was created within the system                     | 01.02.9876                           |
-| Value             | Value within the personal access token, shown only once during creation      | 6J10PkciR6eG61656Y0cA178J74V8bZ5     |
-| User id           | User with which the personal access token is associated                      | b1d536ce-fe29-4967-843f-2189bf971ae9 |
 
 ### Project
 
