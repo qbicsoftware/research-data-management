@@ -1,7 +1,7 @@
 # Upload Data
 
-After creating measurements in the data manager, you can upload measured data to our platform.
-This section gives an overview on how to upload data to measurements from QBiC's data manager.
+After creating measurements in the Data Manager, you can upload measured data to our platform.
+This section gives an overview on how to upload data to measurements from QBiC's Data Manager.
 
 ## Prerequisites
 
@@ -155,7 +155,7 @@ Our system will then transfer the folder and proceed with data registration.
 !!! success
     Congratulations you have uploaded your data!
 
-Finally, you can view summarized information for your uploaded data within the raw data view of the data manager.
+Finally, you can view summarized information for your uploaded data within the raw data view of the Data Manager.
 
 Should your files not appear check the error directory as outlined in the [failed upload section](#handle-failed-uploads)
 
@@ -235,7 +235,7 @@ Our system will then transfer the folder and proceed with data registration.
 !!! success
     Congratulations you have uploaded your data!
 
-Finally, you can view summarized information for your uploaded dataset within the raw data view of the data manager.
+Finally, you can view summarized information for your uploaded dataset within the raw data view of the Data Manager.
 
 Should your files not appear check the error directory as outlined in the [failed upload section](#handle-failed-uploads)
 

@@ -1,7 +1,7 @@
 # Measurement Registration
 
 !!! tip "Excel file support"
-    The data manager now supports measurement registration and updates with Excel files (*.xlsx).
+    The Data Manager now supports measurement registration and updates with Excel files (*.xlsx).
     
     __Only requirement__: metadata must be in the first sheet of your workbook.
 
@@ -61,7 +61,7 @@ Use the [ROR registry search](https://ror.org/search) to determine the URL of th
 Once the mandatory measurement metadata has been provided, export "Metadata" sheet into a tab seperated UTF-16BE Unicode Text (*.txt) text file. This encoding ensures that special symbols like 'μ' (think volumes in sample preparation) are correctly transferred and can be displayed with your sample information.
 ![register_measurement_proteomics_measurement_export.png](images/measurement_registration_proteomics_measurement_export.png)
 
-Finally, [upload](#measurement-upload) the exported text file into the data manager application.
+Finally, [upload](#measurement-upload) the exported text file into the Data Manager application.
 
 ### Genomics
 
@@ -89,12 +89,12 @@ Use the [ROR registry search](https://ror.org/search) to determine the URL of th
 Once the mandatory measurement metadata has been provided, export "Metadata" sheet into a tab seperated UTF-16BE Unicode Text (*.txt) text file. This encoding ensures that special symbols like 'μ' (think volumes in sample preparation) are correctly transferred and can be displayed with your sample information.
 ![register_measurement_proteomics_measurement_export.png](images/measurement_registration_proteomics_measurement_export.png)
 
-Finally, [upload](#measurement-upload) the exported text file into the data manager application. 
+Finally, [upload](#measurement-upload) the exported text file into the Data Manager application. 
 
 ## Measurement Upload
 
 Once the measurement metadata has been [prepared](#prepare-metadata) according to the domain specifications, 
-the exported _txt_ file can be uploaded into the data manager application. 
+the exported _txt_ file can be uploaded into the Data Manager application. 
 To start the measurement registration process press the "Register Measurements" button within the measurement summary view. 
 ![measurement_summary](images/measurement_summary_no_measurements.png)
 

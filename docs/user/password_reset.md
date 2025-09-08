@@ -1,6 +1,6 @@
 # Password Reset
 
-The data manager application provides an easy and secure solution
+The Data Manager application provides an easy and secure solution
 to set a new password should a password associated with a user account be lost.
 To reset your password the following steps have to be taken
 

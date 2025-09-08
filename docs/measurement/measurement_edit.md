@@ -1,7 +1,7 @@
 # Measurement Edit
 
 !!! tip "Excel file support"
-    The data manager now supports measurement registration and updates with Excel files (*.xlsx).
+    The Data Manager now supports measurement registration and updates with Excel files (*.xlsx).
 
     __Only requirement__: metadata must be in the first sheet of your workbook.
 
@@ -67,7 +67,7 @@ You can use our [ontology search](../ontology_search/ontology_search_introductio
 The "Organisation Id" column expects the full [RoR Id](https://ror.org/about/) URL of the organisation.
 Use the [ROR registry search](https://ror.org/search) to determine the URL of the organisation RoR Id.
 
-Finally, [upload](#upload-metadata) the exported text file into the data manager application.
+Finally, [upload](#upload-metadata) the exported text file into the Data Manager application.
 
 ### Genomics
 
@@ -94,12 +94,12 @@ You can use our [ontology search](../ontology_search/ontology_search_introductio
 The "Organisation Id" column expects the full [RoR Id](https://ror.org/about/) URL of the organisation.
 Use the [ROR registry search](https://ror.org/search) to determine the URL of the organisation RoR Id.
 
-Finally, [upload](#upload-metadata) the exported text file into the data manager application.
+Finally, [upload](#upload-metadata) the exported text file into the Data Manager application.
 
 ## Upload Metadata
 
 Once the measurement metadata has been [prepared](#prepare-metadata) according to the domain specifications,
-the exported _txt_ file can be uploaded into the data manager application.
+the exported _txt_ file can be uploaded into the Data Manager application.
 
 To start the update process press the "Edit" button within the measurement summary view.
 ![measurement_summary](images/measurement_summary_with_measurements.png)

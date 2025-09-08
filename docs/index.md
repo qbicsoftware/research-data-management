@@ -2,7 +2,7 @@
 
 Behind every great research project should be great research data management!
 Start your voyage towards a __FAIR__ and __Open Data__ future and include
-the [data manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in your research!
+the [Data Manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in your research!
 
 ## What's new?
 
@@ -21,12 +21,12 @@ Check it out [here](glossary/glossary.md)
 - Enable the user to trigger experiment update processes asynchronously.
 - Keep him informed of the progress via dedicated toast notifications
 
-### Streamline service API within the data manager backend to enable CRUD processes asynchronously
+### Streamline service API within the Data Manager backend to enable CRUD processes asynchronously
 <div style="font-size: smaller; color: rgba(122,122,122,1)">March 4th, 2025 </div>
 
 - Enable the user to trigger project creation asynchronously
 - Keep him informed of the progress via dedicated toast notifications
-- Update the data manager to Java 21
+- Update the Data Manager to Java 21
 
 
 ### New project summary layout
@@ -54,7 +54,7 @@ Check it out [here](glossary/glossary.md)
   supported.
 - Sample metadata: the term `Organism ID` has been renamed to `Biological Replicate` to match its
   purpose of use.
-- The data manager is now connected to the [TIB terminology service](https://terminology.tib.eu).  
+- The Data Manager is now connected to the [TIB terminology service](https://terminology.tib.eu).  
   The [queried ontologies](ontology_search/ontology_search_introduction.md) are restricted to life science specific ones. You miss one? Please let us
   know and submit
   a [feature request](https://github.com/qbicsoftware/data-manager-app/issues/new/choose). Currently
