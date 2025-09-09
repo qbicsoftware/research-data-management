@@ -10,7 +10,7 @@ the [Data Manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
 <div style="font-size: smaller; color: rgba(122,122,122,1)">September 02th, 2025 </div>
 
 Introduction of a glossary explaining the terms with example values in the research data management documentation.
-Check it out [here](glossary/glossary.md)
+Check it out [here](metadata/concepts.md)
 
 ## Update notes
 
