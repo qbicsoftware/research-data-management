@@ -1,7 +1,3 @@
-table colgroup col {
-width: auto !important;
-}
-
 # Data Modalities
 
 ## Quick Reference Table
