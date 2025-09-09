@@ -3,3 +3,38 @@
   --md-primary-fg-color--light: #006AF5;
   --md-primary-fg-color--dark:  #006AF5;
 }
+
+.md-grid {
+  max-width: 80rem  /*Replace Default max width of 61 rem to have more space on bigger screens */
+}
+
+.md-typeset h1 {
+  margin-bottom: 1.5rem;
+}
+
+.md-typeset h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.md-typeset h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.md-typeset h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.md-typeset h5,
+.md-typeset h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Standard block image spacing */
+.md-typeset img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;   /* 2rem top/bottom, auto left/right = center */
+}
