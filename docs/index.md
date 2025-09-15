@@ -6,14 +6,14 @@ the [data manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
 
 ## What's new?
 
-### Documentation
+### Metadata Examples and Descriptions
 
 <div style="font-size: smaller; color: rgba(122,122,122,1)">September 16th, 2025 </div>
 
 - Glossary: Introduction of a glossary explaining the terms with example values in the research data
   management documentation. Check it out [here](metadata/concepts.md)
 
-### Features
+### Orcid Linkage and Template Registration Overhaul
 
 <div style="font-size: smaller; color: rgba(122,122,122,1)">September 16th, 2025 </div>
 
