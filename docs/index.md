@@ -22,6 +22,13 @@ Check it out [here](metadata/concepts.md)
   registration dialog directly to
   download the domain specific template
 
+### Move registration template download into sample registration dialog
+
+<div style="font-size: smaller; color: rgba(122,122,122,1)">September 16th, 2025 </div>
+
+- Downloading the batch registration template can now be done within the sample registration dialog
+  directly.
+
 ### Link Orcid to existing accounts
 
 <div style="font-size: smaller; color: rgba(122,122,122,1)">September 16th, 2025 </div>
