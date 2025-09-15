@@ -6,14 +6,16 @@ the [data manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
 
 ## What's new?
 
-<div style="font-size: smaller; color: rgba(122,122,122,1)">September 16th, 2025 </div>
-
 ### Documentation
+
+<div style="font-size: smaller; color: rgba(122,122,122,1)">September 16th, 2025 </div>
 
 - Glossary: Introduction of a glossary explaining the terms with example values in the research data
   management documentation. Check it out [here](metadata/concepts.md)
 
 ### Features
+
+<div style="font-size: smaller; color: rgba(122,122,122,1)">September 16th, 2025 </div>
 
 - Orcid Linkage: If you didn't add your orcid account during account registration you can
   catch up now by linking your orcid account in your user profiles
