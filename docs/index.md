@@ -6,53 +6,31 @@ the [data manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
 
 ## What's new?
 
-### Glossary
-
 <div style="font-size: smaller; color: rgba(122,122,122,1)">September 16th, 2025 </div>
 
-Introduction of a glossary explaining the terms with example values in the research data management
-documentation.
-Check it out [here](metadata/concepts.md)
+### Documentation
 
-### Move domain based template selection into measurement registration dialog
+- Glossary: Introduction of a glossary explaining the terms with example values in the research data
+  management documentation. Check it out [here](metadata/concepts.md)
 
-<div style="font-size: smaller; color: rgba(122,122,122,1)">September 16th, 2025 </div>
+### Features
 
-- Specify the domain within the measurement
-  registration dialog directly to
-  download the domain specific template
-
-### Move registration template download into sample registration dialog
-
-<div style="font-size: smaller; color: rgba(122,122,122,1)">September 16th, 2025 </div>
-
-- Downloading the batch registration template can now be done within the sample registration dialog
+- Orcid Linkage: If you didn't add your orcid account during account registration you can
+  catch up now by linking your orcid account in your user profiles
+- Simplify sample registration: Downloading the batch registration template can now be done within
+  the sample registration dialog
   directly.
-
-### Link Orcid to existing accounts
-
-<div style="font-size: smaller; color: rgba(122,122,122,1)">September 16th, 2025 </div>
-
-- If you didn't add your orcid account during account registration you can catch up now
-  by Linking your orcid account
-  within the data manager
-
-### Add internal identifier tracking to genomics and proteomics measurements
-
-<div style="font-size: smaller; color: rgba(122,122,122,1)">September 16th, 2025 </div>
-
-- The measurement registration sheets now feature a
-  column measurement name to
-  optionally store the internally assigned lab identifier
-
-### Allow filtering of the raw data table to get a subset of urls for data download
-
-<div style="font-size: smaller; color: rgba(122,122,122,1)">September 16th, 2025 </div>
-
-- The registered datasets can now
-  be filtered by their properties via
-  a dedicated search field
-- Triggering the download of dataset URLS provides only the URLs of the filtered dataset
+- Simplify measurement registration: Specify the domain within the measurement registration dialog
+  directly download the domain
+  specific template
+- Optional measurement name: The measurement registration sheets for proteomics and genomics now
+  feature a column "measurement
+  name" to optionally store the internally assigned lab identifier
+- Raw data filtering: The registered datasets can now be filtered by their properties via a
+  dedicated search field
+- Download Urls for filtered raw data: Triggering the download of dataset URLS provides only the
+  URLs of
+  the filtered dataset
 
 ## Update history
 
