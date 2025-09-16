@@ -3,31 +3,31 @@
 Before you can begin to manage your projects and access your data within the data-manager, 
 you need to create an account for the platform. We currently support 2 modes of registration:
 
-1. [Register an account via orcid](#register-an-account-via-orcid)
+1. [Register an account via ORCID](#register-an-account-via-ORCID)
 2. [Register an account via email](#register-an-account-via-email)
 
-## Register an account via orcid
+## Register an account via ORCID
 
-### Login to orcid
+### Login to ORCID
 
-We recommend to register to the Data Manager via an [orcid](https://orcid.org) account.
-This will allow you to log in to the Data Manager application as long as as you keep being logged into your orcid account, 
+We recommend to register to the Data Manager via an [ORCID](https://orcid.org) account.
+This will allow you to log in to the Data Manager application as long as as you keep being logged into your ORCID account, 
 removing the necessity of a separate login step.
   
-To do so press on the "login with ORCiD" registration card on the bottom of the login page. 
+To do so press on the "login with ORCID" registration card on the bottom of the login page. 
 
 ![login_page_registration](images/user_registration/login_page.png)
 
-This will redirect you to the orcid login page 
+This will redirect you to the ORCID login page 
 
 ![orcid_login](images/user_registration/orcid/orcid_login.png)
 
-Login to your orcid account and grant the Data Manager application to access your publicly available orcid by pressing the "authorize access" button. 
+Login to your ORCID account and grant the Data Manager application to access your publicly available ORCID by pressing the "authorize access" button. 
 
 ![orcid_registration_authorize_access.png](images/user_registration/orcid/orcid_registration_authorize_access.png)
 
-Should you not have an orcid account press the "register_now" link 
-within the orcid login and follow the provided steps to register a new orcid account.
+Should you not have an ORCID account press the "register_now" link 
+within the ORCID login and follow the provided steps to register a new ORCID account.
 
 ### Finalize Data Manager account
 
@@ -44,12 +44,12 @@ This additional information consists of
     This username is visible to other users within the platform
 
 Press the register button to register an account within the Data Manager application and navigate to the login page.
-Finally, press on the "login with ORCiD" registration card on the bottom of the login page to login into the Data Manager application via your orcid credentials. 
+Finally, press on the "login with ORCID" registration card on the bottom of the login page to login into the Data Manager application via your ORCID credentials. 
 ![registration page](images/user_registration/login_page.png)
 
 ## Register an account via email
 
-If you don't want to link your orcid with the Data Manager application, 
+If you don't want to link your ORCID with the Data Manager application, 
 you can also register an account with your email address by pressing the register link on the login page or via the "registration" button on the top right.
 
 ![login_page_registration](images/user_registration/login_page.png)
