@@ -43,7 +43,8 @@ this will also change the spacing of any icons/emojis within the documentation *
 }
 
 .md-typeset__table tr td:first-child {
-  font-size: 0.7rem; /*Default font size for all cells is by default 0.61rem*/
+  font-weight: bold;
+  /*Default font size for all cells is by default 0.61rem*/
 }
 
 .md-typeset__table {
