@@ -13,18 +13,18 @@
 }
 
 .md-typeset h2 {
-  margin-top: 1.5rem;
+  margin-top: 2.25rem;
   margin-bottom: 1rem;
 }
 
 .md-typeset h3 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
 }
 
 .md-typeset h4 {
   margin-top: 1rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
 }
 
 .md-typeset h5,
@@ -34,7 +34,16 @@
 }
 
 /* Standard block image spacing */
-.md-typeset img {
+.md-typeset img  {
   margin-top: 1rem;
-  margin-bottom: 1rem;   /* 2rem top/bottom, auto left/right = center */
+  margin-bottom: 0.75rem;   /* 2rem top/bottom, auto left/right = center */
+}
+
+/* Increase the font size for the entries within the first column of the table */
+.md-typeset__table tr td:first-child {
+  font-size: 0.7rem; /*Default font size for all cells is by default 0.61rem*/
+}
+
+.md-typeset__table {
+  margin-bottom: 0; /*Default bottom margin for all tables is by default .5em*/
 }
