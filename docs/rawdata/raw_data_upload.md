@@ -125,19 +125,19 @@ chosen a different SFTP client.
 
 **Open the Site Manager:** You need to add the QBiC's upload server as a site to _FileZilla_ within its site manager.
 To open the site manager select it from the menu or press on the highlighted icon.
-![An image showing the button leading to the site manager](./images/upload/raw_data_upload_open_site_manager.png)
+![An image showing the button leading to the site manager](./images/upload/raw_data_upload_open_site_manager.png){.screenshot}
 
 **Add the upload server:** In the _Site Manager_ you can add sites to which you want to connect. For
 measurement data registration, select `SFTP - SSH File Transfer Protocol` and
 enter `upload.qbic.uni-tuebingen.de` into the `Host` field.
-![An image showing the users site manager highlighting the host and connection field](images/upload/raw_data_upload_site_manager_host-fields.png)
+![An image showing the users site manager highlighting the host and connection field](images/upload/raw_data_upload_site_manager_host-fields.png){.screenshot}
 
 You can log in with your _University of Tübingen_ credentials. Enter your university user account
 into the `User` field.
-![An image showing the users site manager highlighting the user and password field](images/upload/raw_data_upload_site_manager_credential-fields.png)
+![An image showing the users site manager highlighting the user and password field](images/upload/raw_data_upload_site_manager_credential-fields.png){.screenshot}
 **Connect to the server:** Make sure you are in the network of the _University of Tübingen_. You can connect to the server by pressing `Connect` in
 the _Site Manager_. After connecting to the server, _FileZilla_ shows you the contents of your home directory on the server side.
-![An image showing the users home folder. You can see three directories named registration, error and upload.](images/upload/raw_data_upload_remote_filesystem.png)
+![An image showing the users home folder. You can see three directories named registration, error and upload.](images/upload/raw_data_upload_remote_filesystem.png){.screenshot}
 !!! warning
     When you first log in, the server will create some folders. Do not delete these folders!
 
@@ -248,6 +248,6 @@ in  `/home/<your-user>/error`.
     A failed upload will be contained within a directory named after a universally unique identifier 
     to ensure data integrity during the registration process within our system.
 
-![An image showing the error folder. It contains a directory with an automatically assigned process ID.](./images/upload/raw_data_upload_error_folder.png)
+![An image showing the error folder. It contains a directory with an automatically assigned process ID.](./images/upload/raw_data_upload_error_folder.png){.screenshot}
 In this new folder, you can find an `error.txt` file describing the error, and the data you tried to upload.
 You can then try to fix the error. To retry the upload of the fixed folder, move it to the registration folder again.

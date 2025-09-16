@@ -14,7 +14,7 @@ Within the project summary view, press the edit button on the top right to open 
 
 Once the dialog has been opened you can edit the project attributes of interest 
 within the dialog and save your changes via the "save" button on the bottom.
-![project_navigation_search](images/project_edit.png)
+![project_navigation_search](images/project_edit.png){.screenshot}
 
 # Upload of Project Related Files
 
@@ -32,11 +32,11 @@ via their respective upload buttons to the right.
 
 To upload one or more offer files click the upload button within the offer component in the middle right of the project summary view, 
 which will open up the offer upload dialog.
-![offer_upload](images/offer_upload.png)
+![offer_upload](images/offer_upload.png){.screenshot}
 
 Within the dialog you are able to upload your offer files either via clicking the upload files button and selecting the files of interest in your file system 
 or by drag and dropping the files into the dashed box saying "drop your files here".
-![offer_upload_with_offer](images/offer_upload_with_offer.png)
+![offer_upload_with_offer](images/offer_upload_with_offer.png){.screenshot}
 Should you have uploaded one or more wrong files, 
 you can easily delete them via a press of the cross icon next to the respective file names
 
@@ -46,21 +46,21 @@ you can easily delete them via a press of the cross icon next to the respective 
 
 For each successful file upload you are then able to specify if the offer was signed already 
 via the checkbox shown next to the file name.
-![offer_upload_with_offer_signed](images/offer_upload_with_offer_signed.png)
+![offer_upload_with_offer_signed](images/offer_upload_with_offer_signed.png){.screenshot}
 
 Finally, save your uploaded files to the project via a pressing the "Save" button on the bottom right of the dialog. 
 Your uploaded offer will then be shown in the offer component on the middle right of the project summary view.
-![project_summary_with_offer](images/project_summary_with_offer.png)
+![project_summary_with_offer](images/project_summary_with_offer.png){.screenshot}
 
 ## Quality Control Upload
 
 To upload one or more quality control(qc) files click the upload button within the quality control component in the bottom right of the project summary view, 
 which will open up the QC upload dialog.
-![qc_upload](images/qc_upload.png)
+![qc_upload](images/qc_upload.png){.screenshot}
 
 Within the dialog you are able to upload your qc files either via clicking the upload files button and selecting the files of interest in your file system
 or by drag and dropping the files into the dashed box saying "drop your files here".
-![qc_upload_with_qc](images/qc_upload_with_qc.png)
+![qc_upload_with_qc](images/qc_upload_with_qc.png){.screenshot}
 
 Should you have uploaded one or more wrong files,
 you can easily delete them via a press of the cross icon next to their respective file names
@@ -72,11 +72,11 @@ you can easily delete them via a press of the cross icon next to their respectiv
 For each successful qc file upload you are then able to optionally link it to the experiment in question 
 within the link to an experiment section of the dialog.
 To do so, select the experiment linked to their respective quality control files via the dropdown menu below the file name.
-![qc_upload_with_qc_experiment_selected](images/qc_upload_with_qc_experiment_selected.png)
+![qc_upload_with_qc_experiment_selected](images/qc_upload_with_qc_experiment_selected.png){.screenshot}
 
 Finally, save your uploaded files to the project via a pressing the save button on the bottom right of the dialog.
 Your uploaded qc reports will then be shown in the qc component on the bottom right of the project summary view.
-![project_summary_with_qc](images/project_summary_with_qc.png)
+![project_summary_with_qc](images/project_summary_with_qc.png){.screenshot}
 
 ## Download Project Metadata
 

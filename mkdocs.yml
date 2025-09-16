@@ -51,6 +51,7 @@ extra:
       link: https://github.com/qbicsoftware/research-data-management
       name: research-data-management on Github
 markdown_extensions:
+  - attr_list
   - admonition
   - pymdownx.details
   - pymdownx.superfences:

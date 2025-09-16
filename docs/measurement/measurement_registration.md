@@ -6,7 +6,7 @@
     __Only requirement__: metadata must be in the first sheet of your workbook.
 
 To register measurements, start by [navigating](measurement_introduction.md#measurement-navigation) into the measurement summary view.
-![measurement_summary](images/measurement_summary_no_measurements.png)
+![measurement_summary](images/measurement_summary_no_measurements.png){.screenshot}
 Once within the measurement summary view, measurements can be registered via the following steps:
 
 1. [Download](#download-template) the domain specific metadata template spreadsheet
@@ -23,7 +23,7 @@ Once within the measurement summary view, measurements can be registered via the
 
 Within this view download the proteomic specific template's _.xlsx_ file via the template component on the top right by clicking
 on the download icon (down arrow).
-![register_measurements_proteomics_download_template.png](images/measurement_registration_proteomics_download_template.png)
+![register_measurements_proteomics_download_template.png](images/measurement_registration_proteomics_download_template.png){.screenshot}
 
 ### Genomics
 
@@ -31,20 +31,20 @@ Within this view download the genomic specific template's xlsx file via the temp
 on the download icon (down arrow).
 
 Once downloaded open the template file in Microsoft Excel, which contains the two sheets "Property Information" and "Metadata".
-![register_measurements_ngs_measurement_template.png](images/measurement_registration_ngs_measurement_template.png)
+![register_measurements_ngs_measurement_template.png](images/measurement_registration_ngs_measurement_template.png){.screenshot}
 
 ## Prepare Metadata
 
 ### Proteomics
 
 Start by opening the downloaded proteomics template file in Microsoft Excel. It contains the two sheets "Property Information" and "Metadata".
-![register_measurement_proteomics_measurement_template.png](images/measurement_registration_proteomics_measurement_template.png)
+![register_measurement_proteomics_measurement_template.png](images/measurement_registration_proteomics_measurement_template.png){.screenshot}
 
 The "Property Information" Sheet provides detailed information about which properties are required and what values are permitted for each property within the sheet.
-![register_measurement_proteomics_measurement_template_property_sheet.png](images/measurement_registration_proteomics_measurement_template_property_sheet.png)
+![register_measurement_proteomics_measurement_template_property_sheet.png](images/measurement_registration_proteomics_measurement_template_property_sheet.png){.screenshot}
 
 Use these Guidelines to fill in the "Metadata" sheet with the mandatory necessary information for the performed measurement.
-![register_measurement_proteomics_measurement_filled.png](images/measurement_registration_proteomics_measurement_filled.png)
+![register_measurement_proteomics_measurement_filled.png](images/measurement_registration_proteomics_measurement_filled.png){.screenshot}
 
 !!! tip "Sample Id"
     You can copy the Sample IDs from the [downloadable](../batch/sample-batch.md#download-sample-metadata) batch metadata sheet
@@ -59,20 +59,20 @@ The "Organisation Id" column expects the full [RoR Id](https://ror.org/about/) U
 Use the [ROR registry search](https://ror.org/search) to determine the URL of the organisation RoR Id.
 
 Once the mandatory measurement metadata has been provided, export "Metadata" sheet into a tab seperated UTF-16BE Unicode Text (*.txt) text file. This encoding ensures that special symbols like 'μ' (think volumes in sample preparation) are correctly transferred and can be displayed with your sample information.
-![register_measurement_proteomics_measurement_export.png](images/measurement_registration_proteomics_measurement_export.png)
+![register_measurement_proteomics_measurement_export.png](images/measurement_registration_proteomics_measurement_export.png){.screenshot}
 
 Finally, [upload](#measurement-upload) the exported text file into the Data Manager application.
 
 ### Genomics
 
 Start by opening the downloaded genomic template file in Microsoft Excel. It contains the two sheets "Property Information" and "Metadata".
-![register_measurements_ngs_measurement_template.png](images/measurement_registration_ngs_measurement_template.png)
+![register_measurements_ngs_measurement_template.png](images/measurement_registration_ngs_measurement_template.png){.screenshot}
 
 The "Property Information" Sheet provides detailed information about which properties are required and what values are permitted for each property within the sheet.
-![register_measurements_ngs_measurement_template_property_sheet.png](images/measurement_registration_ngs_measurement_template_property_sheet.png)
+![register_measurements_ngs_measurement_template_property_sheet.png](images/measurement_registration_ngs_measurement_template_property_sheet.png){.screenshot}
 
 Use these Guidelines to fill in the "Metadata" sheet with the mandatory necessary information for the performed measurement.
-![register_measurement_proteomics_measurement_filled.png](images/measurement_registration_proteomics_measurement_filled.png)
+![register_measurement_proteomics_measurement_filled.png](images/measurement_registration_proteomics_measurement_filled.png){.screenshot}
 
 !!! tip "Sample Id"
     You can copy the Sample IDs from the [downloadable](../batch/sample-batch.md#download-sample-metadata) batch metadata sheet
@@ -87,7 +87,7 @@ The "Organisation Id" column expects the full [RoR Id](https://ror.org/about/) U
 Use the [ROR registry search](https://ror.org/search) to determine the URL of the organisation RoR Id.
 
 Once the mandatory measurement metadata has been provided, export "Metadata" sheet into a tab seperated UTF-16BE Unicode Text (*.txt) text file. This encoding ensures that special symbols like 'μ' (think volumes in sample preparation) are correctly transferred and can be displayed with your sample information.
-![register_measurement_proteomics_measurement_export.png](images/measurement_registration_proteomics_measurement_export.png)
+![register_measurement_proteomics_measurement_export.png](images/measurement_registration_proteomics_measurement_export.png){.screenshot}
 
 Finally, [upload](#measurement-upload) the exported text file into the Data Manager application. 
 
@@ -96,14 +96,14 @@ Finally, [upload](#measurement-upload) the exported text file into the Data Mana
 Once the measurement metadata has been [prepared](#prepare-metadata) according to the domain specifications, 
 the exported _txt_ file can be uploaded into the Data Manager application. 
 To start the measurement registration process press the "Register Measurements" button within the measurement summary view. 
-![measurement_summary](images/measurement_summary_no_measurements.png)
+![measurement_summary](images/measurement_summary_no_measurements.png){.screenshot}
 
 This will open the measurement registration dialog with which the metadata can be registered. 
-![register_measurements_upload_template.png](images/measurement_registration_upload_template.png)
+![register_measurements_upload_template.png](images/measurement_registration_upload_template.png){.screenshot}
 
 Within the dialog you are able to upload your measurement files either via clicking the upload files button and selecting the files of interest in your file system
 or by drag and dropping the files into the dashed box saying "drop your files here".
-![register_measurements_proteomics_upload_template_filled.png](images/measurement_registration_upload_template_filled.png)
+![register_measurements_proteomics_upload_template_filled.png](images/measurement_registration_upload_template_filled.png){.screenshot}
 
 Should you have uploaded one or more files in error, you can easily delete them via a press of the cross icon next to their respective file names
 

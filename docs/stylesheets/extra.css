@@ -1,11 +1,11 @@
 :root {
-  --md-primary-fg-color:        #006AF5;
+  --md-primary-fg-color: #006AF5;
   --md-primary-fg-color--light: #006AF5;
-  --md-primary-fg-color--dark:  #006AF5;
+  --md-primary-fg-color--dark: #006AF5;
 }
 
 .md-grid {
-  max-width: 80rem  /*Replace Default max width of 61 rem to have more space on bigger screens */
+  max-width: 80rem /*Replace Default max width of 61 rem to have more space on bigger screens */
 }
 
 .md-typeset h1 {
@@ -33,13 +33,15 @@
   margin-bottom: 0.5rem;
 }
 
-/* Standard block image spacing */
-.md-typeset img  {
+/* Add Margins to screenshots employed within a text
+CAUTION Don't change img natively,
+this will also change the spacing of any icons/emojis within the documentation */
+
+.md-typeset .screenshot {
   margin-top: 1rem;
-  margin-bottom: 0.75rem;   /* 2rem top/bottom, auto left/right = center */
+  margin-bottom: 0.75rem;
 }
 
-/* Increase the font size for the entries within the first column of the table */
 .md-typeset__table tr td:first-child {
   font-size: 0.7rem; /*Default font size for all cells is by default 0.61rem*/
 }

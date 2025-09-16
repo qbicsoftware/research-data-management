@@ -28,16 +28,16 @@ to anyone or to any system.
 
 First of all, navigate to your PAT overview page in your profile overview (top-right corner)
 
-![profile menu](images/raw_data_create_pat_profile_menu.png)
+![profile menu](images/raw_data_create_pat_profile_menu.png){.screenshot}
 
 You should now be able to see the PAT token overview page:
 
-![pat overview](images/raw_data_create_pat_overview_no_pats.png)
+![pat overview](images/raw_data_create_pat_overview_no_pats.png){.screenshot}
 
 Personal access tokens have a life-time, which can be set based on your requirements. Your token
 expires automatically, there is nothing you have to do manually.
 
-![generate token](images/raw_data_create_pat_generate_token.png)
+![generate token](images/raw_data_create_pat_generate_token.png){.screenshot}
 
 !!! warning "Token accessibility"
     A generated token will be only visible in its raw notation once! Make sure to store it safely in
@@ -49,7 +49,7 @@ You can see your created tokens in the overview, however since they are instantl
 you cannot access the actual token text anymore. We encourage you to use meaningful descriptions for your tokens,
 so you remember for what purpose you have created them.
 
-![token overview](images/raw_data_create_pat_token_overview.png)
+![token overview](images/raw_data_create_pat_token_overview.png){.screenshot}
 
 !!! danger "Token security"
     If you are unsure, if your PAT got exposed or shared with untrusted parties, delete them right
@@ -61,7 +61,7 @@ To navigate to the raw data summary view start by [navigating](../project/projec
 From there [navigate](../experiment/experiment_introduction.md#experiment-navigation) into the experiment summary view of interest.
 From within the experiment summary you can navigate into the raw data summary view.
 To do so, click on the "Download Raw Data" tab within the experiment navigation bar on the top.
-![experiment_summary.png](../experiment/images/experimental_summary.png)
+![experiment_summary.png](../experiment/images/experimental_summary.png){.screenshot}
 
 This will take you to the raw data summary view
 ![raw_data_summary_no_data.png](images/raw_data_summary_no_data.png)

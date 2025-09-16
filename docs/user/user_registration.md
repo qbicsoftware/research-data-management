@@ -16,15 +16,15 @@ removing the necessity of a separate login step.
   
 To do so press on the "login with ORCID" registration card on the bottom of the login page. 
 
-![login_page_registration](images/user_registration/login_page.png)
+![login_page_registration](images/user_registration/login_page.png){.screenshot}
 
 This will redirect you to the ORCID login page 
 
-![orcid_login](images/user_registration/orcid/orcid_login.png)
+![orcid_login](images/user_registration/orcid/orcid_login.png){.screenshot}
 
 Login to your ORCID account and grant the Data Manager application to access your publicly available ORCID by pressing the "authorize access" button. 
 
-![orcid_registration_authorize_access.png](images/user_registration/orcid/orcid_registration_authorize_access.png)
+![orcid_registration_authorize_access.png](images/user_registration/orcid/orcid_registration_authorize_access.png){.screenshot}
 
 Should you not have an ORCID account press the "register_now" link 
 within the ORCID login and follow the provided steps to register a new ORCID account.
