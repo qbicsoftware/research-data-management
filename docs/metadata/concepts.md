@@ -1,4 +1,4 @@
-# Data Modalities
+# Metadata Concepts
 
 ## Quick Reference Table
 
@@ -14,12 +14,10 @@
 
 ### User
 
-In our documentation you can find detailed information on how
-to [register](../user/user_registration.md)
-and [edit](../user/user_edit.md) your account within the Data Manager.
+Check our documentation to find out how
+to [register](../user/user_registration.md) and [edit](../user/user_edit.md) your account.
 
-Below you can find an overview of the information associated with a user account within the Data
-Manager
+The following concepts are associated with an user account.
 
 | Concept           | Example                                   | Mandatory<br/> :white_check_mark: Yes<br/> :x: No | Type                                                                                                                                                                                               | Description                                                                                                                                                                                                                                                                                                                   |                          
 |-------------------|-------------------------------------------|---------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -33,21 +31,23 @@ Manager
 
 #### Personal Access Token
 
-Downloading your data is handled via the registration of a personal access token. Check out our
-dedicated sections to find out how
+!!! warning
+    Personal access token ensure that only authorized users are able to to download their data.
+    <br/>For this reason never share your token with other users
+
+<br/>Check out our documentation to find out how
 to [register](../rawdata/raw_data_download.md#generate-a-token)
 and [edit](../rawdata/raw_data_download.md#manage-tokens) your personal access tokens.
 
 ### Project
 
-For detailed information visit the [project documentation](../project/project_introduction.md)
-There you will find detailed information on how to [register](../project/project_registration.md)
-and [edit](../project/project_edit.md) a project within the Data Manager.
-Additionally, it outlines how to grant or revoke [access](../project/project_access.md) to your
-project to other users within the Data Manager.
+Visit the [documentation](../project/project_introduction.md)
+to find out how to [register](../project/project_registration.md)
+and [edit](../project/project_edit.md) a project.
+<br/>Additionally, it outlines how to grant or revoke [access](../project/project_access.md) to your
+project to other users.
 
-Below you can find an overview of the information associated with a project within the Data
-Manager
+The following concepts are associated with a project
 
 | Concept                              | Example                                                                     | Mandatory<br/> :white_check_mark: Yes<br/> :x: No | Type                                                                                                                                              | Description                                                                                                                             |            
 |--------------------------------------|-----------------------------------------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
@@ -67,15 +67,12 @@ Manager
 
 #### Offer
 
-For detailed information visit
-the [project editing documentation](../project/project_edit.md)
-
-There you will find detailed information on how
+Visit
+the [documentation](../project/project_edit.md) to find out how
 to [register](../project/project_edit.md#offer-upload)
-and [edit](../project/project_edit.md#offer-upload) your offer file within the Data Manager.
+and [edit](../project/project_edit.md#offer-upload) your offer file.
 
-Below you can find an overview of the information associated with an offer file within the Data
-Manager.
+The following concepts are associated with an offer file
 
 | Concept    | Example                                   | Mandatory<br/> :white_check_mark: Yes<br/> :x: No | Type                                                                                                                                              | Description                                                                                                                   |                                         
 |------------|-------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -85,16 +82,11 @@ Manager.
 
 #### Sample QC
 
-For detailed information visit
-the [project editing documentation](../project/project_edit.md)
-
-There you will find detailed information on how
+Visit our [documentation](../project/project_edit.md) to find out how
 to [register](../project/project_edit.md#quality-control-upload)
-and [edit](../project/project_edit.md#quality-control-upload) your sample qc file within the Data
-Manager.
+and [edit](../project/project_edit.md#quality-control-upload) your sample qc file.
 
-Below you can find an overview of the information associated with a quality control file within the
-Data Manager.
+The following concepts are associated with a quality control file
 
 | Concept       | Example                                   | Mandatory<br/> :white_check_mark: Yes<br/> :x: No | Type                                                                                                                                              | Description                                                                                                                     |                                                                    
 |---------------|-------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
@@ -104,14 +96,11 @@ Data Manager.
 
 ### Experiment
 
-For detailed information visit
-the [experiment documentation](../experiment/experiment_introduction.md)
+Visit our [documentation](../experiment/experiment_introduction.md) to find out how
+to [register](../experiment/experiment_creation.md)
+and [edit](../experiment/experiment_creation.md) an experiment.
 
-There you will find detailed information on how to [register](../experiment/experiment_creation.md)
-and [edit](../experiment/experiment_creation.md) an experiment within the Data Manager.
-
-Below you can find an overview of the information associated with an experiment within the Data
-Manager.
+The following concepts are associated with an experiment.
 
 | Concept                | Example                                                                             | Mandatory<br/> :white_check_mark: Yes<br/> :x: No | Type                                                                                                         | Description                                                                                                                                                                        |                                 
 |------------------------|-------------------------------------------------------------------------------------|---------------------------------------------------|--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -128,17 +117,12 @@ Manager.
 
 #### Experimental Variables
 
-For detailed information visit
-the [experiment documentation](../experiment/experiment_introduction.md)
-
-There you will find detailed information on how
+Visit our [documentation](../experiment/experiment_introduction.md) to find out how
 to [register](../experiment/experiment_creation.md#experimental-variable-creation)
 and [edit](../experiment/experiment_creation.md#experimental-variable-creation) your experimental
-variables within the Data Manager.
+variables.
 
-Below you can find an overview of the information associated with an experiment variable within the
-Data
-Manager.
+The following concepts are associated with an experiment variable
 
 | Concept       | Example                                   | Mandatory<br/> :white_check_mark: Yes<br/> :x: No | Type                                                                                                                                              | Description                                                                                                                                                               |                              
 |---------------|-------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -150,17 +134,12 @@ Manager.
 
 #### Experimental Groups
 
-For detailed information visit
-the [experiment documentation](../experiment/experiment_introduction.md)
-
-There you will find detailed information on how
+Visit our [documentation](../experiment/experiment_introduction.md) to find out how
 to [register](../experiment/experiment_creation.md#experimental-group-creation)
 and [edit](../experiment/experiment_creation.md#experimental-group-creation) your experimental
-variables within the Data Manager.
+variables.
 
-Below you can find an overview of the information associated with an experiment group within the
-Data
-Manager.
+The following concepts are associated with an experiment group
 
 | Concept               | Example                                   | Mandatory<br/> :white_check_mark: Yes<br/> :x: No | Type                                                                                                                                              | Description                                                                                                                                                      |                        
 |-----------------------|-------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -171,16 +150,12 @@ Manager.
 
 #### Confounding Variables
 
-For detailed information visit
-the [experiment documentation](../experiment/confounding-variables.md)
-
-There you will find detailed information on how
+Visit our [documentation](../experiment/confounding-variables.md) to find out how
 to [register](../experiment/confounding-variables.md#define-confounding-variables-in-your-experiment)
 and [edit](../experiment/confounding-variables.md#rename-a-confounding-variable) your experimental
-variables within the Data Manager.
+variables.
 
-Below you can find an overview of the information associated with a confounding variable within the
-Data Manager.
+The following concepts are associated with a confounding variables.
 
 | Concept       | Example                                   | Mandatory<br/> :white_check_mark: Yes<br/> :x: No | Type                                                                                                                                              | Description                                                                                                                                                              |                            
 |---------------|-------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -189,14 +164,11 @@ Data Manager.
 
 ### Ontology
 
-In our documentation you can find detailed information on how
+Visit our documentation to find out how
 to [search](../ontology_search/ontology_search_introduction.md#ontology-search-introduction)
 for your ontology terms of interest.
-Detailed information for each field can additionally be found within the documentation of
-the [ontology service API](https://www.ebi.ac.uk/ols4/)
 
-Below you can find an overview of the information associated with the ontology terms within the Data
-Manager.
+The following concepts are associated with the ontology terms.
 
 | Concept               | Example                                                                               | Mandatory<br/> :white_check_mark: Yes<br/> :x: No | Type                                                                                                                         | Description                                                                                                                       |                     
 |-----------------------|---------------------------------------------------------------------------------------|---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -207,15 +179,16 @@ Manager.
 | Ontology term IRI     | http://purl.obolibrary.org/obo/ncbitaxon.owl                                          | :white_check_mark:                                | Identifier                                                                                                                   | <details class="info">Unique resource identifier for the ontology providing the term<summary>View Description</summary></details> |
 | Ontology term version | http://purl.obolibrary.org/obo/ncbitaxon/2023-09-19/ncbitaxon.owl                     | :white_check_mark:                                | Identifier                                                                                                                   | <details class="info">Specific Version of the ontology providing the term<summary>View Description</summary></details>            |
 
+For more information check the documentation of
+the [ontology service API](https://www.ebi.ac.uk/ols4/)
+
 ### Sample
 
-In our documentation you can find detailed information on how
+Visit our documentation to find out how
 to [register](../batch/sample-batch.md#creating-and-registering-sample-batches)
 and [edit](../batch/sample-batch.md#editing-sample-batches) your batches and samples.
 
-Below you can find an overview of the information associated with a sample within the Data
-Manager. This information can also be found in the **Property Information** tab within the sample
-registration template sheet.
+The following concepts are associated with a sample.
 
 | Concept              | Example                                   | Mandatory<br/> :white_check_mark: Yes<br/> :x: No | Type                                                                                                                                                                                                                                                                           | Description                                                                                                                                                                                                                   |                        
 |----------------------|-------------------------------------------|---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -231,15 +204,17 @@ registration template sheet.
 | Biological replicate | "Mouse_WT_1"                              | :x:                                               | Text                                                                                                                                                                                                                                                                           | <details class="info">Specify if the samples belong to the same biological source within your experiment.<summary>View Description</summary></details>                                                                        |
 | Comment              | "Redone QC"                               | :x:                                               | Text                                                                                                                                                                                                                                                                           | <details class="info">Free Text, can contain any notes related to a specific sample in question<summary>View Description</summary></details>                                                                                  |
 
-The current sample registration template sheet can be found here
-[sample-metadata-template.xlsx](templates/sample-metadata-template.xlsx)
+Additional information can be found in the **Property Information** tab within the sample
+registration [template sheet](templates/sample-metadata-template.xlsx).
 
 #### Batch
 
-A batch can be defined as a group of samples processed or analyzed together under the same
-experimental conditions with the aim to minimize technical variation.
-Below you can find an overview of the information associated with a sample batch within the Data
-Manager.
+!!! note
+    A batch can be defined as a group of samples processed together under the same
+    experimental conditions. 
+    <br/>  This is done document and minimize technical variation.
+
+The following concepts are associated with a sample batch.
 
 | Concept           | Example                                   | Mandatory<br/> :white_check_mark: Yes<br/> :x: No | Type                                                                                                                                              | Description                                                                                                                                                                                                           |                         
 |-------------------|-------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -252,18 +227,15 @@ Manager.
 ### Measurement
 
 For detailed information visit
-the [measurement documentation](../measurement/measurement_introduction.md)
+our [measurement documentation](../measurement/measurement_introduction.md)
 
 #### Genomics
 
-In our documentation you can find detailed information on how
+Visit our documentation to find out how
 to [register](../measurement/measurement_registration.md#genomics)
 or [edit](../measurement/measurement_edit.md#genomics) your proteomics measurement
 
-Below you can find an overview of the information associated with a genomic measurement within the
-Data Manager. This information can also be found in the "property information" tab within the
-genomic measurement
-registration template sheet.
+The following concepts are associated with a genomic measurement.
 
 | Concept            | Example                                   | Mandatory<br/> :white_check_mark: Yes<br/> :x: No | Type                                                                                                                                                                                                             | Description                                                                                                                                                                                             |  
 |--------------------|-------------------------------------------|---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -285,60 +257,56 @@ registration template sheet.
 | Sample name        | Lab_Id_01                                 | :x:                                               | Text                                                                                                                                                                                                             | <details class="info">Common human-readable name of the sample. Can also be internal lab identifier<summary>View Description</summary></details>                                                        |
 | Sample pool        | Pool_1                                    | :x:                                               | Text                                                                                                                                                                                                             | <details class="info">A group of samples that are pooled together for a measurement. All samples in a pool group should have the same label.<summary>View Description</summary></details>               |
 
-The current NGS Measurement Registration Template can be found here
-[ngs_measurement_registration_sheet.xlsx](templates/ngs_measurement_registration_sheet.xlsx)
+Additional information can be found in the **property information** tab within the
+genomic measurement registration [template sheet](templates/ngs_measurement_registration_sheet.xlsx)
 
 #### Proteomics
 
-In our documentation you can find detailed information on how
+Visit our documentation to find out how
 to [register](../measurement/measurement_registration.md#proteomics)
 or [edit](../measurement/measurement_edit.md#proteomics) your proteomics measurement
 
-Below you can find an overview of the information associated with a proteomics measurement within
-the Data Manager. This information can also be found in the "property information" tab within the
-proteomics measurement
-registration template sheet.
+The following concepts are associated with a proteomics measurement.
 
-| Concept            | Example                                   | Mandatory<br/> :white_check_mark: Yes<br/> :x: No | Type                                                                                                                                                                                                                                                    | Description                                                                                                                                                                                                        |                             
-|--------------------|-------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Digestion enzyme   | Trypsin                                   | :white_check_mark:                                | Text                                                                                                                                                                                                                                                    | <details class="info">Information about the enzymes used for the proteolytic step.<summary>View Description</summary></details>                                                                                    |
+| Concept            | Example                                   | Mandatory<br/> :white_check_mark: Yes<br/> :x: No | Type                                                                                                                                                                                                                                                    | Description                                                                                                                                                                                                         |                             
+|--------------------|-------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Digestion enzyme   | Trypsin                                   | :white_check_mark:                                | Text                                                                                                                                                                                                                                                    | <details class="info">Information about the enzymes used for the proteolytic step.<summary>View Description</summary></details>                                                                                     |
 | Digestion method   | in gel                                    | :white_check_mark:                                | Enumeration, Selectable values can be found [here](https://github.com/qbicsoftware/data-manager-app/blob/main/project-management/src/main/java/life/qbic/projectmanagement/application/measurement/validation/MeasurementProteomicsValidator.java#L166) | <details class="info">Method that has been used to break proteins into peptides, Selectable from the methods "in gel", "in solution", "iST proteomics kit", "on beads"<summary>View Description</summary></details> |
-| Facility           | "Quantitative Biology Center"             | :white_check_mark:                                | Text                                                                                                                                                                                                                                                    | <details class="info">The facilities name within the organisation (group name, etc.)<summary>View Description</summary></details>                                                                                  |
-| Id                 | 001d7e11-55a3-4d8f-<br/>82e6-04466e868a64 | :white_check_mark:                                | Identifier, validated against [RFC4122](https://www.rfc-editor.org/rfc/rfc5322">https://www.rfc-editor.org/rfc/rfc4122) <br/>format specification                                                                                                       | <details class="info">Identifier of the measurement automatically assigned by the Data Manager<summary>View Description</summary></details>                                                                        |
-| Instrument         | BAO:0002733                               | :white_check_mark:                                | Identifier, structured as prefix:reference <br/>as seen in the [W3C](https://www.w3.org/TR/curie/) <br/>format specification                                                                                                                            | <details class="info">Ontology Identifier of the instrument that has been used for the measurement, usually in the form PREFIX:CODE<summary>View Description</summary></details>                                   |
-| Lc column          | ProteoSil_100-C18                         | :white_check_mark:                                | Text                                                                                                                                                                                                                                                    | <details class="info">The type of column that has been used.<summary>View Description</summary></details>                                                                                                          |
-| Measurement code   | MSQ2ABCD001AA-<br/>118569093700875        | :white_check_mark:                                | Text, beginning with the domain(MS) prefix <br/>followed by the [SampleCode](concepts.md#sample), <br/>seperated by a hyphen with its unique creation timestamp                                                                                         | <details class="info">Human readable unique measurement code, automatically assigned by the Data Manager, usually in the form "MS"SAMPLECODE"-"Timestamp"<summary>View Description</summary></details>             |
-| Organization IRI   | https://ror.org/03a1kwz48                 | :white_check_mark:                                | Identifier, validated according to the structure <br/>defined by the [RoR](https://ror.readme.io/docs/identifier)                                                                                                                                       | <details class="info">Research organization registry identifier([RoR Id](https://ror.org/)) of the organisation where the measurement has been conducted<summary>View Description</summary></details>              |
-| Organization label | University Tuebingen                      | :white_check_mark:                                | Text                                                                                                                                                                                                                                                    | <details class="info">Human Readable Name of the organization, automatically received from the RoR by the Organization IRI<summary>View Description</summary></details>                                            |
-| Registration date  | 2025-04-28<br/> 08:24:25.000000           | :white_check_mark:                                | Date                                                                                                                                                                                                                                                    | <details class="info">Timestamp when the batch was created within the Data Manager<summary>View Description</summary></details>                                                                                    |
-| Sample id          | 00058431-df92-48a6-<br/>891b-671d714bb723 | :white_check_mark:                                | Identifier , validated against [RFC4122](https://www.rfc-editor.org/rfc/rfc5322">https://www.rfc-editor.org/rfc/rfc4122) <br/>format specification                                                                                                      | <details class="info">Identifier of the sample employed within the measurement<summary>View Description</summary></details>                                                                                        |
-| Comment            | Repeated Measurement <br/>after Bad QC    | :x:                                               | Text                                                                                                                                                                                                                                                    | <details class="info">Free Text, can contain any notes related to a measurement in question with up to 500 characters<summary>View Description</summary></details>                                                 |
-| Enrichment method  | Phosphopeptide Enrichment                 | :x:                                               | Text                                                                                                                                                                                                                                                    | <details class="info">Enrichment of proteins or peptides of different characteristics.<summary>View Description</summary></details>                                                                                |
-| Fraction name      | Fraction01                                | :x:                                               | Text                                                                                                                                                                                                                                                    | <details class="info">If the sample was fractionated this label can be used to indicate which fraction was measured.<summary>View Description</summary></details>                                                  |
-| Injection volume   | 10                                        | :x:                                               | Number                                                                                                                                                                                                                                                  | <details class="info">The sample volume injected into the LC column in microliter(µl).<summary>View Description</summary></details>                                                                                      |
-| Label              | Heavy                                     | :x:                                               | Text                                                                                                                                                                                                                                                    | <details class="info">The label value for the label type that has been used.<summary>View Description</summary></details>                                                                                                 |
-| Label type         | SILAC                                     | :x:                                               | Text                                                                                                                                                                                                                                                    | <details class="info">The label type that has been used to label the sample for measurement.<summary>View Description</summary></details>                                                                                             |
-| LCMS method        | APCI                                      | :x:                                               | Text                                                                                                                                                                                                                                                    | <details class="info">Laboratory specific methods that have been used for LCMS measurement.<summary>View Description</summary></details>                                                                                              |
-| Replicate name     | Replicate_1                               | :x:                                               | Text                                                                                                                                                                                                                                                    | <details class="info">Label to distinguish between technical replicates for repeated measurements of the same sample.<summary>View Description</summary></details>                                                                    |
-| Sample name        | Lab_Id_01                                 | :x:                                               | Text                                                                                                                                                                                                                                                    | <details class="info">Common human-readable name of the sample. Can also be internal lab identifier<summary>View Description</summary></details>                                                                                      |
-| Sample pool        | Pool_1                                    | :x:                                               | Text                                                                                                                                                                                                                                                    | <details class="info">A group of samples that are pooled together for a measurement. All samples in a pool group should have the same label.<summary>View Description</summary></details>                                             |
+| Facility           | "Quantitative Biology Center"             | :white_check_mark:                                | Text                                                                                                                                                                                                                                                    | <details class="info">The facilities name within the organisation (group name, etc.)<summary>View Description</summary></details>                                                                                   |
+| Id                 | 001d7e11-55a3-4d8f-<br/>82e6-04466e868a64 | :white_check_mark:                                | Identifier, validated against [RFC4122](https://www.rfc-editor.org/rfc/rfc5322">https://www.rfc-editor.org/rfc/rfc4122) <br/>format specification                                                                                                       | <details class="info">Identifier of the measurement automatically assigned by the Data Manager<summary>View Description</summary></details>                                                                         |
+| Instrument         | BAO:0002733                               | :white_check_mark:                                | Identifier, structured as prefix:reference <br/>as seen in the [W3C](https://www.w3.org/TR/curie/) <br/>format specification                                                                                                                            | <details class="info">Ontology Identifier of the instrument that has been used for the measurement, usually in the form PREFIX:CODE<summary>View Description</summary></details>                                    |
+| Lc column          | ProteoSil_100-C18                         | :white_check_mark:                                | Text                                                                                                                                                                                                                                                    | <details class="info">The type of column that has been used.<summary>View Description</summary></details>                                                                                                           |
+| Measurement code   | MSQ2ABCD001AA-<br/>118569093700875        | :white_check_mark:                                | Text, beginning with the domain(MS) prefix <br/>followed by the [SampleCode](concepts.md#sample), <br/>seperated by a hyphen with its unique creation timestamp                                                                                         | <details class="info">Human readable unique measurement code, automatically assigned by the Data Manager, usually in the form "MS"SAMPLECODE"-"Timestamp"<summary>View Description</summary></details>              |
+| Organization IRI   | https://ror.org/03a1kwz48                 | :white_check_mark:                                | Identifier, validated according to the structure <br/>defined by the [RoR](https://ror.readme.io/docs/identifier)                                                                                                                                       | <details class="info">Research organization registry identifier([RoR Id](https://ror.org/)) of the organisation where the measurement has been conducted<summary>View Description</summary></details>               |
+| Organization label | University Tuebingen                      | :white_check_mark:                                | Text                                                                                                                                                                                                                                                    | <details class="info">Human Readable Name of the organization, automatically received from the RoR by the Organization IRI<summary>View Description</summary></details>                                             |
+| Registration date  | 2025-04-28<br/> 08:24:25.000000           | :white_check_mark:                                | Date                                                                                                                                                                                                                                                    | <details class="info">Timestamp when the batch was created within the Data Manager<summary>View Description</summary></details>                                                                                     |
+| Sample id          | 00058431-df92-48a6-<br/>891b-671d714bb723 | :white_check_mark:                                | Identifier , validated against [RFC4122](https://www.rfc-editor.org/rfc/rfc5322">https://www.rfc-editor.org/rfc/rfc4122) <br/>format specification                                                                                                      | <details class="info">Identifier of the sample employed within the measurement<summary>View Description</summary></details>                                                                                         |
+| Comment            | Repeated Measurement <br/>after Bad QC    | :x:                                               | Text                                                                                                                                                                                                                                                    | <details class="info">Free Text, can contain any notes related to a measurement in question with up to 500 characters<summary>View Description</summary></details>                                                  |
+| Enrichment method  | Phosphopeptide Enrichment                 | :x:                                               | Text                                                                                                                                                                                                                                                    | <details class="info">Enrichment of proteins or peptides of different characteristics.<summary>View Description</summary></details>                                                                                 |
+| Fraction name      | Fraction01                                | :x:                                               | Text                                                                                                                                                                                                                                                    | <details class="info">If the sample was fractionated this label can be used to indicate which fraction was measured.<summary>View Description</summary></details>                                                   |
+| Injection volume   | 10                                        | :x:                                               | Number                                                                                                                                                                                                                                                  | <details class="info">The sample volume injected into the LC column in microliter(µl).<summary>View Description</summary></details>                                                                                 |
+| Label              | Heavy                                     | :x:                                               | Text                                                                                                                                                                                                                                                    | <details class="info">The label value for the label type that has been used.<summary>View Description</summary></details>                                                                                           |
+| Label type         | SILAC                                     | :x:                                               | Text                                                                                                                                                                                                                                                    | <details class="info">The label type that has been used to label the sample for measurement.<summary>View Description</summary></details>                                                                           |
+| LCMS method        | APCI                                      | :x:                                               | Text                                                                                                                                                                                                                                                    | <details class="info">Laboratory specific methods that have been used for LCMS measurement.<summary>View Description</summary></details>                                                                            |
+| Replicate name     | Replicate_1                               | :x:                                               | Text                                                                                                                                                                                                                                                    | <details class="info">Label to distinguish between technical replicates for repeated measurements of the same sample.<summary>View Description</summary></details>                                                  |
+| Sample name        | Lab_Id_01                                 | :x:                                               | Text                                                                                                                                                                                                                                                    | <details class="info">Common human-readable name of the sample. Can also be internal lab identifier<summary>View Description</summary></details>                                                                    |
+| Sample pool        | Pool_1                                    | :x:                                               | Text                                                                                                                                                                                                                                                    | <details class="info">A group of samples that are pooled together for a measurement. All samples in a pool group should have the same label.<summary>View Description</summary></details>                           |
 
-The current proteomics Measurement Registration Template can be found here
-[proteomics_measurement_registration_sheet.xlsx](templates/proteomics_measurement_registration_sheet.xlsx)
+Additional information can be found the **property information** tab within the
+proteomics measurement
+registration [template sheet](templates/proteomics_measurement_registration_sheet.xlsx).
 
 #### Immunopeptidomics (Coming Soon)
 
 ### Raw Data
 
-Please visit the raw data documentation
-for detailed information on how to [upload](../rawdata/raw_data_upload.md)
+Visit our documentation to find out how to [upload](../rawdata/raw_data_upload.md)
 or [download](../rawdata/raw_data_download.md) your raw data.
 
-Below you can find an overview of the information associated with a raw data dataset within the Data
-Manager
+The following concepts are associated with a raw data dataset.
 
-| Concept           | Example                                   | Mandatory<br/> :white_check_mark: Yes<br/> :x: No | Type                                                                                                                                                                             | Description                                                                                                                                                         |                                 
-|-------------------|-------------------------------------------|---------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Concept           | Example                                   | Mandatory<br/> :white_check_mark: Yes<br/> :x: No | Type                                                                                                                                                                             | Description                                                                                                                                                                            |                                 
+|-------------------|-------------------------------------------|---------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | File count        | 20                                        | :white_check_mark:                                | Number                                                                                                                                                                           | <details class="info">Number of Files contained within the raw data upload, automatically determined by the Data Manager<summary>View Description</summary></details>                  |
 | File size         | 2000Mb                                    | :white_check_mark:                                | Text                                                                                                                                                                             | <details class="info">Size of all Files within the raw data upload, automatically determined by the Data Manager<summary>View Description</summary></details>                          |
 | File suffixes     | fastq, tar, txt                           | :white_check_mark:                                | List of Text                                                                                                                                                                     | <details class="info">List of File suffixes for all files within a raw data upload, automatically determined by the Data Manager<summary>View Description</summary></details>          |
