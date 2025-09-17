@@ -209,10 +209,10 @@ registration [template sheet](templates/sample-metadata-template.xlsx).
 
 #### Batch
 
-!!! note
+!!! info
     A batch can be defined as a group of samples processed together under the same
     experimental conditions. 
-    <br/>  This is done document and minimize technical variation.
+    <br/>  This is done to document and minimize technical variation.
 
 The following concepts are associated with a sample batch.
 
