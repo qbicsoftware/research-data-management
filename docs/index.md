@@ -2,22 +2,32 @@
 
 Behind every great research project should be great research data management!
 Start your voyage towards a __FAIR__ and __Open Data__ future and include
-the [data manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in your research!
+the [Data Manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in your research!
 
 ## What's new?
 
-### Confounding variable support
-<div style="font-size: smaller; color: rgba(122,122,122,1)">February 12th, 2025 </div>
+### Glossary
+<div style="font-size: smaller; color: rgba(122,122,122,1)">September 02th, 2025 </div>
 
-- Experimental design: The management of confounding variables on experiment and sample level is now possible
-- Ontology: Ontology terms are now queried from TIB's new [APIv3](https://terminology.tib.eu/ts/api) by default, which uses the improved OLS4 backend
-- Measurements: Technical replicate information is now shown for measurements
-- Measurements: Sample pool names are now displayed in the measurement overview
-- Metadata: Improved Excel file export that also displays the ontology terms CURIE
-
-Check out the full [release notes](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.8.0) on GitHub.
+Introduction of a glossary explaining the terms with example values in the research data management documentation.
+Check it out [here](metadata/concepts.md)
 
 ## Update notes
+
+### Enable Asynchronous Sample and Experiment Update
+<div style="font-size: smaller; color: rgba(122,122,122,1)">June 10th, 2025 </div>
+
+- Enable the user to trigger sample creation and update asynchronously
+- Enable the user to trigger experiment update processes asynchronously.
+- Keep him informed of the progress via dedicated toast notifications
+
+### Streamline service API within the Data Manager backend to enable CRUD processes asynchronously
+<div style="font-size: smaller; color: rgba(122,122,122,1)">March 4th, 2025 </div>
+
+- Enable the user to trigger project creation asynchronously
+- Keep him informed of the progress via dedicated toast notifications
+- Update the Data Manager to Java 21
+
 
 ### New project summary layout
 <div style="font-size: smaller; color: rgba(122,122,122,1)">November 14th, 2024 </div>
@@ -44,7 +54,7 @@ Check out the full [release notes](https://github.com/qbicsoftware/data-manager-
   supported.
 - Sample metadata: the term `Organism ID` has been renamed to `Biological Replicate` to match its
   purpose of use.
-- The data manager is now connected to the [TIB terminology service](https://terminology.tib.eu).  
+- The Data Manager is now connected to the [TIB terminology service](https://terminology.tib.eu).  
   The [queried ontologies](ontology_search/ontology_search_introduction.md) are restricted to life science specific ones. You miss one? Please let us
   know and submit
   a [feature request](https://github.com/qbicsoftware/data-manager-app/issues/new/choose). Currently
