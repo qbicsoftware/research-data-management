@@ -7,6 +7,6 @@ Within this view you are able to [register](measurement_registration.md) or [edi
 ## Measurement Navigation
 
 From the experiment summary you can navigate into the measurement summary view.
-![experiment_summary](../experiment/images/experimental_summary.png)
+![experiment_summary](../experiment/images/experimental_summary.png){.screenshot}
 To do so, click on the "View Measurements" tab within the experiment navigation bar on the top.
-![measurement_summary](images/measurement_summary_no_measurements.png)
+![measurement_summary](images/measurement_summary_no_measurements.png){.screenshot}

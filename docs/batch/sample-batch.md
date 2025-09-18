@@ -28,11 +28,11 @@ In this file you can fill out information for the samples you want to register.
 **Once you filled out** all the information, you can go back to the dialog. In case you closed the dialog, simply re-open it.
 </br>
 Please go ahead and **upload your filled metadata file** in the dialog.
-Once the data manager validated the information in your file,
+Once the Data Manager validated the information in your file,
 go ahead and **choose a name for your batch**.
 </br>
 Once you named your batch and uploaded the file with the necessary information, go ahead and **click the
-`Register`** button. The data manager will now go through the process of creating samples within your
+`Register`** button. The Data Manager will now go through the process of creating samples within your
 experiment.
 
 !!! info "Email Notification"
@@ -40,7 +40,7 @@ experiment.
     all [project collaborators](../project/project_access.md#add-collaborator) will automatically receive
     an email with a link to the created batch.
 
-After the data manager is done registering your samples, you can **close** the dialog **by clicking the
+After the Data Manager is done registering your samples, you can **close** the dialog **by clicking the
 `Finish`** button.
 Now samples annotated with the provided metadata are registered to your experiment. You can see the
 newly created batch next to the other batches in the samples view.
@@ -76,14 +76,14 @@ Note that the information in greyed out columns such as e.g. `Sample Id` is immu
 **Once you filled out** all the information, you can go back to the dialog. In case you closed the dialog, simply re-open it.
 </br>
 Please go ahead and **upload your filled metadata file** in the dialog.
-Once the data manager validated the information in your file,
+Once the Data Manager validated the information in your file,
 go ahead and **choose a name for your batch** if you want to change it.
 </br>
 Once you named your batch and uploaded the file with the necessary information, go ahead and **click the
-`Edit batch`** button. The data manager will now go through the process of updating the sample information within your
+`Edit batch`** button. The Data Manager will now go through the process of updating the sample information within your
 experiment.
 
-After the data manager is done registering your samples, you can **close** the dialog **by clicking the
+After the Data Manager is done registering your samples, you can **close** the dialog **by clicking the
 `Finish`** button.
 
 [//]: # (How do I delete existing samples in my experiment?)

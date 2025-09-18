@@ -14,7 +14,7 @@ project card directly.
 Once within the project open the application drawer via the button on the top left of the
 application
 and select "ontology search" to navigate to the ontology summary view.
-![ontology_summary.png](images/ontology_search_summary.png)
+![ontology_summary.png](images/ontology_search_summary.png){.screenshot}
 
 ## Ontology Search
 
@@ -22,10 +22,10 @@ Start by providing at least 2 letters in the ontology search field of the entity
 to retrieve the ontology information.
 Once done so a card list showing information for all ontology entries which contain the provided
 letters will appear.
-![ontology_search_triggered_without_species.png](images/ontology_search_triggered_without_species.png)
+![ontology_search_triggered_without_species.png](images/ontology_search_triggered_without_species.png){.screenshot}
 
 Alternatively the ontology search can also be limited to only look for species specific information.
-![ontology_search_triggered_with_species.png](images/ontology_search_triggered_with_species.png)
+![ontology_search_triggered_with_species.png](images/ontology_search_triggered_with_species.png){.screenshot}
 
 !!! note "Enable species specific search"
 The application provides access to species terminologies for the
@@ -42,4 +42,4 @@ Additionally, it allows you to copy the
 ontology [CURIE](https://link.springer.com/article/10.1007/s12599-022-00744-0),
 which can be especially handy
 during [measurement registration](../measurement/measurement_registration.md)
-![ontology_search_curie_copie.gif](images/ontology_search_copy_curie.png)
+![ontology_search_curie_copie.gif](images/ontology_search_copy_curie.png){.screenshot}

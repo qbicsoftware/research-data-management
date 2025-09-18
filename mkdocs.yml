@@ -15,30 +15,31 @@ nav:
   - Get started:
       Process Overview: get_started/process_overview.md
   - Batch: batch/sample-batch.md
-  - Raw data:
-      - Download Data: rawdata/raw_data_download.md
-      - Upload Data: rawdata/raw_data_upload.md
+  - Developers & Stewards:
+      - API: developers/api.md
+      - Metadata Concepts: metadata/concepts.md
   - Experiment:
       - Introduction: experiment/experiment_introduction.md
       - Creation: experiment/experiment_creation.md
-      - Confounding Variables: confounding-variables.md
+      - Confounding Variables: experiment/confounding-variables.md
   - Measurement:
       - Introduction: measurement/measurement_introduction.md
-      - Registration: measurement/measurement_registration.md
       - Editing: measurement/measurement_edit.md
+      - Registration: measurement/measurement_registration.md
   - Ontology:
       - Introduction: ontology_search/ontology_search_introduction.md
   - Project:
       - Introduction: project/project_introduction.md
-      - Registration: project/project_registration.md
-      - Editing: project/project_edit.md
       - Access Management: project/project_access.md
+      - Editing: project/project_edit.md
+      - Registration: project/project_registration.md
+  - Raw data:
+      - Download Data: rawdata/raw_data_download.md
+      - Upload Data: rawdata/raw_data_upload.md
   - User:
-      - Registration: user/user_registration.md
-      - Password Reset: user/password_reset.md
       - Editing: user/user_edit.md
-  - Developers:
-      - API: developers/api.md
+      - Password Reset: user/password_reset.md
+      - Registration: user/user_registration.md
 extra_css:
   - stylesheets/extra.css
 extra:
@@ -50,6 +51,7 @@ extra:
       link: https://github.com/qbicsoftware/research-data-management
       name: research-data-management on Github
 markdown_extensions:
+  - attr_list
   - admonition
   - pymdownx.details
   - pymdownx.superfences:

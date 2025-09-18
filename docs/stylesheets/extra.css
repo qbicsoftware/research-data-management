@@ -1,5 +1,65 @@
 :root {
-  --md-primary-fg-color:        #006AF5;
+  --md-primary-fg-color: #006AF5;
   --md-primary-fg-color--light: #006AF5;
-  --md-primary-fg-color--dark:  #006AF5;
+  --md-primary-fg-color--dark: #006AF5;
+}
+
+.md-grid {
+  max-width: 70rem /*Replace Default max width of 61 rem to have more space on bigger screens */
+}
+
+.md-typeset h1 {
+  margin-bottom: 1.5rem;
+}
+
+.md-typeset h2 {
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.md-typeset h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.md-typeset h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.md-typeset h5,
+.md-typeset h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Add Margins to screenshots employed within a text
+CAUTION Don't change img natively,
+this will also change the spacing of any icons/emojis within the documentation */
+
+.md-typeset .screenshot {
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.md-typeset__table tr td:first-child {
+  font-weight: bold;
+  /*Default font size for all cells is by default 0.61rem*/
+}
+
+.md-typeset__table {
+  margin-bottom: 0; /*Default bottom margin for all tables is by default .5em*/
+}
+
+/* Add Zebra Striping*/
+.md-typeset__table tr:nth-child(even) {
+  background-color: #f5f5f5;  /* light gray for even rows */
+}
+
+.md-typeset__table tr:nth-child(odd) {
+  background-color: #ffffff;  /* white for odd rows */
+}
+
+.md-typeset__table thead tr {
+  background-color: #e0e0e0; /* white for header rows */
 }

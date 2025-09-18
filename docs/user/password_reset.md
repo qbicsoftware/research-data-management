@@ -1,6 +1,6 @@
 # Password Reset
 
-The data manager application provides an easy and secure solution
+The Data Manager application provides an easy and secure solution
 to set a new password should a password associated with a user account be lost.
 To reset your password the following steps have to be taken
 
@@ -12,7 +12,7 @@ To reset your password the following steps have to be taken
 
 From the login page you can navigate to a dedicated password reset view via the "Forgot password"
 link on the bottom of the login
-![login_password_reset](images/password_reset/password_reset.png)
+![login_password_reset](images/password_reset/password_reset.png){.screenshot}
 
 You should now be able to see the password reset view:
 

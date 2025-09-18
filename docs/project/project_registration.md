@@ -26,7 +26,7 @@ this step.
 Once all the required information has been provided you can navigate to the next step via the "next"
 button below
 
-![project_design](images/project_design.png)
+![project_design](images/project_design.png){.screenshot}
 
 ## Funding Information
 
@@ -35,7 +35,7 @@ sponsor.
 If this is not applicable for your project, you can go directly to the next step via the "next"
 button below. If you want change any adde information, previous steps in the dialog can always be reached by clicking the "back" button.
 
-![funding_information](images/funding_information.png)
+![funding_information](images/funding_information.png){.screenshot}
 
 ## Project Collaborators
 
@@ -52,7 +52,7 @@ Once all the required information has been provided you can navigate to the next
 button below
 or go to the previous step via the "back" button.
 
-![project_collaborators](images/project_collaborators.png)
+![project_collaborators](images/project_collaborators.png){.screenshot}
 
 ## Experimental Information
 
@@ -64,7 +64,7 @@ information of the involved organisms.
 To provide these details you can select one or more entries via the provided search fields.
 Start by providing at least 2 letters of your species, specimen or analyte in their respective inputs
 fields and possible selection options will appear. You are also able to select icons for the main species and specimen in your experiment. Otherwise, default icons will be shown.
-![experimental_information](images/experimental_information_search.png)
+![experimental_information](images/experimental_information_search.png){.screenshot}
 
 !!! info "Ontology id"
     Behind each selectable option within the species, specimen and analyte input fields
@@ -73,7 +73,7 @@ fields and possible selection options will appear. You are also able to select i
 Once all the required information has been provided you can create your project via the "confirm"
 button below or go to the previous step via the "back" button.
 
-![experimental_information](images/experimental_information.png)
+![experimental_information](images/experimental_information.png){.screenshot}
 
 After successful project creation, your project should appear in the project listing on your landing
 page.

@@ -13,15 +13,15 @@ or [register a new project](project_registration.md).
 From the landing page you can navigate into your project via the project list.
 Either click on the project card directly or make use of the search box
 to filter the project lists for the project of interest.
-![project_navigation_search](images/project_search.png)
+![project_navigation_search](images/project_search.png){.screenshot}
 
 Once you've found the project you can navigate into it
 by clicking on its respective project card, which will take you into the project summary view.
-![project_summary](images/project_summary.png)
+![project_summary](images/project_summary.png){.screenshot}
 
 To navigate between projects you can go back to the landing page via the home button on the top right.
 Alternatively you can use the application drawer to go to your most recent projects or switch back to your landing page.
-![project_summary](images/project_summary_drawer.png)
+![project_summary](images/project_summary_drawer.png){.screenshot}
 
 !!! info "Application drawer"
     The application drawer can be used to navigate between projects and experiments once a project has been selected.
@@ -29,4 +29,4 @@ Alternatively you can use the application drawer to go to your most recent proje
 
 To navigate between projects via the application drawer select your project of interest from the menu on the left 
 or select "go to projects" to go back to your landing page
-![project_summary](images/project_summary_drawer_opened.png)
+![project_summary](images/project_summary_drawer_opened.png){.screenshot}
