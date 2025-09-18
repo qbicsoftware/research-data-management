@@ -32,10 +32,10 @@ The following concepts are associated with an user account.
 #### Personal Access Token
 
 !!! warning
-Personal access token ensure that only authorized users are able to to download their data.
-<br/>For this reason never share your token with other users
+    Personal access token are used as app credentials. They are connected to the user that
+    created them and must not be shared.
 
-<br/>Check out our documentation to find out how
+Check out our documentation to find out how
 to [register](../rawdata/raw_data_download.md#generate-a-token)
 and [edit](../rawdata/raw_data_download.md#manage-tokens) your personal access tokens.
 
@@ -313,4 +313,3 @@ The following concepts are associated with a raw data dataset.
 | Registration date | 2025-04-28<br/> 08:24:25.000000@          | <span title="Yes">✅</span> | Date                                                                                                                                                                             | <details class="info">Timestamp when the raw data was uploaded within the Data Manager<summary>View Description</summary></details>                                                    |
 | Sample ids        | 00058431-df92-48a6-<br/>891b-671d714bb723 | <span title="Yes">✅</span> | List of Identifiers, <br/>validated against [RFC4122](https://www.rfc-editor.org/rfc/rfc5322">https://www.rfc-editor.org/rfc/rfc4122) <br/>format specification                  | <details class="info">List of Identifiers of the samples which were measured resulting in the raw data generation and upload.<summary>View Description</summary></details>             |
 | Sample name       | Lab_Id_01, Lab_Id_02                      | <span title="Yes">✅</span> | Text                                                                                                                                                                             | <details class="info">List of the human-readable name of the samples which were measured resulting in the raw data generation and upload.<summary>View Description</summary></details> |
-
