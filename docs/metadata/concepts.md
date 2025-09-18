@@ -32,10 +32,10 @@ The following concepts are associated with an user account.
 #### Personal Access Token
 
 !!! warning
-Personal access token ensure that only authorized users are able to to download their data.
-<br/>For this reason never share your token with other users
+    Personal access token are used as app credentials. They are connected to the user that
+    created them and must not be shared.
 
-<br/>Check out our documentation to find out how
+Check out our documentation to find out how
 to [register](../rawdata/raw_data_download.md#generate-a-token)
 and [edit](../rawdata/raw_data_download.md#manage-tokens) your personal access tokens.
 
@@ -210,9 +210,9 @@ registration [template sheet](templates/sample-metadata-template.xlsx).
 #### Batch
 
 !!! info
-    A batch can be defined as a group of samples processed together under the same
-    experimental conditions.
-    <br/>  This is done to document and minimize technical variation.
+A batch can be defined as a group of samples processed together under the same
+experimental conditions.
+<br/>  This is done to document and minimize technical variation.
 
 The following concepts are associated with a sample batch.
 
