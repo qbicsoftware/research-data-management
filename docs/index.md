@@ -35,19 +35,6 @@ the [Data Manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
 
 ## Update history
 
-### Release 1.8.0 - Confounding variable support
-
-<div style="font-size: smaller; color: rgba(122,122,122,1)">February 12th, 2025 </div>
-
-- Experimental design: The management of confounding variables on experiment and sample level is now possible
-- Ontology: Ontology terms are now queried from TIB's new [APIv3](https://terminology.tib.eu/ts/api) by default, which uses the improved OLS4 backend
-- Measurements: Technical replicate information is now shown for measurements
-- Measurements: Sample pool names are now displayed in the measurement overview
-- Metadata: Improved Excel file export that also displays the ontology terms CURIE
-
-Check out the full [release notes](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.8.0) on GitHub.
-
-
 ### Enable Asynchronous Sample and Experiment Update
 
 <div style="font-size: smaller; color: rgba(122,122,122,1)">June 10th, 2025 </div>
@@ -64,6 +51,20 @@ Check out the full [release notes](https://github.com/qbicsoftware/data-manager-
 - Keep him informed of the progress via dedicated toast notifications
 - Update the Data Manager to Java 21
 
+### Confounding variable support
+
+<div style="font-size: smaller; color: rgba(122,122,122,1)">February 12th, 2025 </div>
+
+- Experimental design: The management of confounding variables on experiment and sample level is now
+  possible
+- Ontology: Ontology terms are now queried from TIB's new [APIv3](https://terminology.tib.eu/ts/api)
+  by default, which uses the improved OLS4 backend
+- Measurements: Technical replicate information is now shown for measurements
+- Measurements: Sample pool names are now displayed in the measurement overview
+- Metadata: Improved Excel file export that also displays the ontology terms CURIE
+
+Check out the
+full [release notes](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.8.0) on GitHub.
 
 ### New project summary layout
 
@@ -98,7 +99,8 @@ Check out the full [release notes](https://github.com/qbicsoftware/data-manager-
 - Sample metadata: the term `Organism ID` has been renamed to `Biological Replicate` to match its
   purpose of use.
 - The Data Manager is now connected to the [TIB terminology service](https://terminology.tib.eu).  
-  The [queried ontologies](ontology_search/ontology_search_introduction.md) are restricted to life science specific ones. You miss one? Please let us
+  The [queried ontologies](ontology_search/ontology_search_introduction.md) are restricted to life
+  science specific ones. You miss one? Please let us
   know and submit
   a [feature request](https://github.com/qbicsoftware/data-manager-app/issues/new/choose). Currently
   included ontologies are:
