@@ -210,9 +210,9 @@ registration [template sheet](templates/sample-metadata-template.xlsx).
 #### Batch
 
 !!! info
-A batch can be defined as a group of samples processed together under the same
-experimental conditions.
-<br/>  This is done to document and minimize technical variation.
+    A batch can be defined as a group of samples processed together under the same
+    experimental conditions.
+    <br/>  This is done to document and minimize technical variation.
 
 The following concepts are associated with a sample batch.
 
@@ -313,4 +313,3 @@ The following concepts are associated with a raw data dataset.
 | Registration date | 2025-04-28<br/> 08:24:25.000000@          | <span title="Yes">✅</span> | Date                                                                                                                                                                             | <details class="info">Timestamp when the raw data was uploaded within the Data Manager<summary>View Description</summary></details>                                                    |
 | Sample ids        | 00058431-df92-48a6-<br/>891b-671d714bb723 | <span title="Yes">✅</span> | List of Identifiers, <br/>validated against [RFC4122](https://www.rfc-editor.org/rfc/rfc5322">https://www.rfc-editor.org/rfc/rfc4122) <br/>format specification                  | <details class="info">List of Identifiers of the samples which were measured resulting in the raw data generation and upload.<summary>View Description</summary></details>             |
 | Sample name       | Lab_Id_01, Lab_Id_02                      | <span title="Yes">✅</span> | Text                                                                                                                                                                             | <details class="info">List of the human-readable name of the samples which were measured resulting in the raw data generation and upload.<summary>View Description</summary></details> |
-
