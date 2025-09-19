@@ -15,7 +15,7 @@ the [Data Manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
 
 ### Orcid Linkage and Template Registration Overhaul
 
-<div style="font-size: smaller; color: rgba(122,122,122,1)">September 18th, 2025 </div>
+<div style="font-size: smaller; color: rgba(122,122,122,1)">September 19th, 2025 </div>
 
 - Orcid Linkage: If you didn't add your orcid account during account registration you can
   catch up now by linking your orcid account in your user profiles
