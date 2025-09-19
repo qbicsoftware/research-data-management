@@ -32,6 +32,7 @@ the [Data Manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
   dedicated search field
 - Download Urls for filtered raw data: Triggering the download of dataset URLS provides only the
   URLs of the filtered dataset
+
 Check out the full [release notes](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.11.0) on GitHub.
 
 ## Update history
