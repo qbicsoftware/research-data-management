@@ -6,16 +6,13 @@ the [Data Manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
 
 ## What's new?
 
-### Metadata Examples and Descriptions
-
-<div style="font-size: smaller; color: rgba(122,122,122,1)">September 19th, 2025 </div>
-
-- Glossary: Introduction of a glossary explaining the terms with example values in the research data
-  management documentation. Check it out [here](metadata/concepts.md)
-
 ### Orcid Linkage and Template Registration Overhaul
 
-<div style="font-size: smaller; color: rgba(122,122,122,1)">September 19th, 2025 </div>
+<div style="font-size: smaller; color: rgba(122,122,122,1)">September 18th, 2025 </div>
+
+📌 Checkout the complete [release notes](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.11.0) on GitHub.
+
+💡 Highlights:
 
 - Orcid Linkage: If you didn't add your orcid account during account registration you can
   catch up now by linking your orcid account in your user profiles
@@ -33,9 +30,15 @@ the [Data Manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
 - Download Urls for filtered raw data: Triggering the download of dataset URLS provides only the
   URLs of the filtered dataset
 
-Check out the full [release notes](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.11.0) on GitHub.
-
 ## Update history
+
+### Metadata Examples and Descriptions
+
+<div style="font-size: smaller; color: rgba(122,122,122,1)">September 18th, 2025 </div>
+
+- Glossary: Introduction of a glossary explaining the terms with example values in the research data
+  management documentation. Check it out [here](metadata/concepts.md)
+
 
 ### Enable Asynchronous Sample and Experiment Update
 
