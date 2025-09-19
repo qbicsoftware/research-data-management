@@ -8,7 +8,7 @@ the [Data Manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
 
 ### Metadata Examples and Descriptions
 
-<div style="font-size: smaller; color: rgba(122,122,122,1)">September 18th, 2025 </div>
+<div style="font-size: smaller; color: rgba(122,122,122,1)">September 19th, 2025 </div>
 
 - Glossary: Introduction of a glossary explaining the terms with example values in the research data
   management documentation. Check it out [here](metadata/concepts.md)
