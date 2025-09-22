@@ -135,11 +135,13 @@ to [register](../experiment/confounding-variables.md#define-confounding-variable
 and [edit](../experiment/confounding-variables.md#rename-a-confounding-variable) your experimental
 variables.
 
-Confounding variables belong to the concept [sample](#sample) and are associated as key-value pairs there.
+Values for confounding variables can be provided per [sample](#sample) and are defined in the
+experiment.
 
-| Concept       | Example                                   | Mandatory                  | Type                                                                                                                                              | Description                                                                                                                                                              |                            
-|---------------|-------------------------------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Name          | Time                                      | <span title="Yes">✅</span> | Text                                                                                                                                              | <details class="info">Unique name of the experimental variable<summary>View Description</summary></details>                                                              |
+| Concept | Example    | Mandatory                  | Type | Description                                                                                                      |                            
+|---------|------------|----------------------------|------|------------------------------------------------------------------------------------------------------------------|
+| Name    | Time       | <span title="Yes">✅</span> | Text | <details class="info">Unique name of the experimental variable<summary>View Description</summary></details>      |
+| Values  | [6pm, 8pm] | <span title="No">❌</span>  | List | <details class="info">Possible values of the confounding variables.<summary>View Description</summary></details> |
 
 ### Terminology
 
