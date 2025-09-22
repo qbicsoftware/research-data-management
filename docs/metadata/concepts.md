@@ -159,7 +159,7 @@ The following concepts are associated with the terminology terms.
 | Terminology term version | http://purl.obolibrary.org/obo/ncbitaxon/2023-09-19/ncbitaxon.owl                     | <span title="Yes">✅</span> | Identifier                                                                                                                   | <details class="info">Specific Version of the ontology providing the term<summary>View Description</summary></details>            |
 
 For more information check the documentation of
-the [ontology service API](https://www.ebi.ac.uk/ols4/)
+the [ontology service API](https://terminology.tib.eu/ts/)
 
 ### Sample
 
