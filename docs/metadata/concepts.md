@@ -6,7 +6,7 @@
 |-----------------------------|--------------------------------------------------------------------------------|
 | [User](#user)               | Learn more about the metadata of your user account and its authentication      | 
 | [Project](#project)         | Information about a projects metadata such as contact, funding and objective   | 
-| [Ontology](#ontology)       | Find out more about the ontology terms employed within experiments and samples | 
+| [Terminology](#terminology) | Find out more about the ontology terms employed within experiments and samples | 
 | [Experiment](#experiment)   | Everything related to the metadata within an experimental design               | 
 | [Sample](#sample)           | Detailed information concerning the metadata of sample and batches             | 
 | [Measurement](#measurement) | Everything related to NGS and PxP measurement metadata                         | 
@@ -142,13 +142,13 @@ The following concepts are associated with a confounding variables.
 |---------------|-------------------------------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Name          | Time                                      | <span title="Yes">✅</span> | Text                                                                                                                                              | <details class="info">Unique name of the experimental variable<summary>View Description</summary></details>                                                              |
 
-### Ontology
+### Terminology
 
 Visit our documentation to find out how
 to [search](../ontology_search/ontology_search_introduction.md#ontology-search-introduction)
-for your ontology terms of interest.
+for your terminology of interest.
 
-The following concepts are associated with the ontology terms.
+The following concepts are associated with the terminology terms.
 
 | Concept               | Example                                                                               | Mandatory                  | Type                                                                                                                         | Description                                                                                                                       |                     
 |-----------------------|---------------------------------------------------------------------------------------|----------------------------|------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -156,8 +156,8 @@ The following concepts are associated with the ontology terms.
 | Description           | A protein complex <br/>that plays a role <br/>in neurotransmitter-gated ion transport | <span title="Yes">✅</span> | Text                                                                                                                         | <details class="info">Description providing explanation for the term<summary>View Description</summary></details>                 |
 | Label                 | 5-HT3 Receptor                                                                        | <span title="Yes">✅</span> | Text                                                                                                                         | <details class="info">Common human-readable label of the term<summary>View Description</summary></details>                        |
 | Name                  | NCIT:C105979                                                                          | <span title="Yes">✅</span> | Identifier, structured as prefix:reference <br/>as seen in the [W3C](https://www.w3.org/TR/curie/) <br/>format specification | <details class="info">The OBO-style identifier, usually in the form PREFIX:ID<summary>View Description</summary></details>        |
-| Ontology term IRI     | http://purl.obolibrary.org/obo/ncbitaxon.owl                                          | <span title="Yes">✅</span> | Identifier                                                                                                                   | <details class="info">Unique resource identifier for the ontology providing the term<summary>View Description</summary></details> |
-| Ontology term version | http://purl.obolibrary.org/obo/ncbitaxon/2023-09-19/ncbitaxon.owl                     | <span title="Yes">✅</span> | Identifier                                                                                                                   | <details class="info">Specific Version of the ontology providing the term<summary>View Description</summary></details>            |
+| Terminology term IRI  | http://purl.obolibrary.org/obo/ncbitaxon.owl                                          | <span title="Yes">✅</span> | Identifier                                                                                                                   | <details class="info">Unique resource identifier for the ontology providing the term<summary>View Description</summary></details> |
+| Terminology term version | http://purl.obolibrary.org/obo/ncbitaxon/2023-09-19/ncbitaxon.owl                     | <span title="Yes">✅</span> | Identifier                                                                                                                   | <details class="info">Specific Version of the ontology providing the term<summary>View Description</summary></details>            |
 
 For more information check the documentation of
 the [ontology service API](https://www.ebi.ac.uk/ols4/)
