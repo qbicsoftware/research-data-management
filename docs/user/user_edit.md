@@ -44,6 +44,6 @@ Login to your ORCID account and grant the Data Manager application to access you
 Should you not have an ORCID account press the "register_now" link
 within the ORCID login and follow the provided steps to register a new ORCID account.
 
-If everything went well you can see your the newly linked orcid account within your profile page
+After linking your account, you can see the linked account within your profile page.
 
 ![orcid_registration_authorize_access.png](images/edit_user_information/edit_user_information_orcid_account_linked.png){.screenshot}
