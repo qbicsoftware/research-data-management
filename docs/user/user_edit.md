@@ -27,3 +27,23 @@ Once you're satisfied with your new username, click the "Save" button.
 The system will check if the username is unique and not already associated 
 with another account and if that is the case update your username. 
 ![edit_user_information_changed.png](images/edit_user_information/edit_user_information_changed.png){.screenshot}
+
+## Link Orcid
+
+Within this page, you can link your [orcid account](https://www.orcid.org) by clicking on the blue highlighted "link ORCiD account".
+![link_orcid_account.png](images/edit_user_information/edit_user_information_link_orcid_account.png){.screenshot}
+
+Clicking on "link ORCiD account" redirects you to the ORCID login page.
+
+![orcid_login](images/edit_user_information/link_orcid_login.png){.screenshot}
+
+Login to your ORCID account and grant the Data Manager application to access your publicly available ORCID by pressing the "authorize access" button.
+
+![orcid_registration_authorize_access.png](images/edit_user_information/edit_user_information_orcid_linkage_authorize_access.png){.screenshot}
+
+Should you not have an ORCID account press the "register_now" link
+within the ORCID login and follow the provided steps to register a new ORCID account.
+
+After linking your account, you can see the linked account within your profile page.
+
+![orcid_registration_authorize_access.png](images/edit_user_information/edit_user_information_orcid_account_linked.png){.screenshot}
