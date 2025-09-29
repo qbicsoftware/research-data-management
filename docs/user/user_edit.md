@@ -33,7 +33,7 @@ with another account and if that is the case update your username.
 Within this page, you can link your [orcid account](https://www.orcid.org) by clicking on the blue highlighted "link ORCiD account".
 ![link_orcid_account.png](images/edit_user_information/edit_user_information_link_orcid_account.png){.screenshot}
 
-This will redirect you to the ORCID login page
+Clicking on "link ORCiD account" redirects you to the ORCID login page.
 
 ![orcid_login](images/edit_user_information/link_orcid_login.png){.screenshot}
 
