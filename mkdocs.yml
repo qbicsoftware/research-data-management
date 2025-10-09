@@ -36,7 +36,7 @@ nav:
   - Raw data:
       - Download Data: rawdata/raw_data_download.md
       - Upload Data: rawdata/raw_data_upload.md
-      - Request Access to Server: rawdata/upload_server_access.md
+      - Request Access to Server: rawdata/raw_data_request_server_access.md
   - User:
       - Editing: user/user_edit.md
       - Password Reset: user/password_reset.md

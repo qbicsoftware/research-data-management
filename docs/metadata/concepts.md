@@ -269,7 +269,7 @@ registration [template sheet](templates/proteomics_measurement_registration_shee
 
 ### Raw Data
 
-Visit our documentation to find out how to [upload](../rawdata/upload_server_access.md)
+Visit our documentation to find out how to [upload](../rawdata/raw_data_request_server_access.md)
 or [download](../rawdata/raw_data_download.md) your raw data.
 
 The following concepts are associated with a raw data dataset.

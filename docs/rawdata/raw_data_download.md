@@ -1,6 +1,6 @@
 # Raw Data Introduction
 
-The raw data summary view shows detailed information about the raw data already [registered](upload_server_access.md) for the measurements within your experiment.
+The raw data summary view shows detailed information about the raw data already [registered](raw_data_request_server_access.md) for the measurements within your experiment.
 Additionally, it enables you to generate the [URLs](#raw-data-url-generation) necessary
 to start the command line based [raw data download](#download-raw-data). 
 
