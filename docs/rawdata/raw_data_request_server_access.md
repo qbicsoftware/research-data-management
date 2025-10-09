@@ -1,6 +1,6 @@
-# Request Access as a data submitter
+# Request Server Access
 
-This section gives an overview on how to submit data as an external party.
+This section gives an overview on how to request access to our upload server to submit data from outside of the University Tübingen network.
 
 !!! tip
     Should you be a member of the university of Tübingen you can immediately [upload your data](raw_data_upload.md) and skip this process.
