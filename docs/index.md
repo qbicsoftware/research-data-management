@@ -6,7 +6,7 @@ the [Data Manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
 
 ## What's new?
 
-### Documentation Update - Data Submission from outside the University Tübingen network
+### Data Submission from outside the University Tübingen network
 
 <div style="font-size: smaller; color: rgba(122,122,122,1)">October 10th, 2025 </div>
 
