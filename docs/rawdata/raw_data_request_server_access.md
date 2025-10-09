@@ -13,7 +13,7 @@ This section gives an overview on how to request access to our upload server to 
 
 ## Procedure
 
-To minimize security risk. access to our upload server is restricted to temporary whitelisted IP addresses from outside of the university network.
+To minimize security risk, access to our upload server is restricted to temporary whitelisted IP addresses from outside of the university network.
 !!! note
     Please make sure to provide a **public** and **static** IP address from the machine you want to connect from.
     Check with your IT department on details on how to obtain such an IP address.
