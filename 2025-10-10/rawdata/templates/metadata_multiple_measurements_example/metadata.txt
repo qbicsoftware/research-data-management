@@ -1,0 +1,2 @@
+MSQTEST001AL-437845761848053  my-registration-batch
+MSQTEST002AT-437845764676875  my-registration-batch2
