@@ -6,11 +6,25 @@ the [Data Manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
 
 ## What's new?
 
+### Data Submission from outside the University Tübingen network
+
+<div style="font-size: smaller; color: rgba(122,122,122,1)">October 10th, 2025 </div>
+
+- External Data Submission: Check out how
+  to [request access ](rawdata/raw_data_request_server_access.md)
+  and [submit your data](rawdata/raw_data_upload.md) from outside the University Tübingen network
+- Orcid Linkage documentation: Learn how to [link your orcid account](user/user_edit.md#link-orcid)
+  within the data manager
+
+## Update history
+
 ### Orcid Linkage and Template Registration Overhaul
 
 <div style="font-size: smaller; color: rgba(122,122,122,1)">September 18th, 2025 </div>
 
-📌 Checkout the complete [release notes](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.11.0) on GitHub.
+📌 Checkout the
+complete [release notes](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.11.0) on
+GitHub.
 
 💡 Highlights:
 
@@ -30,15 +44,12 @@ the [Data Manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
 - Download Urls for filtered raw data: Triggering the download of dataset URLS provides only the
   URLs of the filtered dataset
 
-## Update history
-
 ### Metadata Examples and Descriptions
 
 <div style="font-size: smaller; color: rgba(122,122,122,1)">September 18th, 2025 </div>
 
 - Glossary: Introduction of a glossary explaining the terms with example values in the research data
   management documentation. Check it out [here](metadata/concepts.md)
-
 
 ### Enable Asynchronous Sample and Experiment Update
 

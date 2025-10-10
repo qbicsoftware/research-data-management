@@ -3,16 +3,26 @@
 After creating measurements in the Data Manager, you can upload measured data to our platform.
 This section gives an overview on how to upload data to measurements from QBiC's Data Manager.
 
+!!! info
+    If you are not a member of the University of Tübingen, please [request access as a data submitter](raw_data_request_server_access.md) 
+
 ## Prerequisites
 
-The following is required in order to successfully execute the measurement data upload.
+The following is required in order to successfully execute the measurement data upload dependent on your affiliation.
 
-- A connection to the University Of Tübingen network (
-  e.g. [using the University VPN](https://uni-tuebingen.de/en/facilities/zentrum-fuer-datenverarbeitung/services/network-services/network-access/remote-access-vpn/))
-- An LDAP account of the University Of Tübingen
-- Access to the project of interest
-- OpenSSH package or a SFTP **client** software (e.g. [FileZilla](https://filezilla-project.org/download.php?type=client)
-  or [WinSCP](https://winscp.net))
+=== "University Tübingen member"
+    - A connection to the University Of Tübingen network (
+    e.g. [using the University VPN](https://uni-tuebingen.de/en/facilities/zentrum-fuer-datenverarbeitung/services/network-services/network-access/remote-access-vpn/))
+    - An LDAP account of the University Of Tübingen
+    - Access to the project of interest
+    - OpenSSH package or a SFTP **client** software (e.g. [FileZilla](https://filezilla-project.org/download.php?type=client)
+    or [WinSCP](https://winscp.net))
+
+=== "External data submitter"
+    - [Granted access and authorization to our upload server](raw_data_request_server_access.md)
+    - Access to the project of interest
+    - OpenSSH package or a SFTP **client** software (e.g. [FileZilla](https://filezilla-project.org/download.php?type=client)
+    or [WinSCP](https://winscp.net))
 
 ## Process Overview
 
@@ -132,10 +142,19 @@ measurement data registration, select `SFTP - SSH File Transfer Protocol` and
 enter `upload.qbic.uni-tuebingen.de` into the `Host` field.
 ![An image showing the users site manager highlighting the host and connection field](images/upload/raw_data_upload_site_manager_host-fields.png){.screenshot}
 
-You can log in with your _University of Tübingen_ credentials. Enter your university user account
-into the `User` field.
-![An image showing the users site manager highlighting the user and password field](images/upload/raw_data_upload_site_manager_credential-fields.png){.screenshot}
-**Connect to the server:** Make sure you are in the network of the _University of Tübingen_. You can connect to the server by pressing `Connect` in
+Afterwards, choose the affiliation dependent login method to connect to our upload server. 
+
+=== "University Tübingen member"
+    Login with your _University of Tübingen_ credentials. Enter your university provided username
+    into the `User` field.
+    ![An image showing the users site manager highlighting the user and password field](images/upload/raw_data_upload_site_manager_credential-fields.png){.screenshot}
+
+=== "External data submitter"
+    Login with your username and key file. Enter your username
+    into the `User` field and select your private key file from within your local `.ssh` directory by pressing the browse button.
+    ![An image showing the users site manager highlighting the user field](images/upload/raw_data_upload_site_manager_submitter_credential_fields.png){.screenshot}
+
+**Connect to the server:** You can connect to the server by pressing `Connect` in
 the _Site Manager_. After connecting to the server, _FileZilla_ shows you the contents of your home directory on the server side.
 ![An image showing the users home folder. You can see three directories named registration, error and upload.](images/upload/raw_data_upload_remote_filesystem.png){.screenshot}
 !!! warning
@@ -165,38 +184,43 @@ The OpenSSH SFTP program is supported natively by most operating systems.
 In this section we will go through the process of connecting to our server
 using the [OpenSSH SFTP](https://man.openbsd.org/sftp) program.
 
+!!! note
+    This section requires commandline knowledge within your operating system.
+    We recommend to get in contact with your local IT department should you need assistance
+    or upload your data via a [dedicated sftp client](#upload-your-dataset-via-sftp-client)
+
 ### Install OpenSSH SFTP
 
 #### Linux/Mac
 Linux and Mac systems do typically have the OpenSSH package containing SFTP pre-installed.
 Should this not be the case, try to install the openSSH package with the package manager employed by your system.
-We recommend to get in contact with your local IT department should you need assistance.
 
 #### Windows
 Newer Windows Versions (Windows10 version 1803 and newer and Windows 11) do typically have the OpenSSH package containing SFTP preinstalled.
-Should this not be the case, check your system settings to see if the **OpenSSH server feature** is installed within the windows optional features. 
-We recommend to get in contact with your local IT department should you need assistance.
+Should this not be the case, check your system settings to see if the **OpenSSH server feature** is installed within the windows optional features.
 
 ### Connect and upload your dataset 
 
-!!! note
-    This section requires basic command line knowledge of your operating system. 
+!!! tip
+
     Check the OpenSSH sftp [manpage](https://man.openbsd.org/sftp) for information on how to use the sftp program.
 
 Start by opening the command line within your operating system of choice. 
 Next navigate to the local working directory containing the dataset you wish to upload.
-From within this directory connect to our upload server with the **sftp** command, replacing <your-user> with your university account credentials:
+From within this directory connect to our upload server with the **sftp** command, replacing <your-user> with your university account credentials 
+or tbe username granted to you after [requesting access](raw_data_request_server_access.md) to our upload server from outside the university network:
 
-``` bash
-sftp <your-user>@upload.qbic.uni-tuebingen.de
-```
-Upon successful connection you will be prompted for your university account password.
+=== "External Data Submitter"
+    ``` bash
+    sftp -i <your private key file> <username>@upload.qbic.uni-tuebingen.de
+    ```
 
-!!! Warning
-    Keep in mind that you need to be within the university network and 
-    have a valid university account to connect to our upload server 
+=== "University Tübingen Member"
+    ``` bash
+    sftp <username>@upload.qbic.uni-tuebingen.de
+    ```
 
-If everything goes well, you'll be connected to the remote working directory within our upload server.
+If everything goes well, you'll be connected to your remote home directory within our upload server.
 You can check out the directory structure of this directory with the following **ls** command:
 
 ``` bash
