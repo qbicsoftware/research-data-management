@@ -1,111 +1,80 @@
-# Sample Batch
-[//]: # (What is a sample batch?)
-## Definition
+# Sample batches
 
-A sample batch forms a logical container of samples that are going to be shipped together to the
-measurement facility with the intention of being processed under the same conditions.
+## What is a sample batch?
 
-[//]: # (What is the purpose of grouping samples into batches?)
-## Intention 
+A sample batch is a group of samples shipped together to a measurement facility and processed under the same conditions. Tracking batches is how you identify and correct for **batch effects** — technical variation introduced when samples are processed at different times or under different conditions.
 
-Grouping and processing samples as distinct sample batches is key in properly tracking and avoiding batch effects.
-Click [here](https://pmc.ncbi.nlm.nih.gov/articles/PMC3880143/) for a quick introduction into batch effect and their impact on research data. 
+Undocumented batches are one of the most common causes of irreproducible results. [Learn more about batch effects](https://pmc.ncbi.nlm.nih.gov/articles/PMC3880143/).
 
-[//]: # (How do I add samples to my experiment?)
 ## Creating and registering sample batches
 
-We call the process of adding samples to an experiment "sample registration". 
-When you want to link samples to an experiment you need to register metadata for those samples.
+1. In the experiment summary, click **Register sample batch**.
 
-To **start** with the sample registration process, click on the button `Register sample batch` to open the sample registration dialog.
+2. **Download the template** — an Excel spreadsheet with one row per sample.
 
-Please go ahead and **download the metadata template file** from the dialog.
-In this file you can fill out information for the samples you want to register. 
+    !!! note "Mandatory fields"
+        Columns marked with an asterisk (`*`) are mandatory.
 
-!!! note
-    **Mandatory** information for the sample registration is marked by an asterix `*` after the column name.
+3. Fill in the template. For each sample, record its species, specimen, analyte, experimental group, and any other required details.
 
-**Once you filled out** all the information, you can go back to the dialog. In case you closed the dialog, simply re-open it.
-</br>
-Please go ahead and **upload your filled metadata file** in the dialog.
-Once the Data Manager validated the information in your file,
-go ahead and **choose a name for your batch**.
-</br>
-Once you named your batch and uploaded the file with the necessary information, go ahead and **click the
-`Register`** button. The Data Manager will now go through the process of creating samples within your
-experiment.
+    !!! tip "Sample IDs are assigned automatically"
+        Don't fill in the Sample ID column. The system generates a unique, permanent ID for each sample (e.g. `Q2ABCD001AA`) when you register the batch.
 
-!!! info "Email Notification"
-    Upon successful batch registration,
-    all [project collaborators](../project/project_access.md#add-collaborator) will automatically receive
-    an email with a link to the created batch.
+4. Upload the completed file in the registration dialog. The system validates it and highlights any errors.
 
-After the Data Manager is done registering your samples, you can **close** the dialog **by clicking the
-`Finish`** button.
-Now samples annotated with the provided metadata are registered to your experiment. You can see the
-newly created batch next to the other batches in the samples view.
+5. Enter a **batch name** (e.g. "Pilot cohort — January 2026").
 
-!!! info "SampleId"
-    Upon successful batch registration, each sample will be associated with a unique SampleId 
-    distinguishing it from other samples within the system
-    an email with a link to the created batch.
+6. Click **Register**. The system processes your samples in the background.
 
-[//]: # (How do I edit existing samples in my experiment?)
+7. Click **Finish** when done.
+
+!!! info "Email notification"
+    All [project collaborators](../project/project_access.md#add-collaborator) receive an email with a link to the new batch.
+
+??? info "Sample ID format"
+    Sample IDs follow the pattern `Q2XXXXNNNCC`: the six-character project code, a three-digit running number, and a two-character random suffix (e.g. `Q2ABCD001AA`). They are permanent and cannot be changed after registration.
+
 ## Editing sample batches
 
-You might need to edit sample metadata after registering the sample batch to the experiment.
-Editing sample information is restricted to editing the sample metadata. Adding or removing samples from a batch is not possible.
+You can update sample metadata after registration. You cannot add or remove individual samples from a batch.
 
-To **start** with the sample edit process, click on the edit button next to the batch you want to edit. This will open the batch editing dialog.
+1. Click the **edit** button next to the batch.
 
-!!! info "Project role"
-    Should you not see the action column,   
-    please make sure that you have been granted the "write" or "admin" role to it by the project owner/admin.
+    !!! info "Required role"
+        You need **write** or **admin** role.
 
-Please go ahead and **download the metadata template file** from the dialog.
-In this file you can fill out information for the samples you want to register. 
+2. **Download the current metadata** — the template is pre-filled with existing values.
 
-!!! note
-    **Mandatory** information for the sample editing is marked by an asterix `*` after the column name.
+3. Make your changes. Grey columns (e.g. `Sample Id`) are locked — changes there are ignored.
 
-Note that the information in greyed out columns such as e.g. `Sample Id` is immutable and changes made within will not be registered during the sample editing process.
+    !!! note "Mandatory fields"
+        Columns marked with `*` remain mandatory.
 
-!!! note
-    Information shown in greyed out columns are immutable and cannot be changed. 
+4. Upload the edited file, optionally rename the batch, and click **Edit batch**.
 
-**Once you filled out** all the information, you can go back to the dialog. In case you closed the dialog, simply re-open it.
-</br>
-Please go ahead and **upload your filled metadata file** in the dialog.
-Once the Data Manager validated the information in your file,
-go ahead and **choose a name for your batch** if you want to change it.
-</br>
-Once you named your batch and uploaded the file with the necessary information, go ahead and **click the
-`Edit batch`** button. The Data Manager will now go through the process of updating the sample information within your
-experiment.
+5. Click **Finish**.
 
-After the Data Manager is done registering your samples, you can **close** the dialog **by clicking the
-`Finish`** button.
+## Deleting a sample batch
 
-[//]: # (How do I delete existing samples in my experiment?)
-## Delete a sample batch
+!!! danger "This is irreversible"
+    Deleting a batch permanently removes all sample metadata for every sample in that batch.
 
-!!! warning "Batch Deletion"
-    Keep in mind, that deleting a batch will also delete all sample metadata of the samples within the batch
+!!! warning "Measurements must be removed first"
+    A batch can only be deleted if none of its samples are referenced by a measurement. [Delete the measurements](../measurement/measurement_edit.md#delete-measurements) first.
 
-To **start** with the sample batch deletion process, click on the **`delete`** button next to the batch in question within the action column.
+1. Click the **delete** button next to the batch.
 
-!!! info "Project role"
-    Should you not see the action column,   
-    please make sure that you have been granted the "write" or "admin" role to it by the project owner/admin.
+    !!! info "Required role"
+        You need **write** or **admin** role.
 
-This will open the batch deletion dialog requiring **confirmation** of the batch deletion process by clicking the **`Confirm`** button.
+2. Click **Confirm** in the dialog.
 
-!!! warning "Attached Measurements"
-    Keep in mind, that batches can only be deleted if none of the samples within the batch have been used in a measurement.)
-    Otherwise, you need to delete the measurements in question before the batch can be deleted.
-
-[//]: # (How do I download sample metadata)
 ## Download sample metadata
 
-To **download** the sample metadata for all registered samples click on the **`Download sample metadata`** button.
-This will export all registered metadata as an `.xlsx` file to your local download directory.
+Click **Download sample metadata** to export all registered sample metadata as an `.xlsx` file. This is useful for copying sample IDs into [measurement registration spreadsheets](../measurement/measurement_registration.md).
+
+---
+
+## What's next
+
+➡ [Register measurements](../measurement/measurement_registration.md) · [Back to experiment](../experiment/experiment_introduction.md)

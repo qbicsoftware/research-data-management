@@ -1,32 +1,39 @@
-# Project Introduction
+# Projects
 
-After a successful login you will be redirected to your personal landing page.
-From there, you can either [navigate](#project-navigation) into your project of interest
-or [register a new project](project_registration.md).
+A project is the top-level container in the Data Manager. It holds everything related to one research study — experiments, samples, measurements, and raw data — all linked together and searchable.
 
-!!! info "Project access"
-    Should you not see your project of interest, 
-    please make sure that you have been granted access to it by the project owner
+After logging in, your landing page shows all projects you have access to.
 
-## Project Navigation
+## Find and open a project
 
-From the landing page you can navigate into your project via the project list.
-Either click on the project card directly or make use of the search box
-to filter the project lists for the project of interest.
-![project_navigation_search](images/project_search.png){.screenshot}
+Scroll through the project list or type into the search box to filter by name or code.
 
-Once you've found the project you can navigate into it
-by clicking on its respective project card, which will take you into the project summary view.
-![project_summary](images/project_summary.png){.screenshot}
+![Project list with search](images/project_search.png){.screenshot}
 
-To navigate between projects you can go back to the landing page via the home button on the top right.
-Alternatively you can use the application drawer to go to your most recent projects or switch back to your landing page.
-![project_summary](images/project_summary_drawer.png){.screenshot}
+Click a project card to open the **project summary view**.
+
+![Project summary](images/project_summary.png){.screenshot}
+
+!!! info "Can't find your project?"
+    Ask the project owner to [grant you access](project_access.md).
+
+## Navigate between projects
+
+**Home button** (top right): Returns you to the project list.
+
+**Application drawer** (top left): Lists your recent projects and experiments. Open it with the menu button.
+
+![Application drawer](images/project_summary_drawer.png){.screenshot}
+
+Select a project from the drawer to jump straight to it, or click **Go to projects** to return to the full list.
+
+![Drawer expanded](images/project_summary_drawer_opened.png){.screenshot}
 
 !!! info "Application drawer"
-    The application drawer can be used to navigate between projects and experiments once a project has been selected.
-    It can be opened and closed via it's button on the top left.
+    The drawer also lets you switch between experiments within a project without going back to the project summary.
 
-To navigate between projects via the application drawer select your project of interest from the menu on the left 
-or select "go to projects" to go back to your landing page
-![project_summary](images/project_summary_drawer_opened.png){.screenshot}
+---
+
+## What's next
+
+➡ [Register a new project](project_registration.md) · [Edit project details](project_edit.md) · [Manage access](project_access.md)

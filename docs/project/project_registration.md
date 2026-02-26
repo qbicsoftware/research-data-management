@@ -1,84 +1,59 @@
-# Project Registration
+# Register a project
 
-To register a new project the following steps have to be taken:
+The registration wizard walks you through four steps. Click **Create project** at the top of your project list to begin.
 
-1. Trigger the project creation dialog
-2. Provide the minimal required information for the following steps within the dialog:
-    1. [Project Design](#project-design)
-    2. [Funding Information (Optional)](#funding-information)
-    3. [Project Collaborators](#project-collaborators)
-    4. [Experimental Information](#experimental-information)
+## Project design
 
-You can start the project registration process by clicking the create button on top of your project list within your personal landing page.
-This will open the project registration dialog which will guide you through the individual steps necessary to successfully register a new project.
+Provide a **project title** and **objective** (up to 2,000 characters).
 
-Following is a detailed guide for each of these steps:
-
-## Project Design
-
-The information provided in this step serves as the basic outline of your project.
-
-Therefore, it is mandatory that you provide a concise project title and project description in
-this step.
 !!! info "Project code"
-    Each created project will be assigned a unique 5 letter project code, distinguishing it from other projects within the system.
+    Each project is assigned a unique six-character alphanumeric code (e.g. `Q2ABCD`). This code appears in every sample ID and measurement ID downstream — treat it as your project's permanent address.
 
-Once all the required information has been provided you can navigate to the next step via the "next"
-button below
+Click **Next**.
 
-![project_design](images/project_design.png){.screenshot}
+![Project design](images/project_design.png){.screenshot}
 
-## Funding Information
+## Funding information
 
-In this step provide the grant label and identifier if your project has been funded by a third party
-sponsor.
-If this is not applicable for your project, you can go directly to the next step via the "next"
-button below. If you want change any adde information, previous steps in the dialog can always be reached by clicking the "back" button.
+If your project is funded, enter the **grant name** (e.g. DFG) and **grant identifier**. Both fields are optional. Click **Next** to continue, or **Back** to revise.
 
-![funding_information](images/funding_information.png){.screenshot}
+![Funding](images/funding_information.png){.screenshot}
 
-## Project Collaborators
+## Project collaborators
 
-In this step you are able to specify the collaborating parties associated with your project.
-The minimum required information consists of declaring the name and email address of the principal
-investigator
-instigating the project and the project manager handling the projects' execution.
-Finally, you can optionally define the name and email address of the responsible party, which should
-be contacted should project specific questions arise.
-For each of these roles you can of course also assign yourself via a press of the checkbox above
-each role.
+| Role | Required | Description |
+|---|---|---|
+| **Principal investigator** | ✅ | Lead researcher |
+| **Project manager** | ✅ | Day-to-day coordinator |
+| **Responsible person** | ⬜ | Contact for questions |
 
-Once all the required information has been provided you can navigate to the next step via the "next"
-button below
-or go to the previous step via the "back" button.
+For each role, enter a full name and email. Tick the checkbox above a role to assign yourself. Click **Next**.
 
-![project_collaborators](images/project_collaborators.png){.screenshot}
+![Collaborators](images/project_collaborators.png){.screenshot}
 
-## Experimental Information
+## Experimental information
 
-The final step during project creation consists of creating the basic outline of your first
-experiment
-associated with your project.
-For this you need to specify the name of the experiment, and species, specimen and analyte
-information of the involved organisms.
-To provide these details you can select one or more entries via the provided search fields.
-Start by providing at least 2 letters of your species, specimen or analyte in their respective inputs
-fields and possible selection options will appear. You are also able to select icons for the main species and specimen in your experiment. Otherwise, default icons will be shown.
-![experimental_information](images/experimental_information_search.png){.screenshot}
+Set up your first experiment. Provide an **experiment name** and select at least one entry for:
 
-!!! info "Ontology id"
-    Behind each selectable option within the species, specimen and analyte input fields
-    , the unique ontology identifier from one of several ontologies is stored.
+- **Species** — the organism(s) your samples come from
+- **Specimen** — the tissue or material type
+- **Analyte** — the molecular class being measured
 
-Once all the required information has been provided you can create your project via the "confirm"
-button below or go to the previous step via the "back" button.
+Type at least 2 characters in each search field to see matching terms from standardised life science ontologies.
 
-![experimental_information](images/experimental_information.png){.screenshot}
+![Experiment search](images/experimental_information_search.png){.screenshot}
 
-After successful project creation, your project should appear in the project listing on your landing
-page.
-To navigate into your project, you can follow the steps outlined
-in [project navigation](project_introduction.md#project-navigation)
+!!! info "What are these codes?"
+    Each option is backed by a standardised identifier called a CURIE (e.g. `NCBITaxon:9606` for *Homo sapiens*). You don't need to memorise them — just search by name. The system stores the code automatically, which means your data can be understood and compared by anyone, anywhere.
 
-Finally, after successful project registration you can also upload project related files such as quality control and offers as outlined
-in [project edit](project_edit.md#upload-of-project-related-files)
+Optionally select an icon for the species and specimen. Click **Confirm** to create the project.
+
+![Experiment completed](images/experimental_information.png){.screenshot}
+
+Your project appears in the project list. You can now [upload supporting files](project_edit.md#upload-project-related-files) like offers and QC reports.
+
+---
+
+## What's next
+
+➡ [Set up experimental variables](../experiment/experiment_creation.md) · [Invite collaborators](project_access.md)

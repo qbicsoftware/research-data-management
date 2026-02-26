@@ -1,45 +1,38 @@
-# Ontology Search Introduction
+# Ontology search
 
-The ontology search functionality can be accessed from within a project via the application drawer.
-Therefore, start by [navigating](#ontology-navigation) to the ontology summary view.
+The ontology search helps you find standardised scientific terms — and their unique codes — for use in experiment and measurement registration.
 
-The ontology search allows you to [search](#ontology-search) for ontology information
-within our database.
+**What's an ontology?** A shared scientific dictionary: an agreed list of terms with unique identifiers, maintained by the research community. Using these terms means your data can be understood and compared by anyone.
 
-## Ontology Navigation
+## Navigate to the search
 
-From the landing page you can navigate into a project via the project list by clicking on the
-project card directly.
+From any project view, open the application drawer (top left) and select **Ontology search**.
 
-Once within the project open the application drawer via the button on the top left of the
-application
-and select "ontology search" to navigate to the ontology summary view.
-![ontology_summary.png](images/ontology_search_summary.png){.screenshot}
+![Ontology search](images/ontology_search_summary.png){.screenshot}
 
-## Ontology Search
+## Search for a term
 
-Start by providing at least 2 letters in the ontology search field of the entity for which you want
-to retrieve the ontology information.
-Once done so a card list showing information for all ontology entries which contain the provided
-letters will appear.
-![ontology_search_triggered_without_species.png](images/ontology_search_triggered_without_species.png){.screenshot}
+Type at least 2 characters in the search field. A list of matching terms appears with their names, descriptions, and identifiers.
 
-Alternatively the ontology search can also be limited to only look for species specific information.
-![ontology_search_triggered_with_species.png](images/ontology_search_triggered_with_species.png){.screenshot}
+![Search results](images/ontology_search_triggered_without_species.png){.screenshot}
 
-!!! note "Enable species specific search"
-The application provides access to species terminologies for the
-complete [tree of life](https://www.ncbi.nlm.nih.gov/taxonomy) provided by NCBI.
-If activated, only the species taxonomy is queried.
+### Species-only search
 
-??? note "Why does the search not include species?"
-We currently host our own database instance for efficient queries of species to support
-faster lookups. Also, the TIB terminology service, which we have integrated for all other term lookups,
-does not provide the tree of life, yet.
-So they are two independent systems that we request information from here
+Toggle the species filter to search only the [NCBI taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy) (the complete tree of life).
 
-Additionally, it allows you to copy the
-ontology [CURIE](https://link.springer.com/article/10.1007/s12599-022-00744-0),
-which can be especially handy
-during [measurement registration](../measurement/measurement_registration.md)
-![ontology_search_curie_copie.gif](images/ontology_search_copy_curie.png){.screenshot}
+![Species search](images/ontology_search_triggered_with_species.png){.screenshot}
+
+!!! note "Why a separate species search?"
+    Species terms come from NCBI's taxonomy database, which is hosted separately from the [TIB Terminology Service](https://terminology.tib.eu) used for other ontologies. The two systems are queried independently.
+
+## Copy a CURIE
+
+Click the copy icon next to any term to copy its CURIE (e.g. `NCIT:C105979`) to your clipboard. Particularly useful when filling in [measurement registration templates](../measurement/measurement_registration.md).
+
+![Copy CURIE](images/ontology_search_copy_curie.png){.screenshot}
+
+---
+
+## What's next
+
+➡ [Register measurements](../measurement/measurement_registration.md) · [Create an experiment](../experiment/experiment_creation.md)

@@ -1,23 +1,28 @@
-# Experiment Introduction
+# Experiments
 
-After a successful login you will be redirected to your personal landing page.
-From there, [navigate](../project/project_introduction.md#project-navigation) into your project of interest to see the project summary view from which you can
-[navigate](#experiment-navigation) into the experiment summary view.
-Within this view you are able to [create](experiment_creation.md) new experiments.
+An experiment captures the biological design of a study within a project — the species, specimens, analytes, variables, and groups that structure your sample and measurement metadata.
 
-## Experiment Navigation
+Each project can contain multiple experiments (e.g. a pilot run and a full study).
 
-From the project summary you can find your experiments via the experiment list on the top right.
-Click on the name of an experiment to load the respective experiment.
-![project_summary](../project/images/project_summary.png){.screenshot}
+## Find and open an experiment
 
-Alternatively you can also select your experiment of interest via clicking on its name in the 
-application drawer to the left. All of the project's experiments are also available when you are already in one of the experiments.
-![project_summary_drawer](../project/images/project_summary_drawer.png){.screenshot}
+From the project summary, find your experiments in the list on the top right. Click an experiment name to open it.
+
+![Project summary](../project/images/project_summary.png){.screenshot}
+
+Or open the application drawer and select an experiment by name.
+
+![Drawer](../project/images/project_summary_drawer.png){.screenshot}
 
 !!! info "Application drawer"
-    The application drawer can be used to navigate between projects and experiments once a project has been selected.
-    It can be opened and closed via it's button on the top left.
+    The drawer lists all experiments in the current project. Use it to switch between experiments without going back to the project summary.
 
-This will take you to the experiment summary view
-![experiment_summary](images/experimental_summary_no_variables.png){.screenshot}
+This opens the **experiment summary view**.
+
+![Experiment summary](images/experimental_summary_no_variables.png){.screenshot}
+
+---
+
+## What's next
+
+➡ [Create a new experiment](experiment_creation.md) · [Define confounding variables](confounding-variables.md) · [Register sample batches](../batch/sample-batch.md) · [View measurements](../measurement/measurement_introduction.md)
