@@ -3,15 +3,11 @@
 Here's the complete Data Manager workflow — from creating your account to sharing data with collaborators.
 
 ```mermaid
-graph LR
+graph TD
     A(1. Create account) --> B(2. Register project)
     B --> C(3. Design experiment)
     C --> D(4. Register samples)
-```
-
-```mermaid
-graph LR
-    D(4. Register samples) --> E(5. Register measurements)
+    D --> E(5. Register measurements)
     E --> F(6. Upload raw data)
     F --> G(7. Manage access)
     G --> H(8. Share data)

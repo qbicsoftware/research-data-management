@@ -75,3 +75,8 @@ this will also change the spacing of any icons/emojis within the documentation *
   padding-bottom: 0.2rem;
   border-bottom: 1px solid rgba(0, 106, 245, 0.15);
 }
+
+/* Centre mermaid diagrams */
+.md-typeset .mermaid {
+  text-align: center;
+}
