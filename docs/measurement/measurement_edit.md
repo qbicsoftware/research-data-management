@@ -1,150 +1,70 @@
-# Measurement Edit
+# Edit measurements
 
-!!! tip "Excel file support"
-    The Data Manager now supports measurement registration and updates with Excel files (*.xlsx).
+!!! tip "Excel is supported"
+    Upload edited metadata as an Excel file (`.xlsx`). Metadata must be on the first sheet.
 
-    __Only requirement__: metadata must be in the first sheet of your workbook.
+!!! tip "Adding new measurements?"
+    See [Register measurements](measurement_registration.md) instead.
 
+[Navigate](measurement_introduction.md#navigate-to-measurements) to the measurement summary.
 
-To edit measurement metadata, start by [navigating](measurement_introduction.md#measurement-navigation) into the measurement summary view.
-![measurement_summary](images/measurement_summary_with_measurements.png){.screenshot}
+!!! info "Required role"
+    You need **write** or **admin** role to edit or delete measurements.
 
-Once within the measurement summary view, measurements can be edited via the following steps:
+## Edit measurement metadata
 
-1. Select the tab containing the [registered metadata](measurement_registration.md#measurement-registration) of the domain of interest.
-2. [Download](#download-metadata) the measurement metadata  
-3. [Prepare](#prepare-metadata) the edits of the downloaded domain specific metadata sheet
-4. [Upload](#upload-metadata) the edited metadata sheet via the edit measurement dialog
+1. Select the domain tab (Proteomics or Genomics).
 
-Additionally, within the measurement summary view you're also able to [delete](#delete-metadata) measurement metadata.
+2. Click **Download Metadata** to get the current metadata as `.xlsx`.
 
-!!! info "Project role"
-    Should you not see the edit, deletion and download buttons,
-    please make sure that you have been granted the "write" or "admin" role to the project by its owner or an admin!
+=== "Proteomics"
 
-## Download Metadata
+    ![Download](images/measurement_edit_proteomics_download_metadata.png){.screenshot}
 
-### Proteomics
+=== "Genomics"
 
-Start by selecting the **Proteomics** Tab within the measurement metadata tab sheet.
-![measurement_edit_proteomics_download_metadata.png](images/measurement_edit_proteomics_download_metadata.png){.screenshot}
+    ![Download](images/measurement_edit_ngs_download_metadata.png){.screenshot}
 
-Press the "Download Metadata" button, which will download the metadata for all your proteomic measurements in a _xlsx_ file.
-![measurement_edit_proteomics_downloaded_metadata.png](images/measurement_edit_proteomics_downloaded_metadata.png){.screenshot}
+3. Open the file and make your changes. Grey columns (e.g. `Measurement Id`) are locked — changes there are ignored.
 
-### Genomics
+    !!! warning "Locked fields"
+        To correct a locked field, [delete the measurement](#delete-measurements) and [re-register it](measurement_registration.md).
 
-Start by selecting the **Genomics** Tab within the measurement metadata tab sheet.
-![measurement_edit_genomics_download_metadata.png](images/measurement_edit_ngs_download_metadata.png){.screenshot}
+4. Save the file. You can upload the `.xlsx` directly or export as tab-separated UTF-16BE text.
 
-Press the "Download Metadata" button, which will download the metadata for all your genomic measurements in a _xlsx_ file.
-![measurement_edit_genomics_downloaded_metadata.png](images/measurement_edit_ngs_downloaded_metadata.png){.screenshot}
+5. Click **Edit** in the measurement summary to open the upload dialog.
 
-## Prepare Metadata
+    ![Upload](images/measurement_edit_upload_metadata.png){.screenshot}
 
-### Proteomics
+6. Upload your file. The dialog validates it and highlights errors.
 
-Start by opening the downloaded proteomics measurement metadata _xlsx_ file containing the domain specific metadata sheet.
-![measurement_edit_proteomics_downloaded_metadata.png](images/measurement_edit_proteomics_downloaded_metadata.png){.screenshot}
+    !!! warning "File requirements"
+        `.xlsx`, `.txt`, or `.tsv`. Maximum 16 MB.
 
-The _xlsx_ lists the registered measurements according to their measurement Ids with the provided property values during the registration.
+7. Click **Save**.
 
-!!! warning "Fixed Properties"
-    Specific measurement properties such as _Measurement Id_ **cannot** be changed after a measurement has been registered.
-    Cells of these properties are marked as grey, meaning changes to these cells will be ignored.
-    Errors made within these cells require a [deletion](#delete-metadata) and [reregistration](measurement_registration.md#measurement-registration) of the measurement metadata in question. 
+## Delete measurements
 
-Within this sheet make the necessary property changes for the measurements.
-![measurement_edit_proteomics_measurement_edited.png](images/measurement_edit_proteomics_measurement_edited.png){.screenshot}
+1. In the measurement summary, select the measurements to delete by clicking their checkboxes. Use the header checkbox to select all in a domain tab.
 
-Finally, use your workbook directly (xlsx file) or export the sheet into a tab seperated UTF-16BE Unicode Text (*.txt) text file.
-![edit_measurement_proteomics_measurement_export.png](images/measurement_edit_proteomics_measurement_export.png){.screenshot}
+    ![Individual selection](images/measurement_deletion_individual_selection.png){.screenshot}
 
-**Notes:**
-The "Instrument" column expects an ontology [CURIE](https://link.springer.com/article/10.1007/s12599-022-00744-0) of the instrument.
-You can use our [ontology search](../ontology_search/ontology_search_introduction.md#ontology-search) to find the CURIE
+    ![All selected](images/measurement_deletion_all_selection.png){.screenshot}
 
-The "Organisation Id" column expects the full [RoR Id](https://ror.org/about/) URL of the organisation.
-Use the [ROR registry search](https://ror.org/search) to determine the URL of the organisation RoR Id.
+    !!! note "Domain-specific selection"
+        Selections reset when you switch domain tabs. Delete measurements for each domain separately.
 
-Finally, [upload](#upload-metadata) the exported text file into the Data Manager application.
+2. Click **Delete**. A confirmation dialog shows the count and domain.
 
-### Genomics
+    ![Confirm](images/measurement_deletion_confirm_dialog.png){.screenshot}
 
-Start by opening the downloaded proteomics measurement metadata _xlsx_ file containing the domain specific metadata sheet.
-![measurement_edit_proteomics_downloaded_metadata.png](images/measurement_edit_proteomics_downloaded_metadata.png){.screenshot}
+3. Click **Confirm**.
 
-The _xlsx_ file lists the registered measurements according to their measurement Ids with the provided property values during the registration.
+!!! warning "Raw data must be removed first"
+    Measurements with attached raw data cannot be deleted. Delete the raw data first.
 
-!!! warning "Fixed Properties"
-    Specific measurement properties such as _Measurement Id_ **cannot** be changed after a measurement has been registered.
-    Cells of these properties are marked as grey, meaning changes to these cells will be ignored.
-    Errors made within these cells require a [deletion](#delete-metadata) and [reregistration](measurement_registration.md#measurement-registration) of the measurement metadata in question.
+---
 
-Within this sheet make the necessary property changes for the measurements.
-![measurement_edit_ngs_measurement_edited.png](images/measurement_edit_ngs_measurement_edited.png){.screenshot}
+## What's next
 
-Finally, use your workbook directly (xlsx file) or export the sheet into a tab seperated UTF-16BE Unicode Text (*.txt) text file.
-![edit_measurement_ngs_measurement_export.png](images/measurement_edit_ngs_measurement_export.png){.screenshot}
-
-**Notes:**
-The "Instrument" column expects an ontology [CURIE](https://link.springer.com/article/10.1007/s12599-022-00744-0) of the instrument.
-You can use our [ontology search](../ontology_search/ontology_search_introduction.md#ontology-search) to find the CURIE
-
-The "Organisation Id" column expects the full [RoR Id](https://ror.org/about/) URL of the organisation.
-Use the [ROR registry search](https://ror.org/search) to determine the URL of the organisation RoR Id.
-
-Finally, [upload](#upload-metadata) the exported text file into the Data Manager application.
-
-## Upload Metadata
-
-Once the measurement metadata has been [prepared](#prepare-metadata) according to the domain specifications,
-the exported _txt_ file can be uploaded into the Data Manager application.
-
-To start the update process press the "Edit" button within the measurement summary view.
-![measurement_summary](images/measurement_summary_with_measurements.png){.screenshot}
-
-This will open the measurement edit dialog with which the edited metadata can be uploaded.
-![edit_measurement_upload_metadata.png](images/measurement_edit_upload_metadata.png){.screenshot}
-Within the dialog you are able to upload your measurement files either via clicking the upload files button and selecting the files of interest in your file system
-or by drag and dropping the files into the dashed box saying "drop your files here".
-![measurement_edit_upload_metadata_filled.png](images/measurement_edit_upload_metadata_filled.png){.screenshot}
-
-Should you have uploaded one or more files by accident, you can easily delete them via a press of the cross icon next to their respective file names
-
-!!! warning "File constraints"
-    Please adhere to the file format and maximum file size outlined in the dialog.
-    Currently, we support the _txt_, _tsv_ or _xlsx_ file formats with a maximum file size of 16Mb
-
-The edit dialog will validate the provided metadata information and show invalid properties below the file name.
-
-Once all metadata properties are valid, upload the measurement metadata files to the experiment via pressing the "Save" button on the bottom right of the dialog.
-The changed measurement metadata will be shown in the grid within their domain specific tab in the measurement summary view.
-
-# Delete Metadata
-
-To delete measurement metadata, start by [navigating](measurement_introduction.md#measurement-navigation) into the measurement summary view.
-![measurement_summary](images/measurement_summary_with_measurements.png){.screenshot}
-
-Once within the measurement summary view, start the measurement metadata deletion process by selecting the measurements within the domain of interest.
-![measurement_deletion_individual_selection.png](images/measurement_deletion_individual_selection.png){.screenshot}
-
-Alternatively, can also select all measurements of a domain via a press of the checkbox within the column header. 
-![measurement_deletion_all_selection.png](images/measurement_deletion_all_selection.png){.screenshot}
-
-You are also able to use the Search field above to filter measurements before selection. Keep in mind that changing the filter will reset the selection of measurements.
-
-!!! Note "Domain Specific Selection"
-    The selected measurements are reset if a different domain tab is clicked.
-    Therefore, delete the measurements for each domain individually.
-
-Afterwards, press the "Delete" button to start the measurement deletion. A dialog will open asking you to confirm the deletion and informing you about the number and domain of the measurements that will be deleted.
-![measurement_deletion_confirm_dialog.png](images/measurement_deletion_confirm_dialog.png)
-
-Press the "Confirm" button to trigger the measurement deletion. 
-If all measurements for a specific domain have been deleted, the domain specific tab will disappear as well until new measurements are registered.
-![measurement_deletion_all_selection_deleted.png](images/measurement_deletion_all_selection_deleted.png)
-
-!!! warning "Attached Raw Data"
-    Keep in mind, that measurements can only be deleted if they have no raw data attached to them. 
-    Otherwise, you need to delete the raw data before the measurement can be deleted.
+➡ [Upload raw data](../rawdata/raw_data_upload.md)

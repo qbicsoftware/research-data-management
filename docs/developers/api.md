@@ -1,14 +1,22 @@
-# Data Manager API
+# API reference
 
-Access to resources in Data Manager via a RESTful API.
+Access Data Manager resources programmatically via a RESTful API.
 
-!!! info "API endpoints"
-    Currently, only one endpoint exists, which allows for a download of raw data. It is planned to extend the API in
-    the future to interact with various resources in Data Manager.
+!!! info "Available endpoints"
+    The API currently provides a single endpoint for raw data download. Additional endpoints are planned.
 
+## Documentation
 
-## Swagger API docs
+Interactive API documentation is available via Swagger UI:
 
-Detailed API documentation is available via Swagger UI and [hosted on the web service](https://download.qbic.uni-tuebingen.de/swagger-ui/index.html). 
+**[Open Swagger UI](https://download.qbic.uni-tuebingen.de/swagger-ui/index.html)**
 
+> Not familiar with the metadata fields? See the [Metadata glossary](../metadata/concepts.md).
 
+Authentication uses the same [personal access token](../rawdata/raw_data_download.md#personal-access-token) as the command-line download.
+
+---
+
+## What's next
+
+➡ [Download raw data](../rawdata/raw_data_download.md)

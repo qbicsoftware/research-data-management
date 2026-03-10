@@ -1,137 +1,139 @@
 # Life Science Data Management
 
-Behind every great research project should be great research data management!
-Start your voyage towards a __FAIR__ and __Open Data__ future and include
-the [Data Manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in your research!
+Good science starts with good data management. The [QBiC Data Manager](https://rdm.qbic.uni-tuebingen.de/login) helps you keep your research data organised, findable, and ready to share — from your first experiment through to publication.
 
-## What's new?
+Not sure where to begin? Head to the **[Get started guide](get_started/process_overview.md)**.
 
-### Data Submission from outside the University Tübingen network
+---
 
-<div style="font-size: smaller; color: rgba(122,122,122,1)">October 10th, 2025 </div>
 
-- External Data Submission: Check out how
-  to [request access ](rawdata/raw_data_request_server_access.md)
-  and [submit your data](rawdata/raw_data_upload.md) from outside the University Tübingen network
-- Orcid Linkage documentation: Learn how to [link your orcid account](user/user_edit.md#link-orcid)
-  within the data manager
+## What's new
+
+### Duplicate condition detection and improved measurement grid
+
+<div style="font-size: smaller; color: rgba(122,122,122,1)">March 9, 2026</div>
+
+- **Duplicate condition warning:** The system now alerts you when you try to add a condition that already exists in your experiment — catching silent metadata errors before they reach your samples.
+- **Improved measurement view:** The measurement table uses a new flexible grid layout, making it easier to search, sort, and browse large sets of measurements.
+- **Bug fix — PI and PM roles were swapped:** A bug in project creation caused the Principal Investigator and Project Manager fields to be written to the wrong roles. This is now corrected. **If you created a project between v1.12.0 and v1.12.4, open your project settings and verify that PI and PM are assigned to the right people.** Audit log entries from the affected period cannot be retroactively corrected — document any discrepancies in your Data Management Plan.
+
+📌 Full [release notes (v1.12.5)](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.12.5) on GitHub.
+
+---
 
 ## Update history
 
-### Orcid Linkage and Template Registration Overhaul
+### Selective downloads, experimental variables, and raw data filtering
 
-<div style="font-size: smaller; color: rgba(122,122,122,1)">September 18th, 2025 </div>
+<div style="font-size: smaller; color: rgba(122,122,122,1)">November 11, 2025</div>
 
-📌 Checkout the
-complete [release notes](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.11.0) on
-GitHub.
+📌 Full [release notes (v1.12.0)](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.12.0) on GitHub.
 
-💡 Highlights:
+Highlights:
 
-- Orcid Linkage: If you didn't add your orcid account during account registration you can
-  catch up now by linking your orcid account in your user profiles
-- Simplify sample registration: Downloading the batch registration template can now be done within
-  the sample registration dialog
-  directly.
-- Simplify measurement registration: Specify the domain within the measurement registration dialog
-  directly download the domain
-  specific template
-- Optional measurement name: The measurement registration sheets for proteomics and genomics now
-  feature a column "measurement
-  name" to optionally store the internally assigned lab identifier
-- Raw data filtering: The registered datasets can now be filtered by their properties via a
-  dedicated search field
-- Download Urls for filtered raw data: Triggering the download of dataset URLS provides only the
-  URLs of the filtered dataset
+- **Selective raw data download:** Choose which measurements to download instead of retrieving everything at once.
+- **Experimental variables:** Define the conditions you're testing (drug concentration, temperature, time point) and the groups that structure your sample metadata.
+- **Raw data filtering:** Filter registered datasets by properties using the new filter grid. URL export now includes only the datasets matching your current filter.
 
-### Metadata Examples and Descriptions
+### Fixes and improvements (v1.12.1–v1.12.4)
 
-<div style="font-size: smaller; color: rgba(122,122,122,1)">September 18th, 2025 </div>
+<div style="font-size: smaller; color: rgba(122,122,122,1)">November 2025 – February 2026</div>
 
-- Glossary: Introduction of a glossary explaining the terms with example values in the research data
-  management documentation. Check it out [here](metadata/concepts.md)
+- **v1.12.1** (Nov 17, 2025): Fixed Data Privacy and Legal Notice display. Raw dataset search now includes measurement ID for more precise filtering.
+- **v1.12.2** (Dec 11, 2025): Institution lookup now uses [ROR API v2](https://ror.readme.io/docs/api-v2) — the platform resolves institutional affiliations more reliably. Your existing ROR URLs (`https://ror.org/…`) are unaffected; no action needed.
+- **v1.12.3** (Jan 13, 2026): Injection volume is now validated during proteomics measurement registration — out-of-range or non-numeric values are rejected before you save.
+- **v1.12.4** (Feb 4, 2026): Internal UI framework updated (Vaadin 24.9.10). No changes to data entry fields or platform behaviour.
 
-### Enable Asynchronous Sample and Experiment Update
+### Data submission from outside the University of Tübingen network
 
-<div style="font-size: smaller; color: rgba(122,122,122,1)">June 10th, 2025 </div>
+<div style="font-size: smaller; color: rgba(122,122,122,1)">October 10, 2025</div>
 
-- Enable the user to trigger sample creation and update asynchronously
-- Enable the user to trigger experiment update processes asynchronously.
-- Keep him informed of the progress via dedicated toast notifications
+- **External data submission:** Collaborators outside the university network can now upload measurement data. See how to [request server access](rawdata/raw_data_request_server_access.md) and [upload your data](rawdata/raw_data_upload.md).
+- **ORCID linking:** Connect your ORCID account to an existing Data Manager profile at any time from your [user profile](user/user_edit.md#link-orcid).
 
-### Streamline service API within the Data Manager backend to enable CRUD processes asynchronously
+### ORCID linking and simpler template registration
 
-<div style="font-size: smaller; color: rgba(122,122,122,1)">March 4th, 2025 </div>
+<div style="font-size: smaller; color: rgba(122,122,122,1)">September 18, 2025</div>
 
-- Enable the user to trigger project creation asynchronously
-- Keep him informed of the progress via dedicated toast notifications
-- Update the Data Manager to Java 21
+📌 Full [release notes (v1.11.0)](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.11.0) on GitHub.
+
+Highlights:
+
+- **ORCID linking:** Link your ORCID from your user profile — no need to re-register.
+- **Simpler sample registration:** Download the batch template directly from the registration dialog.
+- **Simpler measurement registration:** Pick your domain (proteomics or genomics) and download the template in one step.
+- **Optional measurement name:** Both registration sheets now include a `Measurement Name` column for your internal lab identifier.
+- **Raw data filtering:** Filter registered datasets by properties using the search field.
+- **Filtered download URLs:** URL export now includes only the datasets matching your current filter.
+
+### Metadata glossary
+
+<div style="font-size: smaller; color: rgba(122,122,122,1)">September 18, 2025</div>
+
+- A new [Metadata glossary](metadata/concepts.md) explains every field with plain-language descriptions and example values.
+
+### Faster sample and experiment updates
+
+<div style="font-size: smaller; color: rgba(122,122,122,1)">June 10, 2025</div>
+
+- Sample and experiment updates now run in the background. A notification confirms when the process is complete.
+
+### Background project creation
+
+<div style="font-size: smaller; color: rgba(122,122,122,1)">March 4, 2025</div>
+
+- Project creation now runs in the background with progress notifications.
 
 ### Confounding variable support
 
-<div style="font-size: smaller; color: rgba(122,122,122,1)">February 12th, 2025 </div>
+<div style="font-size: smaller; color: rgba(122,122,122,1)">February 12, 2025</div>
 
-- Experimental design: The management of confounding variables on experiment and sample level is now
-  possible
-- Ontology: Ontology terms are now queried from TIB's new [APIv3](https://terminology.tib.eu/ts/api)
-  by default, which uses the improved OLS4 backend
-- Measurements: Technical replicate information is now shown for measurements
-- Measurements: Sample pool names are now displayed in the measurement overview
-- Metadata: Improved Excel file export that also displays the ontology terms CURIE
+- **Confounding variables:** Track factors that might influence your results at the experiment and sample level.
+- **Updated ontology search:** Terms now come from the improved [TIB Terminology Service](https://terminology.tib.eu/ts/api).
+- **Measurement details:** Technical replicate information and sample pool names are now visible in the measurement overview.
+- **Better metadata export:** Excel exports now include the ontology identifier (CURIE) alongside each human-readable label.
 
-Check out the
-full [release notes](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.8.0) on GitHub.
+Full [release notes (v1.8.0)](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.8.0).
 
-### New project summary layout
+### Redesigned project summary
 
-<div style="font-size: smaller; color: rgba(122,122,122,1)">November 14th, 2024 </div>
+<div style="font-size: smaller; color: rgba(122,122,122,1)">November 14, 2024</div>
 
-- A completely new design of the project summary, that targets many improvements for accessing and
-  updating high level project information
-- Enhances the spreadsheet templates with examples using what Microsoft
-  calls [Input Messages](https://support.microsoft.com/en-us/office/more-on-data-validation-f38dee73-9900-4ca6-9301-8a5f6e1f0c4c)
-  and links to further information resources
-- Spreadsheet templates are no static documents anymore, but generated dynamically
+- New project summary layout with easier access to project information.
+- Spreadsheet templates now include helpful examples and validation tooltips.
+- Templates are generated dynamically — always up to date.
 
-### Excel spreadsheets now supported for sample batch registration
+### Excel support for sample batch registration
 
-<div style="font-size: smaller; color: rgba(122,122,122,1)">October 23rd, 2024 </div>
+<div style="font-size: smaller; color: rgba(122,122,122,1)">October 23, 2024</div>
 
-- Sample Batches can now be registered and updated
-  directly [with XLSX spreadsheets](batch/sample-batch.md).
-- RO-Crate Export: The project summary information can now
-  be [downloaded](project/project_edit.md#download-project-metadata) as an
-  RO-Crate to your local filesystem within the project summary.
-  For more information on RO-Crates visit [here](https://www.researchobject.org/ro-crate/).
-- Some smaller [bug fixes](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.5.0).
+- Register and update sample batches with [Excel spreadsheets](batch/sample-batch.md).
+- **RO-Crate export:** Download your project metadata as a [structured, machine-readable package](project/project_edit.md#download-project-metadata). Learn more about [RO-Crate](https://www.researchobject.org/ro-crate/).
+- [Bug fixes](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.5.0).
 
-### Excel spreadsheets now supported for measurements
+### Excel support for measurements
 
-<div style="font-size: smaller; color: rgba(122,122,122,1)">September 4th, 2024 </div>
+<div style="font-size: smaller; color: rgba(122,122,122,1)">September 4, 2024</div>
 
-- Measurements can now be registered and updated
-  directly [with XLSX spreadsheets](measurement/measurement_introduction.md). TSV is still
-  supported.
-- Sample metadata: the term `Organism ID` has been renamed to `Biological Replicate` to match its
-  purpose of use.
-- The Data Manager is now connected to the [TIB terminology service](https://terminology.tib.eu).  
-  The [queried ontologies](ontology_search/ontology_search_introduction.md) are restricted to life
-  science specific ones. You miss one? Please let us
-  know and submit
-  a [feature request](https://github.com/qbicsoftware/data-manager-app/issues/new/choose). Currently
-  included ontologies are:
-    - Bio-assay Ontology (__BAO__)
-    - Brenda Tissue Ontology (__BTO__)
-    - Chemical Entities of Biological Interest (__CHEBI__)
-      Bioinformatics operations, data types, formats, identifiers and topics (__EDAM__)
-    - Experimental Factor Ontology (__EFO__)
-    - Environmental Factor Ontology (__ENVO__)
-    - Gene Ontology (__GO__)
-    - Molecular Interaction (__MI__)
-    - PSI Mass Spectrometry Ontology (__MS__)
-    - National Cancer Institute Thesaurus (__NCIT__)
-    - Plant Ontology (__PO__)
-- For
-  species, [terms can be selected](ontology_search/ontology_search_introduction.md)
-  from [NCBI's tree of life](https://doi.org/10.1371/journal.pgen.1005912).
-- Some smaller [bug fixes](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.4.0).
+- Register and update measurements with [Excel spreadsheets](measurement/measurement_introduction.md). TSV still supported.
+- The sample field `Organism ID` has been renamed to `Biological Replicate` to better reflect its purpose.
+- Connected to the [TIB Terminology Service](https://terminology.tib.eu) for standardised scientific vocabulary. Currently supported ontologies:
+
+    | Abbreviation | Full name |
+    |---|---|
+    | **BAO** | Bio-assay Ontology |
+    | **BTO** | Brenda Tissue Ontology |
+    | **CHEBI** | Chemical Entities of Biological Interest |
+    | **EDAM** | Bioinformatics operations, data types, formats, identifiers and topics |
+    | **EFO** | Experimental Factor Ontology |
+    | **ENVO** | Environmental Ontology |
+    | **GO** | Gene Ontology |
+    | **MI** | Molecular Interaction |
+    | **MS** | PSI Mass Spectrometry Ontology |
+    | **NCIT** | National Cancer Institute Thesaurus |
+    | **PO** | Plant Ontology |
+
+    Missing an ontology? [Submit a feature request](https://github.com/qbicsoftware/data-manager-app/issues/new/choose).
+
+- Species terms come from [NCBI's tree of life](https://doi.org/10.1371/journal.pgen.1005912).
+- [Bug fixes](https://github.com/qbicsoftware/data-manager-app/releases/tag/1.4.0).
