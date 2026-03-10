@@ -7,7 +7,11 @@ graph LR
     A(1. Create account) --> B(2. Register project)
     B --> C(3. Design experiment)
     C --> D(4. Register samples)
-    D --> E(5. Register measurements)
+```
+
+```mermaid
+graph LR
+    D(4. Register samples) --> E(5. Register measurements)
     E --> F(6. Upload raw data)
     F --> G(7. Manage access)
     G --> H(8. Share data)
