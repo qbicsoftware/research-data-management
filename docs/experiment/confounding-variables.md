@@ -29,4 +29,4 @@ Open the confounding variables editing controls, enter the new name, and save. E
 
 ## What's next
 
-➡ [Register sample batches](../batch/sample-batch.md) · [Back to experiment overview](experiment_introduction.md)
+➡ [Register sample batches](../batch/sample-batch.md)

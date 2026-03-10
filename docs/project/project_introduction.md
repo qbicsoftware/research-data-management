@@ -32,8 +32,10 @@ Select a project from the drawer to jump straight to it, or click **Go to projec
 !!! info "Application drawer"
     The drawer also lets you switch between experiments within a project without going back to the project summary.
 
+**Managing an existing project?** [Edit project details](project_edit.md) · [Manage access](project_access.md)
+
 ---
 
 ## What's next
 
-➡ [Register a new project](project_registration.md) · [Edit project details](project_edit.md) · [Manage access](project_access.md)
+➡ [Register a new project](project_registration.md)

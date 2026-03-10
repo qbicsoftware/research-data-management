@@ -44,8 +44,10 @@ If you registered with email and want to add ORCID login later:
 
     ![ORCID linked](images/edit_user_information/edit_user_information_orcid_account_linked.png){.screenshot}
 
+> Need to change your password? See [Reset your password](password_reset.md).
+
 ---
 
 ## What's next
 
-➡ [Register a project](../project/project_registration.md) · [Reset your password](password_reset.md)
+➡ [Register a project](../project/project_registration.md)

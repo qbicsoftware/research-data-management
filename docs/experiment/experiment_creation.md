@@ -10,11 +10,14 @@
 In the dialog, provide:
 
 - **Experiment name** — unique within the project, easy to identify
-- **Species** — the organism(s) your samples come from (type at least 2 characters to search)
+- **Species** — the organism(s) your samples come from
 - **Specimen** — the biological material type (e.g. blood, liver tissue)
 - **Analyte** — the molecular class being measured (e.g. protein, mRNA)
 
 You can select multiple entries per field. Optionally choose an icon for the species and specimen.
+
+!!! tip "Searching for terms"
+    Type at least 2 characters in any search field to see matching terms from standardised scientific databases. Pick from the list — it makes your data easier to find and share later. See the [ontology search guide](../ontology_search/ontology_search_introduction.md) for tips on finding the right term.
 
 ![Search active](images/create_experiment_search.png){.screenshot}
 
@@ -67,8 +70,11 @@ Click **Add** to save.
 !!! warning "Groups are locked once samples are registered"
     Remove all registered samples before editing groups.
 
+!!! tip "Track confounding factors"
+    Before registering samples, you can [define confounding variables](confounding-variables.md) — factors like batch effects, operator, or reagent lot that you didn't control but want to account for during analysis.
+
 ---
 
 ## What's next
 
-➡ [Register sample batches](../batch/sample-batch.md) · [Define confounding variables](confounding-variables.md)
+➡ [Register sample batches](../batch/sample-batch.md)

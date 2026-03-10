@@ -77,4 +77,4 @@ Click **Download sample metadata** to export all registered sample metadata as a
 
 ## What's next
 
-➡ [Register measurements](../measurement/measurement_registration.md) · [Back to experiment](../experiment/experiment_introduction.md)
+➡ [Register measurements](../measurement/measurement_registration.md)

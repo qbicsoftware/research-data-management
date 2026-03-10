@@ -61,4 +61,4 @@ Click **Export as RO-Crate** in the project summary. A `.zip` archive downloads 
 
 ## What's next
 
-➡ [Manage access](project_access.md) · [Create an experiment](../experiment/experiment_creation.md)
+➡ [Manage project access](project_access.md)

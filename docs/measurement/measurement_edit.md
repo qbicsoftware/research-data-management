@@ -3,6 +3,9 @@
 !!! tip "Excel is supported"
     Upload edited metadata as an Excel file (`.xlsx`). Metadata must be on the first sheet.
 
+!!! tip "Adding new measurements?"
+    See [Register measurements](measurement_registration.md) instead.
+
 [Navigate](measurement_introduction.md#navigate-to-measurements) to the measurement summary.
 
 !!! info "Required role"
@@ -64,4 +67,4 @@
 
 ## What's next
 
-➡ [Register new measurements](measurement_registration.md) · [Upload raw data](../rawdata/raw_data_upload.md)
+➡ [Upload raw data](../rawdata/raw_data_upload.md)

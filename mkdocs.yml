@@ -6,6 +6,7 @@ theme:
     - content.code.copy
     - navigation.footer
     - header.autohide
+    - navigation.sections
 site_url: 'https://qbicsoftware.github.io/research-data-management/'
 site_name:  Life Science Data Management
 repo_url: https://github.com/qbicsoftware/research-data-management
@@ -21,25 +22,26 @@ nav:
   - Project:
       - Introduction: project/project_introduction.md
       - Registration: project/project_registration.md
-      - Editing: project/project_edit.md
+      - Edit: project/project_edit.md
       - Access management: project/project_access.md
   - Experiment:
       - Introduction: experiment/experiment_introduction.md
       - Creation: experiment/experiment_creation.md
       - Confounding variables: experiment/confounding-variables.md
-  - Sample batch: batch/sample-batch.md
+  - Samples:
+      - Register batches: batch/sample-batch.md
   - Measurement:
       - Introduction: measurement/measurement_introduction.md
       - Registration: measurement/measurement_registration.md
-      - Editing: measurement/measurement_edit.md
+      - Edit: measurement/measurement_edit.md
   - Raw data:
       - Request server access: rawdata/raw_data_request_server_access.md
       - Upload data: rawdata/raw_data_upload.md
       - Download data: rawdata/raw_data_download.md
   - Ontology search: ontology_search/ontology_search_introduction.md
-  - Reference:
+  - Metadata glossary: metadata/concepts.md
+  - Developer reference:
       - API: developers/api.md
-      - Metadata glossary: metadata/concepts.md
 extra_css:
   - stylesheets/extra.css
 extra:

@@ -39,7 +39,8 @@ Set up your first experiment. Provide an **experiment name** and select at least
 - **Specimen** — the tissue or material type
 - **Analyte** — the molecular class being measured
 
-Type at least 2 characters in each search field to see matching terms from standardised life science ontologies.
+!!! tip "Searching for terms"
+    Type at least 2 characters to see matching terms. See the [ontology search guide](../ontology_search/ontology_search_introduction.md) for details.
 
 ![Experiment search](images/experimental_information_search.png){.screenshot}
 
@@ -52,8 +53,11 @@ Optionally select an icon for the species and specimen. Click **Confirm** to cre
 
 Your project appears in the project list. You can now [upload supporting files](project_edit.md#upload-project-related-files) like offers and QC reports.
 
+!!! note "Inviting collaborators"
+    You can [add team members to this project](project_access.md) at any time — you don't need to do this before setting up your experiment.
+
 ---
 
 ## What's next
 
-➡ [Set up experimental variables](../experiment/experiment_creation.md) · [Invite collaborators](project_access.md)
+➡ [Design your experiment](../experiment/experiment_creation.md)

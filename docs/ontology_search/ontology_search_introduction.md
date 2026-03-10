@@ -25,14 +25,19 @@ Toggle the species filter to search only the [NCBI taxonomy](https://www.ncbi.nl
 !!! note "Why a separate species search?"
     Species terms come from NCBI's taxonomy database, which is hosted separately from the [TIB Terminology Service](https://terminology.tib.eu) used for other ontologies. The two systems are queried independently.
 
+!!! info "Two search systems"
+    Species terms come from [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy) — a complete catalogue of organisms. All other terms (specimen, analyte, instrument, disease) come from the [TIB Terminology Service](https://terminology.tib.eu), which aggregates ontologies like EFO, NCIT, and BAO. The two systems are queried independently, which is why species search has its own toggle.
+
 ## Copy a CURIE
 
 Click the copy icon next to any term to copy its CURIE (e.g. `NCIT:C105979`) to your clipboard. Particularly useful when filling in [measurement registration templates](../measurement/measurement_registration.md).
 
 ![Copy CURIE](images/ontology_search_copy_curie.png){.screenshot}
 
+> Ontology terms are also used when [creating experiments](../experiment/experiment_creation.md) — for species, specimen, and analyte fields.
+
 ---
 
 ## What's next
 
-➡ [Register measurements](../measurement/measurement_registration.md) · [Create an experiment](../experiment/experiment_creation.md)
+➡ [Register measurements](../measurement/measurement_registration.md)

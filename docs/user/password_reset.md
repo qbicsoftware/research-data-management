@@ -32,8 +32,10 @@ Enter a new password (at least 12 characters) and confirm. Click the login link 
 
 ![Confirmation](images/password_reset/password_reset_new_password_saved.png){.screenshot}
 
+> Want to update your username or link your ORCID? See [Edit your profile](user_edit.md).
+
 ---
 
 ## What's next
 
-➡ [Log in](https://rdm.qbic.uni-tuebingen.de/login) · [Edit your profile](user_edit.md)
+➡ [Log in to the Data Manager](https://rdm.qbic.uni-tuebingen.de/login)

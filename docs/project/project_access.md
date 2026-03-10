@@ -56,4 +56,4 @@ Click the **×** icon next to the collaborator. They lose access immediately.
 
 ## What's next
 
-➡ [Back to project summary](project_introduction.md) · [Design an experiment](../experiment/experiment_introduction.md)
+➡ [Design your experiment](../experiment/experiment_introduction.md)

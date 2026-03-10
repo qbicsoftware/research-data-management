@@ -7,9 +7,11 @@
 
 Register measurements in three steps:
 
-1. [Download the template](#download-template)
-2. [Fill in the metadata](#prepare-metadata)
-3. [Upload the completed file](#upload)
+```mermaid
+graph LR
+    A(Download template) --> B(Fill in metadata)
+    B --> C(Upload completed file)
+```
 
 !!! info "Required role"
     You need **write** or **admin** role to see the registration buttons.
@@ -32,13 +34,15 @@ Register measurements in three steps:
 
 The template has two sheets: **Property Information** (reference) and **Metadata** (fill this in). Mandatory columns are marked with `*`.
 
+!!! info "Organisation ID"
+    Enter the full [ROR](https://ror.org/) URL of the institution where the measurement was performed (e.g. `https://ror.org/03a1kwz48`). Search at [ror.org](https://ror.org/search). The platform looks up the institution name automatically.
+
 === "Proteomics"
 
     Key fields:
 
     - **Sample ID** — copy from your [batch metadata download](../batch/sample-batch.md#download-sample-metadata)
     - **Instrument** — an ontology code (CURIE) for your mass spectrometer, e.g. `BAO:0002733`. Use the [ontology search](../ontology_search/ontology_search_introduction.md) to find the right code.
-    - **Organisation Id** — the full [ROR](https://ror.org/) URL of your institution, e.g. `https://ror.org/03a1kwz48`. Search at [ror.org](https://ror.org/search).
     - **Digestion enzyme**, **Digestion method**, **LC column** — required proteomics-specific fields.
 
     ![Filled template](images/measurement_registration_proteomics_measurement_filled.png){.screenshot}
@@ -49,7 +53,6 @@ The template has two sheets: **Property Information** (reference) and **Metadata
 
     - **Sample ID** — copy from your [batch metadata download](../batch/sample-batch.md#download-sample-metadata)
     - **Instrument** — an ontology code (CURIE) for your sequencer, e.g. `OBI:0002750`. Use the [ontology search](../ontology_search/ontology_search_introduction.md) to find the right code.
-    - **Organisation Id** — the full [ROR](https://ror.org/) URL of your institution.
     - **Read type** — `paired-end` or `single-end`.
     - **Index I7 / I5** — required for pooled (multiplexed) measurements. These are the DNA index sequences used to identify which sample is which when multiple libraries are sequenced together.
 
@@ -93,4 +96,4 @@ Click **Download Metadata** to export the metadata for all measurements in the c
 
 ## What's next
 
-➡ [Upload raw data](../rawdata/raw_data_upload.md) · [Edit measurements](measurement_edit.md)
+➡ [Upload raw data](../rawdata/raw_data_upload.md)

@@ -7,10 +7,12 @@ The raw data view shows data already uploaded for measurements in your experimen
 
 ## Process
 
-1. [Create a personal access token](#personal-access-token)
-2. [Navigate to the raw data view](#raw-data-navigation)
-3. [Generate download URLs](#generate-download-urls)
-4. [Download via command line](#download-via-command-line)
+```mermaid
+graph LR
+    A(Create access token) --> B(Open raw data view)
+    B --> C(Generate download URLs)
+    C --> D(Download via command line)
+```
 
 ## Personal access token
 
@@ -122,4 +124,4 @@ Create a text file with one URL per line (or use the file from the [URL generati
 
 ## What's next
 
-➡ [Back to experiment](../experiment/experiment_introduction.md) · [Manage project access](../project/project_access.md)
+➡ [Manage project access](../project/project_access.md)

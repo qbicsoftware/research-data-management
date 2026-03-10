@@ -21,4 +21,4 @@ This opens the measurement summary view with separate tabs for Proteomics and Ge
 
 ## What's next
 
-➡ [Register measurements](measurement_registration.md) · [Edit measurements](measurement_edit.md)
+➡ [Register measurements](measurement_registration.md)

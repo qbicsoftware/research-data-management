@@ -282,8 +282,10 @@ The following concepts are associated with a raw data dataset.
 | File suffixes     | fastq, tar, txt                  | <span title="Yes">✅</span> | List of Text | <details class="info">List of file suffixes for all files within a raw data upload, automatically determined by the Data Manager<summary>View Description</summary></details> |
 | Registration date | 2025-04-28<br/> 08:24:25.000000  | <span title="Yes">✅</span> | Date         | <details class="info">Timestamp when the raw data was uploaded within the Data Manager<summary>View Description</summary></details>                                           |
 
+
 ---
 
-## What's next
+## See also
 
-➡ [API reference](../developers/api.md) · [Process overview](../get_started/process_overview.md)
+- [Ontology search](../ontology_search/ontology_search_introduction.md) — find standardised terms and copy their identifiers
+- [Process overview](../get_started/process_overview.md) — the end-to-end Data Manager workflow

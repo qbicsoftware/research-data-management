@@ -163,8 +163,11 @@ If an upload fails, a folder appears in `/home/<your-user>/error` containing an 
 
 Fix the error described in `error.txt`, then move the folder back to `registration` to retry.
 
+!!! tip "Share with collaborators"
+    Grant your team [project access](../project/project_access.md) so they can download files directly.
+
 ---
 
 ## What's next
 
-➡ [Download raw data](raw_data_download.md) · [Back to experiment](../experiment/experiment_introduction.md)
+➡ [Download raw data](raw_data_download.md)

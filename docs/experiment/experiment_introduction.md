@@ -25,4 +25,4 @@ This opens the **experiment summary view**.
 
 ## What's next
 
-➡ [Create a new experiment](experiment_creation.md) · [Define confounding variables](confounding-variables.md) · [Register sample batches](../batch/sample-batch.md) · [View measurements](../measurement/measurement_introduction.md)
+➡ [Create a new experiment](experiment_creation.md)
