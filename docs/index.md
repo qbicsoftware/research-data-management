@@ -6,6 +6,12 @@ the [Data Manager](https://rdm.qbic.uni-tuebingen.de/login) platform early on in
 
 ## What's new?
 
+### Scalable file-based raw data download
+
+- Download raw data **file by file** instead of as a single bundled archive, which scales to datasets
+  of any size and supports resuming interrupted downloads. The bundled measurement download is
+  deprecated. Check out the new [download workflow](rawdata/raw_data_download.md).
+
 ### Data Submission from outside the University Tübingen network
 
 <div style="font-size: smaller; color: rgba(122,122,122,1)">October 10th, 2025 </div>

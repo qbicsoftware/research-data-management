@@ -1,18 +1,15 @@
-# Raw Data Introduction
+# Raw Data Download
 
-The raw data summary view shows detailed information about the raw data already [registered](raw_data_request_server_access.md) for the measurements within your experiment.
-Additionally, it enables you to generate the [URLs](#raw-data-url-generation) necessary
-to start the command line based [raw data download](#download-raw-data). 
-
-!!! info "Are you a developer?"
-    Read about Swagger API docs in the [developer](../developers/api.md) section.
+This guide describes how to download the raw data of your measurements from the Data Manager.
+Raw data is provided **file by file** instead of as a single bundled archive, which scales to
+datasets of any size and lets you resume interrupted downloads.
 
 ## Process
 
-1. Create a [personal access token](#personal-access-token) (PAT)
-2. Navigate to the raw data summary [view](#raw-data-navigation)
-3. Acquire [download URLs](#raw-data-url-generation) for the registered measurement raw data. 
-4. Start the measurement raw data [download](#download-raw-data) measurement and get a coffee :coffee:
+1. Create a [personal access token](#personal-access-token) (PAT).
+2. [List the files](#list-the-files-of-a-measurement) of a measurement (the *manifest*).
+3. [Download the files](#download-the-files) — individually or in parallel.
+4. [Reconstruct the dataset tree](#reconstruct-the-dataset-tree-locally) on your machine.
 
 ## Personal access token
 
@@ -55,93 +52,203 @@ so you remember for what purpose you have created them.
     If you are unsure, if your PAT got exposed or shared with untrusted parties, delete them right
     away. You can create new, safe tokens at any time.
 
-## Raw Data Navigation
+## List the files of a measurement
 
-To navigate to the raw data summary view start by [navigating](../project/project_introduction.md#project-navigation) to the project summary view of your project of interest.
-From there [navigate](../experiment/experiment_introduction.md#experiment-navigation) into the experiment summary view of interest.
-From within the experiment summary you can navigate into the raw data summary view.
-To do so, click on the "Download Raw Data" tab within the experiment navigation bar on the top.
-![experiment_summary.png](../experiment/images/experimental_summary.png){.screenshot}
+To download the raw data of a measurement, first request its file *manifest* to learn which files it
+contains:
 
-This will take you to the raw data summary view
-![raw_data_summary_no_data.png](images/raw_data_summary_no_data.png)
-
-### Raw Data URL Generation
-
-To acquire the URLS necessary for the measurement data download the following steps have to be taken:
-
-1. Navigate to the [raw data summary view](#raw-data-navigation)
-2. Select the measurements for which the raw data URLs should be generated.
-   ![raw_data_download_measurement_selection.png](images/raw_data_download_URL_generation_measurement_selection.png)
-3. Press the "Download URL List" button to download a text file containing the URLs of the selected measurements
-   ![raw_data_download_URL_downloaded.png](images/raw_data_download_URL_downloaded.png)
-
-### Download Raw Data
-
-To download the raw data for your measurements, basic command line/terminal knowledge is required. 
-First start by opening the command line in your operating system of choice. 
-
-#### Open command line on Mac
-
-Open the terminal via the spotlight search function by clicking on the magnifying glass on the top right or via pressing the command and spacebar key on your keyboard.
-Input "terminal" into the text field and select the terminal application from the suggestions. 
-
-![data_download_mac_command_line.png](images/data_download_mac_command_line.png)
-
-#### Open command line on Windows
-
-Click on the magnifying glass in the toolbar at the bottom of the screen. 
-Input "terminal" into the search field and select the terminal application from the suggestions.
-
-![data_download_windows_command_line.png](images/data_download_windows_command_line.png)
-
-#### Download data via command line
-
-We show how to run the download via the two popular command line clients [cURL](https://curl.se/docs/manpage.html) and [GNU Wget](https://www.gnu.org/software/wget/).
-Of course, you can use any other software that supports HTTP.
-
-!!! warning
-    The data will be downloaded into the directory in which the command is run.
-    Please ensure that it's the correct directory and there is enough space before running the download
-
-The commands contain two placeholders, where you have to provide your custom input:
-
-- *ACCESS_TOKEN*: your generated [personal access token](#personal-access-token)
-- *MEASUREMENT_URL*: the [URL](#raw-data-url-generation) associated with the data of the measurement
-
-=== "curl"
-
-    ``` bash
-    curl -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" <MEASUREMENT_URL>
-    ```
-
-=== "wget"
-
-    ``` bash
-    wget --content-disposition --trust-server-names --header "Authorization: Bearer <ACCESS_TOKEN>" <MEASUREMENT_URL>
-    ```
-For example to download the raw data associated with measurement **MSQ7645002AL-182987406699583** the commands would look as follows:
-
-=== "curl"
-
-    ``` bash
-    curl --parallel --fail -OJ -H "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583
-    ```
-
-=== "wget"
-
-    ``` bash
-    wget --content-disposition --trust-server-names --header "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG"  https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583
-    ```
-
-To download multiple measurements using one command, you can provide a text file containing one measurement URL per line (as in the one you can download in the raw data summary!).
-
-```txt
-<MEASUREMENT_URL_1>
-<MEASUREMENT_URL_2>
+```bash
+curl -H "Authorization: Bearer <ACCESS_TOKEN>" \
+  https://download.qbic.uni-tuebingen.de/measurements/<MEASUREMENT_ID>/files
 ```
 
-The corresponding commands need to be adapted accordingly.
+The response lists every file of the measurement together with a ready-to-use **download URL** per file, e.g.:
+
+```json
+{
+    "measurementId": "MSQ7645002AL-182987406699583",
+    "files": [
+        {
+            "index": 0,
+            "path": "raw_data/reads.fastq.gz",
+            "fileName": "reads.fastq.gz",
+            "length": 828008868,
+            "crc32": 1923767687,
+            "registrationTime": "2024-09-03T10:15:30Z",
+            "_links": {
+                "download": {
+                    "href": "https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583/files/0"
+                }
+            }
+        },
+        {
+            "index": 1,
+            "path": "metadata/sample_info.csv",
+            "fileName": "sample_info.csv",
+            "length": 2048,
+            "crc32": 3847561023,
+            "registrationTime": "2024-09-03T10:15:35Z",
+            "_links": {
+                "download": {
+                    "href": "https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583/files/1"
+                }
+            }
+        }
+    ]
+}
+```
+
+For each file, the manifest provides:
+
+- its **index**, used to address the file during download, and
+- a ready-to-use **download URL** in its `_links.download.href` field.
+
+!!! info "Field-level details"
+    The types, descriptions and examples of every manifest field are documented in the
+    [Swagger UI](https://download.qbic.uni-tuebingen.de/swagger-ui/index.html) /
+    [OpenAPI document](https://download.qbic.uni-tuebingen.de/v3/api-docs), which serve as the single
+    source of truth for this schema.
+
+## Download the files
+
+All download endpoints require basic command line/terminal knowledge.
+The data will be downloaded into the directory in which the command is run — please ensure it is the
+correct directory and has enough free space before running the download.
+
+We show the two popular command line clients [cURL](https://curl.se/docs/manpage.html) and
+[GNU Wget](https://www.gnu.org/software/wget/), of course you can use any other software that
+supports HTTP.
+
+!!! warning "Directory structure is not preserved automatically"
+    When downloading files individually or in parallel, **the original directory structure of the
+    dataset is not preserved**. All files are saved to your current working directory, regardless of
+    their original location within the dataset.
+    
+    If your dataset contains files organized in subdirectories (e.g., `raw_data/reads.fastq.gz` and
+    `metadata/sample_info.csv`), they will all end up in the same directory after download.
+    
+    To restore the original structure, you need to use a script that reads each file's `path` field
+    from the manifest and recreates the directory tree locally. See
+    [Reconstruct the dataset tree locally](#reconstruct-the-dataset-tree-locally) for details.
+
+### Download a single file
+
+Download a single file via its download URL (the value of `_links.download.href` from the manifest)
+as the **FILE_URL**:
+
+=== "curl"
+
+    ``` bash
+    curl -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" <FILE_URL>
+    ```
+
+=== "wget"
+
+    ``` bash
+    wget --content-disposition --trust-server-names --header "Authorization: Bearer <ACCESS_TOKEN>" <FILE_URL>
+    ```
+
+For example, to download the first file of measurement **MSQ7645002AL-182987406699583** (the file `raw_data/reads.fastq.gz`):
+
+=== "curl"
+
+    ``` bash
+    curl -OJ -H "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583/files/0
+    ```
+
+=== "wget"
+
+    ``` bash
+    wget --content-disposition --trust-server-names --header "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583/files/0
+    ```
+
+### Resuming interrupted downloads
+
+Large file downloads can be interrupted due to network issues, timeouts, or manual cancellation. The download API supports HTTP byte range requests, allowing you to resume downloads from where they left off instead of starting over.
+
+#### Using curl to resume downloads
+
+curl can automatically resume interrupted downloads using the `-C -` (continue) flag:
+
+```bash
+curl -C - -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" <FILE_URL>
+```
+
+The `-C -` flag tells curl to automatically determine where the download was interrupted and resume from that byte offset.
+
+**Example workflow:**
+
+1. Start the download:
+   ```bash
+   curl -OJ -H "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583/files/0
+   ```
+
+2. If the download is interrupted (e.g., network failure), simply run the same command with `-C -`:
+   ```bash
+   curl -C - -OJ -H "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583/files/0
+   ```
+
+#### Using wget to resume downloads
+
+wget supports resuming with the `-c` (continue) flag:
+
+```bash
+wget -c --content-disposition --trust-server-names --header "Authorization: Bearer <ACCESS_TOKEN>" <FILE_URL>
+```
+
+**Example workflow:**
+
+1. Start the download:
+   ```bash
+   wget --content-disposition --trust-server-names --header "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583/files/0
+   ```
+
+2. If interrupted, resume with `-c`:
+   ```bash
+   wget -c --content-disposition --trust-server-names --header "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583/files/0
+   ```
+
+#### Manual byte range requests
+
+For advanced use cases, you can manually specify byte ranges using the `Range` header:
+
+```bash
+curl -H "Range: bytes=1000-" -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" <FILE_URL>
+```
+
+This requests the file starting from byte 1000 to the end. You can also specify end ranges:
+
+```bash
+curl -H "Range: bytes=0-999" -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" <FILE_URL>
+```
+
+This downloads only the first 1000 bytes (bytes 0-999).
+
+!!! tip "Checking file size before download"
+    You can check the total file size before downloading by using a HEAD request:
+    
+    ```bash
+    curl -I -H "Authorization: Bearer <ACCESS_TOKEN>" <FILE_URL>
+    ```
+    
+    Look for the `Content-Length` header in the response to see the total file size in bytes.
+
+### Download multiple files in parallel
+
+To download **all files** of a measurement in one command, put all file URLs (the
+`_links.download.href` values of the manifest) into a text file — one URL per line.
+To download the files of **multiple measurements**, combine the file URLs of their respective
+manifests in the same text file.
+
+~~~txt
+<FILE_URL_1>
+<FILE_URL_2>
+~~~
+
+!!! warning
+    To ensure character validity in the text file, please format it in the *UTF-8* format.
+
+Then adapt the command accordingly:
 
 === "curl"
 
@@ -155,27 +262,116 @@ The corresponding commands need to be adapted accordingly.
     wget --content-disposition --trust-server-names --header "Authorization: Bearer <ACCESS_TOKEN>" -i <file-with-urls>
     ```
 
-!!! warning
-    To ensure character validity in the text file, please format it in the *UTF-8* format
+## Reconstruct the dataset tree locally
 
-The easiest way to generate such a text file is to generate it in the [raw data view](#raw-data-url-generation).
+When you download files individually or in parallel, they are saved to your current working directory without preserving the original directory structure. If the dataset contains multiple files organized in subdirectories, you may want to reconstruct the original tree locally — for example, to run analysis pipelines that expect a specific file layout, or to keep the data organized as it was on the server.
 
-![data_download_selected_measurements.png](images/data_download_selected_measurements.png)
+### Example: Before and after download
 
-This will download the text file containing the urls for the selected measurements 
+**Original dataset on the server:**
 
-![raw_data_download_text_file.png](images/raw_data_download_text_file.png)
+```
+MSQ7645002AL-182987406699583/
+├── raw_data/
+│   └── reads.fastq.gz
+└── metadata/
+    └── sample_info.csv
+```
 
-For example to download the raw data for all measurements within the text file **download_urls.txt** the command would look as follows:
+**After downloading with `curl -OJ` (files land flat in your current directory):**
+
+```
+./
+├── reads.fastq.gz
+└── sample_info.csv
+```
+
+The directory structure is lost. Both files are now in the same directory, and you can't tell which subdirectory they originally belonged to.
+
+**After tree reconstruction (restoring the original structure):**
+
+```
+./MSQ7645002AL-182987406699583/
+├── raw_data/
+│   └── reads.fastq.gz
+└── metadata/
+    └── sample_info.csv
+```
+
+The original tree is restored, with the measurement ID as the root folder.
+
+### How to reconstruct the tree
+
+Each file's `path` is the **local path within the dataset**. To reconstruct the original dataset tree locally, use the **measurement id** as the name of the root folder and restore every file under its `path`.
+
+```
+MEASUREMENT_ID   = "MSQ7645002AL-182987406699583"
+ROOT_FOLDER      = ./data/<MEASUREMENT_ID>
+
+for FILE in manifest.files:
+    TARGET = ROOT_FOLDER + "/" + FILE.path
+
+    createParentDirectories(TARGET)        # recreate the directory structure
+    download(FILE._links.download.href, to = TARGET)   # store the file at its relative location
+```
+
+For the example manifest above, this produces:
+
+| File | `FILE.path` | `TARGET` (where it's saved) |
+|------|-------------|----------------------------|
+| 1    | `raw_data/reads.fastq.gz` | `./data/MSQ7645002AL-182987406699583/raw_data/reads.fastq.gz` |
+| 2    | `metadata/sample_info.csv` | `./data/MSQ7645002AL-182987406699583/metadata/sample_info.csv` |
+
+Resulting in:
+
+```
+./data/MSQ7645002AL-182987406699583/
+├── raw_data/
+│   └── reads.fastq.gz
+└── metadata/
+    └── sample_info.csv
+```
+
+!!! tip "Parallel & resumable downloads"
+    Because every file is downloaded through its own URL, the file downloads (and the recreated
+    directory structure) can be parallelized, and interrupted downloads can be resumed per file via
+    the supported `Range` requests.
+
+## Legacy: download as ZIP archive
+
+The endpoint `GET /measurements/{measurementId}` downloads a whole measurement as a single ZIP archive in one request:
 
 === "curl"
 
     ``` bash
-    curl --remote-name-all -OJ -H "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" $(cat /Your/awesome/path/download_urls.txt)
+    curl -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" https://download.qbic.uni-tuebingen.de/measurements/<MEASUREMENT_ID>
     ```
 
 === "wget"
 
     ``` bash
-    wget --content-disposition --trust-server-names --header "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" -i /Your/awesome/path/download_urls.txt
+    wget --content-disposition --trust-server-names --header "Authorization: Bearer <ACCESS_TOKEN>" https://download.qbic.uni-tuebingen.de/measurements/<MEASUREMENT_ID>
     ```
+
+For example, to download measurement **MSQ7645002AL-182987406699583** as a ZIP archive:
+
+=== "curl"
+
+    ``` bash
+    curl -OJ -H "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583
+    ```
+
+=== "wget"
+
+    ``` bash
+    wget --content-disposition --trust-server-names --header "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583
+    ```
+
+!!! warning "Limitations of the ZIP archive endpoint"
+    While this endpoint is still available, it has significant limitations compared to the file-based download:
+
+    - **No resume support**: If the download is interrupted, you must start over from the beginning. The file-based endpoints support HTTP byte range requests for resuming interrupted downloads (see [Resuming interrupted downloads](#resuming-interrupted-downloads)).
+    - **Not recommended for large datasets**: For datasets larger than **20 GB**, use the [file-based download workflow](#download-the-files) instead. The download is a single long-running stream. For very large datasets, the connection is more likely to be interrupted, and without resume support, you must restart the entire download from the beginning.
+    - **No parallel downloads**: The entire dataset is transferred as a single stream. The file-based endpoints allow downloading multiple files in parallel.
+
+    For better reliability and performance, especially with large datasets, use the file-based download workflow described above.
