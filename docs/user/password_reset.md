@@ -1,44 +1,41 @@
-# Password Reset
+# Reset your password
 
-The Data Manager application provides an easy and secure solution
-to set a new password should a password associated with a user account be lost.
-To reset your password the following steps have to be taken
+Forgot your password? You can set a new one in three steps.
 
-1. [Provide the account credentials for which the password should be reset](#trigger-password-reset)
-2. [Follow the password reset link you received in your email](#validate-the-password-reset-trigger)
-3. [Set a new password for the account according to the password policy](#set-a-new-password-for-the-account)
+!!! note "ORCID users"
+    If you log in via ORCID, you don't have a Data Manager password to reset. Use the ORCID login button instead.
 
-## Trigger Password Reset
+## Step 1 — Request a reset link
 
-From the login page you can navigate to a dedicated password reset view via the "Forgot password"
-link on the bottom of the login
-![login_password_reset](images/password_reset/password_reset.png){.screenshot}
+1. On the [login page](https://rdm.qbic.uni-tuebingen.de/login), click **Forgot password**.
 
-You should now be able to see the password reset view:
+    ![Login page](images/password_reset/password_reset.png){.screenshot}
 
-![password_reset_email](images/password_reset/password_reset_email.png)
+2. Enter the email address linked to your account and click **Send**.
 
-Please provide the email address of the account for which the password should be reset
-and press the "Send" button. You will receive an email with further instructions.
-![password_reset_email_sent](images/password_reset/password_reset_email_sent.png)
+    ![Email entry](images/password_reset/password_reset_email.png){.screenshot}
 
-## Validate the Password Reset Trigger
+    ![Confirmation](images/password_reset/password_reset_email_sent.png){.screenshot}
 
-Before the password of the provided account can be reset,
-you need to validate that the account indeed belongs to you.
-For this you will receive an email shortly after triggering the password reset, containing a unique
-password reset link
-!!! note "Spam folder"
-    Please check your spam folder if you didn't receive an email
+!!! note "Check your spam folder"
+    If the email doesn't arrive within a few minutes, check spam or junk.
 
-Click the URL to follow the link, which will lead you to a page which allows you to set a new
-password for your account.
-![password_reset_new_password](images/password_reset/password_reset_new_password.png)
+## Step 2 — Open the reset link
 
-## Set a new password for the account
+Click the link in the email. It takes you to a page where you can set a new password.
 
-Please provide a new unique password with at least 12 characters.
-Once a valid password is provided and the reset is triggered you will be redirected to a
-confirmation screen upon successful reset.
-![password_reset_new_password_saved](images/password_reset/password_reset_new_password_saved.png)
-From this screen you can switch to the login via the provided instructions.
+![New password form](images/password_reset/password_reset_new_password.png){.screenshot}
+
+## Step 3 — Set a new password
+
+Enter a new password (at least 12 characters) and confirm. Click the login link on the confirmation screen to sign in.
+
+![Confirmation](images/password_reset/password_reset_new_password_saved.png){.screenshot}
+
+> Want to update your username or link your ORCID? See [Edit your profile](user_edit.md).
+
+---
+
+## What's next
+
+➡ [Log in to the Data Manager](https://rdm.qbic.uni-tuebingen.de/login)

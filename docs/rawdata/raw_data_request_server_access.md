@@ -1,88 +1,77 @@
-# Request Server Access
+# Request server access
 
-This section gives an overview on how to request access to our upload server to submit data from outside of the University Tübingen network.
+This page is for users outside the University of Tübingen network who need to upload data to the QBiC server.
 
-!!! tip
-    Should you be a member of the university of Tübingen you can immediately [upload your data](raw_data_upload.md) and skip this process.
+!!! tip "University members"
+    If you're at the University of Tübingen, you can [upload data directly](raw_data_upload.md) — skip this page.
 
-## Prerequisites
+## What you'll need
 
-- An `ed25519` encrypted public and private keypair on the connecting machine
-- The static and public `IPv4` address of the connecting machine
-- The name and affiliation of the data submitting party
+- An **ed25519 SSH key pair** on the machine you'll connect from
+- The **public, static IPv4 address** of that machine
+- Your **name and institutional affiliation**
 
-## Procedure
+## Generate an SSH key pair
 
-To minimize security risk, access to our upload server is restricted to temporary whitelisted IP addresses from outside of the university network.
-!!! note
-    Please make sure to provide a **public** and **static** IP address from the machine you want to connect from.
-    Check with your IT department on details on how to obtain such an IP address.
-
-As an additional security layer, data submitters have to authenticate using [strong cryptographic keys](#generate-cryptographic-keys).
-Once these technical details are resolved, feel free to contact us to [request access to our server](#get-in-contact)
-
-### Generate Cryptographic Keys
-
-For account creation a public key is required. Please generate an ssh keypair via your system specific command and make sure to specify your email address:
+SSH keys are a secure alternative to passwords for file transfers. Your computer generates two linked files: a private key (stays on your machine — never share it) and a public key (you send it to us). When you connect, the system checks that they match.
 
 === "Linux"
 
-    Open your terminal
-    ``` bash
+    ```bash
     ssh-keygen -t ed25519 -a 420 -f ~/.ssh/qbic-upload.ed25519 -C "<your_email@example.com>"
     ```
 
-=== "MacOS"
+=== "macOS"
 
-    Open Terminal [as described by Apple](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac)
-    ``` bash
+    Open Terminal ([how to](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac)):
+
+    ```bash
     ssh-keygen -t ed25519 -a 420 -f ~/.ssh/qbic-upload.ed25519 -C "<your_email@example.com>"
     ```
 
 === "Windows"
 
-    Open PowerShell [as described by Microsoft](https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.5#run-from-the-start-menu)
-    ``` bash
+    Open PowerShell ([how to](https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.5)):
+
+    ```bash
     ssh-keygen -t ed25519 -a 420 -f $HOME/.ssh/qbic-upload.ed25519 -C "<your_email@example.com>"
     ```
 
-with the name `qbic-upload.ed25519` and a public key named `qbic-upload.ed25519.pub` within your `.ssh` directory.
+This creates two files in your `.ssh` directory: `qbic-upload.ed25519` (private key) and `qbic-upload.ed25519.pub` (public key).
 
-### Get in Contact
+!!! danger "Never share your private key"
+    Only send the `.pub` file. The private key file (without `.pub`) must stay on your computer.
 
-After you have [generated your ssh key](#generate-cryptographic-keys) and setup a public static IP address, 
-please write an email to [support@qbic.zendesk.com](mailto:support@qbic.zendesk.com) and attach the public (.pub) key file similar to the provided template:
+## Request access
 
-!!! warning 
-    Make sure you **only** send us the public key file ending with .pub 
+Send an email to [support@qbic.zendesk.com](mailto:support@qbic.zendesk.com) with the `.pub` file attached:
 
-    **Do not send us the private key!**
+```text
+Dear QBiC Team,
 
-```txt
-Dear QBiC Team
+I would like to upload measurement data to the Data Manager.
+Please provide me with an account on your upload server.
 
-I would like to upload measurement data to your data manager. 
-Can you please provide me with an account on your upload server. 
-
-Below you can find the requested information
-
-Name: <Max Mustermann>
-E-Mail: <max.mustermann@example.com>
-Affiliation: <My Research Institute>, <https://ror.org/03a1kwz48>
+Name: <Your Name>
+Email: <your.email@example.com>
+Affiliation: <Your Institute>, <https://ror.org/your-ror-id>
 Project: <Q2EXAMPLE>
 Access Duration: 30 days
 
-IP-Address: <Your static public IPV4 Adress>
-For accessing your upload server I would like to use the attached key.
+IP Address: <Your static public IPv4 address>
 
-Attachments: qbic-upload.ed25519.pub
+Attached: qbic-upload.ed25519.pub
 ```
 
-### Wait for a reply
-After you have [established contact](#get-in-contact) with our support team, 
-we will create an account for you on our upload server and contact you with confirmation and your assigned username.
+!!! note "Static IP required"
+    Check with your IT department about obtaining a public, static IP address for the machine you'll connect from.
 
-!!! note 
-    Please note down the username as this will be the username you will use to connect to our upload server.
+## Wait for confirmation
 
-### Proceed by [uploading data](raw_data_upload.md)
+The QBiC team will create your account and send you a username. Note it down — you'll need it to [connect and upload](raw_data_upload.md).
+
+---
+
+## What's next
+
+➡ [Upload your data](raw_data_upload.md)

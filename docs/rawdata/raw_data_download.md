@@ -13,44 +13,34 @@ datasets of any size and lets you resume interrupted downloads.
 
 ## Personal access token
 
-Before you can begin with downloading any data via HTTPS, you need to tell the download server
-who you are. We enforce a token-based authentication (personal access token: PAT) so you are not
-required to expose your password
-to anyone or to any system.
+Before downloading, you need a personal access token (PAT) — a credential that identifies you to the download server without exposing your password.
 
-!!! tip "multiple tokens"
-    You can create as many tokens as you like, however consider them as a secret.
+!!! danger "Keep your token secret"
+    Treat your PAT like a password. Don't paste it into shared scripts, don't commit it to version control, and don't share it with colleagues. Each person should generate their own token.
 
 ### Generate a token
 
-First of all, navigate to your PAT overview page in your profile overview (top-right corner)
+1. Click your profile icon (top right) and open the PAT overview page.
 
-![profile menu](images/raw_data_create_pat_profile_menu.png){.screenshot}
+    ![Profile menu](images/raw_data_create_pat_profile_menu.png){.screenshot}
 
-You should now be able to see the PAT token overview page:
+    ![PAT overview](images/raw_data_create_pat_overview_no_pats.png){.screenshot}
 
-![pat overview](images/raw_data_create_pat_overview_no_pats.png){.screenshot}
+2. Set an expiry date and click **Generate**.
 
-Personal access tokens have a life-time, which can be set based on your requirements. Your token
-expires automatically, there is nothing you have to do manually.
+    ![Generate token](images/raw_data_create_pat_generate_token.png){.screenshot}
 
-![generate token](images/raw_data_create_pat_generate_token.png){.screenshot}
-
-!!! warning "Token accessibility"
-    A generated token will be only visible in its raw notation once! Make sure to store it safely in
-    your local password manager, you will not be able to access the token value again.
+    !!! warning "One-time visibility"
+        The token is shown in full only once. Copy it to a password manager immediately — you won't be able to see it again.
 
 ### Manage tokens
 
-You can see your created tokens in the overview, however since they are instantly encrypted after generation,
-you cannot access the actual token text anymore. We encourage you to use meaningful descriptions for your tokens,
-so you remember for what purpose you have created them.
+Your created tokens appear in the overview. Descriptions help you remember what each token is for.
 
-![token overview](images/raw_data_create_pat_token_overview.png){.screenshot}
+![Token overview](images/raw_data_create_pat_token_overview.png){.screenshot}
 
-!!! danger "Token security"
-    If you are unsure, if your PAT got exposed or shared with untrusted parties, delete them right
-    away. You can create new, safe tokens at any time.
+!!! danger "Compromised token?"
+    If a token may have been exposed, delete it immediately and create a new one.
 
 ## List the files of a measurement
 
@@ -138,13 +128,13 @@ as the **FILE_URL**:
 
 === "curl"
 
-    ``` bash
-    curl -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" <FILE_URL>
+    ```bash
+    curl --fail -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" <FILE_URL>
     ```
 
 === "wget"
 
-    ``` bash
+    ```bash
     wget --content-disposition --trust-server-names --header "Authorization: Bearer <ACCESS_TOKEN>" <FILE_URL>
     ```
 
@@ -252,114 +242,12 @@ Then adapt the command accordingly:
 
 === "curl"
 
-    ``` bash
-    curl --remote-name-all -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" $(cat <file-with-urls>)
+    ```bash
+    curl --fail --parallel --remote-name-all -J -H "Authorization: Bearer <ACCESS_TOKEN>" $(cat download_urls.txt)
     ```
 
-=== "wget"
-
-    ``` bash
-    wget --content-disposition --trust-server-names --header "Authorization: Bearer <ACCESS_TOKEN>" -i <file-with-urls>
-    ```
-
-## Reconstruct the dataset tree locally
-
-When you download files individually or in parallel, they are saved to your current working directory without preserving the original directory structure. If the dataset contains multiple files organized in subdirectories, you may want to reconstruct the original tree locally — for example, to run analysis pipelines that expect a specific file layout, or to keep the data organized as it was on the server.
-
-### Example: Before and after download
-
-**Original dataset on the server:**
-
-```
-MSQ7645002AL-182987406699583/
-├── raw_data/
-│   └── reads.fastq.gz
-└── metadata/
-    └── sample_info.csv
-```
-
-**After downloading with `curl -OJ` (files land flat in your current directory):**
-
-```
-./
-├── reads.fastq.gz
-└── sample_info.csv
-```
-
-The directory structure is lost. Both files are now in the same directory, and you can't tell which subdirectory they originally belonged to.
-
-**After tree reconstruction (restoring the original structure):**
-
-```
-./MSQ7645002AL-182987406699583/
-├── raw_data/
-│   └── reads.fastq.gz
-└── metadata/
-    └── sample_info.csv
-```
-
-The original tree is restored, with the measurement ID as the root folder.
-
-### How to reconstruct the tree
-
-Each file's `path` is the **local path within the dataset**. To reconstruct the original dataset tree locally, use the **measurement id** as the name of the root folder and restore every file under its `path`.
-
-```
-MEASUREMENT_ID   = "MSQ7645002AL-182987406699583"
-ROOT_FOLDER      = ./data/<MEASUREMENT_ID>
-
-for FILE in manifest.files:
-    TARGET = ROOT_FOLDER + "/" + FILE.path
-
-    createParentDirectories(TARGET)        # recreate the directory structure
-    download(FILE._links.download.href, to = TARGET)   # store the file at its relative location
-```
-
-For the example manifest above, this produces:
-
-| File | `FILE.path` | `TARGET` (where it's saved) |
-|------|-------------|----------------------------|
-| 1    | `raw_data/reads.fastq.gz` | `./data/MSQ7645002AL-182987406699583/raw_data/reads.fastq.gz` |
-| 2    | `metadata/sample_info.csv` | `./data/MSQ7645002AL-182987406699583/metadata/sample_info.csv` |
-
-Resulting in:
-
-```
-./data/MSQ7645002AL-182987406699583/
-├── raw_data/
-│   └── reads.fastq.gz
-└── metadata/
-    └── sample_info.csv
-```
-
-!!! tip "Parallel & resumable downloads"
-    Because every file is downloaded through its own URL, the file downloads (and the recreated
-    directory structure) can be parallelized, and interrupted downloads can be resumed per file via
-    the supported `Range` requests.
-
-## Legacy: download as ZIP archive
-
-The endpoint `GET /measurements/{measurementId}` downloads a whole measurement as a single ZIP archive in one request:
-
-=== "curl"
-
-    ``` bash
-    curl -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" https://download.qbic.uni-tuebingen.de/measurements/<MEASUREMENT_ID>
-    ```
-
-=== "wget"
-
-    ``` bash
-    wget --content-disposition --trust-server-names --header "Authorization: Bearer <ACCESS_TOKEN>" https://download.qbic.uni-tuebingen.de/measurements/<MEASUREMENT_ID>
-    ```
-
-For example, to download measurement **MSQ7645002AL-182987406699583** as a ZIP archive:
-
-=== "curl"
-
-    ``` bash
-    curl -OJ -H "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583
-    ```
+    !!! note "curl version"
+        The `--parallel` flag requires curl 7.66.0 or later. Check with `curl --version`. On macOS, install a current version via Homebrew if needed: `brew install curl`.
 
 === "wget"
 

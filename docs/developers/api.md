@@ -1,6 +1,6 @@
-# Data Manager API
+# API reference
 
-Access to resources in Data Manager via a RESTful API.
+Access Data Manager resources programmatically via a RESTful API.
 
 !!! info "API endpoints"
     The download API provides endpoints to fetch the raw data of a measurement, including the

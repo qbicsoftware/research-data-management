@@ -1,128 +1,99 @@
-# Measurement Registration
+# Register measurements
 
-!!! tip "Excel file support"
-    The Data Manager now supports measurement registration and updates with Excel files (*.xlsx).
-    
-    __Only requirement__: metadata must be in the first sheet of your workbook.
+!!! tip "Excel is supported"
+    Upload measurement metadata as an Excel file (`.xlsx`). Metadata must be on the first sheet of the workbook.
 
-To register measurements, start by [navigating](measurement_introduction.md#measurement-navigation) into the measurement summary view.
-![measurement_summary](images/measurement_summary_no_measurements.png){.screenshot}
-Once within the measurement summary view, measurements can be registered via the following steps:
+[Navigate](measurement_introduction.md#navigate-to-measurements) to the measurement summary.
 
-1. [Download](#download-template) the domain specific metadata template spreadsheet
-2. [Prepare](#prepare-metadata) the downloaded metadata sheet with the domain specific mandatory information
-3. [Upload](#measurement-upload) the filled in measurement metadata sheet
+Register measurements in three steps:
 
-!!! info "Project role"
-    Should you not see the registration and download buttons,
-    please make sure that you have been granted the "write" or "admin" role to the project by the owner/admin!
+```mermaid
+graph LR
+    A(Download template) --> B(Fill in metadata)
+    B --> C(Upload completed file)
+```
 
-## Download Template
+!!! info "Required role"
+    You need **write** or **admin** role to see the registration buttons.
 
-### Proteomics
+## Download template
 
-Within this view download the proteomic specific template's _.xlsx_ file via the template component on the top right by clicking
-on the download icon (down arrow).
-![register_measurements_proteomics_download_template.png](images/measurement_registration_proteomics_download_template.png){.screenshot}
+=== "Proteomics"
 
-### Genomics
+    Click the download icon (↓) in the template section (top right).
 
-Within this view download the genomic specific template's xlsx file via the template component on the top right by clicking
-on the download icon (down arrow).
+    ![Proteomics template](images/measurement_registration_proteomics_download_template.png){.screenshot}
 
-Once downloaded open the template file in Microsoft Excel, which contains the two sheets "Property Information" and "Metadata".
-![register_measurements_ngs_measurement_template.png](images/measurement_registration_ngs_measurement_template.png){.screenshot}
+=== "Genomics"
 
-## Prepare Metadata
+    Click the download icon (↓) in the template section (top right).
 
-### Proteomics
+    ![Genomics template](images/measurement_registration_ngs_measurement_template.png){.screenshot}
 
-Start by opening the downloaded proteomics template file in Microsoft Excel. It contains the two sheets "Property Information" and "Metadata".
-![register_measurement_proteomics_measurement_template.png](images/measurement_registration_proteomics_measurement_template.png){.screenshot}
+## Prepare metadata
 
-The "Property Information" Sheet provides detailed information about which properties are required and what values are permitted for each property within the sheet.
-![register_measurement_proteomics_measurement_template_property_sheet.png](images/measurement_registration_proteomics_measurement_template_property_sheet.png){.screenshot}
+The template has two sheets: **Property Information** (reference) and **Metadata** (fill this in). Mandatory columns are marked with `*`.
 
-Use these Guidelines to fill in the "Metadata" sheet with the mandatory necessary information for the performed measurement.
-![register_measurement_proteomics_measurement_filled.png](images/measurement_registration_proteomics_measurement_filled.png){.screenshot}
+!!! info "Organisation ID"
+    Enter the full [ROR](https://ror.org/) URL of the institution where the measurement was performed (e.g. `https://ror.org/03a1kwz48`). Search at [ror.org](https://ror.org/search). The platform looks up the institution name automatically.
 
-!!! tip "Sample Id"
-    You can copy the Sample IDs from the [downloadable](../batch/sample-batch.md#download-sample-metadata) batch metadata sheet
+=== "Proteomics"
 
-**Notes:**
-Mandatory metadata properties are marked with an asterisk next to the column header
+    Key fields:
 
-The "Instrument" column expects an ontology [CURIE](https://link.springer.com/article/10.1007/s12599-022-00744-0) of the instrument.
-You can use our [ontology search](../ontology_search/ontology_search_introduction.md#ontology-search) to find the CURIE
+    - **Sample ID** — copy from your [batch metadata download](../batch/sample-batch.md#download-sample-metadata)
+    - **Instrument** — an ontology code (CURIE) for your mass spectrometer, e.g. `BAO:0002733`. Use the [ontology search](../ontology_search/ontology_search_introduction.md) to find the right code.
+    - **Digestion enzyme**, **Digestion method**, **LC column** — required proteomics-specific fields.
 
-The "Organisation Id" column expects the full [RoR Id](https://ror.org/about/) URL of the organisation.
-Use the [ROR registry search](https://ror.org/search) to determine the URL of the organisation RoR Id.
+    ![Filled template](images/measurement_registration_proteomics_measurement_filled.png){.screenshot}
 
-Once the mandatory measurement metadata has been provided, export "Metadata" sheet into a tab seperated UTF-16BE Unicode Text (*.txt) text file. This encoding ensures that special symbols like 'μ' (think volumes in sample preparation) are correctly transferred and can be displayed with your sample information.
-![register_measurement_proteomics_measurement_export.png](images/measurement_registration_proteomics_measurement_export.png){.screenshot}
+=== "Genomics"
 
-Finally, [upload](#measurement-upload) the exported text file into the Data Manager application.
+    Key fields:
 
-### Genomics
+    - **Sample ID** — copy from your [batch metadata download](../batch/sample-batch.md#download-sample-metadata)
+    - **Instrument** — an ontology code (CURIE) for your sequencer, e.g. `OBI:0002750`. Use the [ontology search](../ontology_search/ontology_search_introduction.md) to find the right code.
+    - **Read type** — `paired-end` or `single-end`.
+    - **Index I7 / I5** — required for pooled (multiplexed) measurements. These are the DNA index sequences used to identify which sample is which when multiple libraries are sequenced together.
 
-Start by opening the downloaded genomic template file in Microsoft Excel. It contains the two sheets "Property Information" and "Metadata".
-![register_measurements_ngs_measurement_template.png](images/measurement_registration_ngs_measurement_template.png){.screenshot}
+    ![Filled template](images/measurement_registration_ngs_measurement_filled.png){.screenshot}
 
-The "Property Information" Sheet provides detailed information about which properties are required and what values are permitted for each property within the sheet.
-![register_measurements_ngs_measurement_template_property_sheet.png](images/measurement_registration_ngs_measurement_template_property_sheet.png){.screenshot}
+??? info "What is a CURIE?"
+    A CURIE (Compact URI) is a short, standardised code that identifies a specific term in a scientific database — for example, `OBI:0002750` for an Illumina sequencer. The format follows the [W3C CURIE Syntax](https://www.w3.org/TR/curie/): `PREFIX:REFERENCE`. You don't need to memorise these. Search by instrument name using the [ontology search](../ontology_search/ontology_search_introduction.md) and copy the code.
 
-Use these Guidelines to fill in the "Metadata" sheet with the mandatory necessary information for the performed measurement.
-![register_measurement_proteomics_measurement_filled.png](images/measurement_registration_proteomics_measurement_filled.png){.screenshot}
+!!! tip "XLSX vs TSV"
+    You can upload `.xlsx` directly (recommended) or export the Metadata sheet as a tab-separated `.txt` file in **UTF-16BE Unicode Text** encoding. UTF-16BE preserves special characters like `μ`. A different encoding will corrupt them.
 
-!!! tip "Sample Id"
-    You can copy the Sample IDs from the [downloadable](../batch/sample-batch.md#download-sample-metadata) batch metadata sheet
+## Upload
 
-**Notes:**
-Mandatory metadata properties are marked with an asterisk next to the column header
+1. Click **Register Measurements**.
 
-The "Instrument" column expects an ontology [CURIE](https://link.springer.com/article/10.1007/s12599-022-00744-0) of the instrument.
-You can use our [ontology search](../ontology_search/ontology_search_introduction.md#ontology-search) to find the CURIE
+    ![Register button](images/measurement_summary_no_measurements.png){.screenshot}
 
-The "Organisation Id" column expects the full [RoR Id](https://ror.org/about/) URL of the organisation.
-Use the [ROR registry search](https://ror.org/search) to determine the URL of the organisation RoR Id.
+2. Drag and drop your file or click **Upload files**.
 
-Once the mandatory measurement metadata has been provided, export "Metadata" sheet into a tab seperated UTF-16BE Unicode Text (*.txt) text file. This encoding ensures that special symbols like 'μ' (think volumes in sample preparation) are correctly transferred and can be displayed with your sample information.
-![register_measurement_proteomics_measurement_export.png](images/measurement_registration_proteomics_measurement_export.png){.screenshot}
+    ![Upload dialog](images/measurement_registration_upload_template_filled.png){.screenshot}
 
-Finally, [upload](#measurement-upload) the exported text file into the Data Manager application. 
+    !!! warning "File requirements"
+        `.xlsx`, `.txt`, or `.tsv`. Maximum 16 MB.
 
-## Measurement Upload
+3. The dialog validates your file and flags any errors.
 
-Once the measurement metadata has been [prepared](#prepare-metadata) according to the domain specifications, 
-the exported _txt_ file can be uploaded into the Data Manager application. 
-To start the measurement registration process press the "Register Measurements" button within the measurement summary view. 
-![measurement_summary](images/measurement_summary_no_measurements.png){.screenshot}
+4. Click **Register**.
 
-This will open the measurement registration dialog with which the metadata can be registered. 
-![register_measurements_upload_template.png](images/measurement_registration_upload_template.png){.screenshot}
+??? info "Measurement ID format"
+    Each measurement gets a unique ID that encodes its provenance: `[DOMAIN][SAMPLE_ID]-[TIMESTAMP]`. For example, `MSQ2ABCD001AA-118569093700875` (proteomics) or `NGSQ2ABCD001AA-118569093700875` (genomics). The embedded sample ID means you can always trace a measurement back to its source sample.
 
-Within the dialog you are able to upload your measurement files either via clicking the upload files button and selecting the files of interest in your file system
-or by drag and dropping the files into the dashed box saying "drop your files here".
-![register_measurements_proteomics_upload_template_filled.png](images/measurement_registration_upload_template_filled.png){.screenshot}
+Registered measurements appear in the domain-specific tab.
 
-Should you have uploaded one or more files in error, you can easily delete them via a press of the cross icon next to their respective file names
+![Measurements registered](images/measurement_summary_with_measurements.png){.screenshot}
 
-!!! warning "File constraints"
-    Please adhere to the file format and maximum file size outlined in the dialog.
-    Currently, we support the _txt_ or _tsv_ file formats with a maximum file size of 16Mb
+## Download measurement metadata
 
-The registration dialog will validate the provided information and show invalid properties below the file name. 
+Click **Download Metadata** to export the metadata for all measurements in the currently selected tab as an `.xlsx` file.
 
-Finally, upload the measurement metadata files to the experiment via pressing the "Register" button on the bottom right of the dialog.
+---
 
-!!! note "Measurement Id"
-    During measurement registration each measurement will be assigned a unique measurement ID,
-    distinguishing it from other measurement within the system.
+## What's next
 
-Your uploaded measurement metadata will be shown in the grid within their domain specific tab in the measurement summary view.
-![measurement_summary](images/measurement_summary_with_measurements.png)
-
-## Measurement Metadata Download
-
-You can download the measurement specific metadata via the "Download Metadata" button, which will download the metadata of all measurements of the **currently selected tab** in an _xlsx_ file.
-![batch_registration_downloaded_metadata.png](images/measurement_registration_downloaded_metadata.png)
+➡ [Upload raw data](../rawdata/raw_data_upload.md)

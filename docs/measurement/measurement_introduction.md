@@ -1,12 +1,24 @@
-# Measurement Introduction
+# Measurements
 
-Start by [navigating](../project/project_introduction.md#project-navigation) to the project summary view of your project of interest.
-[Navigate](../experiment/experiment_introduction.md#experiment-navigation) into the experiment of interest and within the experiment [navigate](#measurement-navigation) into the measurement summary view.
-Within this view you are able to [register](measurement_registration.md) or [edit](measurement_edit.md) new measurements. 
+A measurement records how a sample was analysed: which instrument, which protocol, and where the work was done. Registering measurements creates the link between your biological samples and the raw data files produced by the instrument.
 
-## Measurement Navigation
+The Data Manager supports two measurement domains:
 
-From the experiment summary you can navigate into the measurement summary view.
-![experiment_summary](../experiment/images/experimental_summary.png){.screenshot}
-To do so, click on the "View Measurements" tab within the experiment navigation bar on the top.
-![measurement_summary](images/measurement_summary_no_measurements.png){.screenshot}
+- **Proteomics** — mass spectrometry, measurement IDs prefixed with `MS`
+- **Genomics** — next-generation sequencing, measurement IDs prefixed with `NGS`
+
+## Navigate to measurements
+
+[Navigate](../project/project_introduction.md#find-and-open-a-project) to your project, then [open the experiment](../experiment/experiment_introduction.md#find-and-open-an-experiment). Click the **View Measurements** tab.
+
+![Experiment summary](../experiment/images/experimental_summary.png){.screenshot}
+
+This opens the measurement summary view with separate tabs for Proteomics and Genomics.
+
+![Measurement summary](images/measurement_summary_no_measurements.png){.screenshot}
+
+---
+
+## What's next
+
+➡ [Register measurements](measurement_registration.md)
