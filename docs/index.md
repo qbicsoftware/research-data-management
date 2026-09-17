@@ -9,7 +9,13 @@ Not sure where to begin? Head to the **[Get started guide](get_started/process_o
 
 ## What's new
 
-### Duplicate condition detection and improved measurement grid
+### Scalable file-based raw data download
+
+- Download raw data **file by file** instead of as a single bundled archive, which scales to datasets
+  of any size and supports resuming interrupted downloads. The bundled measurement download is
+  deprecated. Check out the new [download workflow](rawdata/raw_data_download.md).
+
+### Data Submission from outside the University Tübingen network
 
 <div style="font-size: smaller; color: rgba(122,122,122,1)">March 9, 2026</div>
 

@@ -1,18 +1,15 @@
-# Download raw data
+# Raw Data Download
 
-The raw data view shows data already uploaded for measurements in your experiment. From here you can generate download URLs and retrieve files via the command line.
-
-!!! info "Looking for the API?"
-    See the [API reference](../developers/api.md) for programmatic access.
+This guide describes how to download the raw data of your measurements from the Data Manager.
+Raw data is provided **file by file** instead of as a single bundled archive, which scales to
+datasets of any size and lets you resume interrupted downloads.
 
 ## Process
 
-```mermaid
-graph LR
-    A(Create access token) --> B(Open raw data view)
-    B --> C(Generate download URLs)
-    C --> D(Download via command line)
-```
+1. Create a [personal access token](#personal-access-token) (PAT).
+2. [List the files](#list-the-files-of-a-measurement) of a measurement (the *manifest*).
+3. [Download the files](#download-the-files) — individually or in parallel.
+4. [Reconstruct the dataset tree](#reconstruct-the-dataset-tree-locally) on your machine.
 
 ## Personal access token
 
@@ -45,62 +42,203 @@ Your created tokens appear in the overview. Descriptions help you remember what 
 !!! danger "Compromised token?"
     If a token may have been exposed, delete it immediately and create a new one.
 
-## Raw data navigation
+## List the files of a measurement
 
-[Navigate](../project/project_introduction.md#find-and-open-a-project) to your project, then [open the experiment](../experiment/experiment_introduction.md#find-and-open-an-experiment). Click the **Download Raw Data** tab.
+To download the raw data of a measurement, first request its file *manifest* to learn which files it
+contains:
 
-![Experiment summary](../experiment/images/experimental_summary.png){.screenshot}
+```bash
+curl -H "Authorization: Bearer <ACCESS_TOKEN>" \
+  https://download.qbic.uni-tuebingen.de/measurements/<MEASUREMENT_ID>/files
+```
 
-![Raw data view](images/raw_data_summary_no_data.png){.screenshot}
+The response lists every file of the measurement together with a ready-to-use **download URL** per file, e.g.:
 
-## Generate download URLs
+```json
+{
+    "measurementId": "MSQ7645002AL-182987406699583",
+    "files": [
+        {
+            "index": 0,
+            "path": "raw_data/reads.fastq.gz",
+            "fileName": "reads.fastq.gz",
+            "length": 828008868,
+            "crc32": 1923767687,
+            "registrationTime": "2024-09-03T10:15:30Z",
+            "_links": {
+                "download": {
+                    "href": "https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583/files/0"
+                }
+            }
+        },
+        {
+            "index": 1,
+            "path": "metadata/sample_info.csv",
+            "fileName": "sample_info.csv",
+            "length": 2048,
+            "crc32": 3847561023,
+            "registrationTime": "2024-09-03T10:15:35Z",
+            "_links": {
+                "download": {
+                    "href": "https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583/files/1"
+                }
+            }
+        }
+    ]
+}
+```
 
-1. Select the measurements you want to download.
+For each file, the manifest provides:
 
-    ![Select measurements](images/raw_data_download_URL_generation_measurement_selection.png){.screenshot}
+- its **index**, used to address the file during download, and
+- a ready-to-use **download URL** in its `_links.download.href` field.
 
-2. Click **Download URL List** to download a text file containing one URL per measurement.
+!!! info "Field-level details"
+    The types, descriptions and examples of every manifest field are documented in the
+    [Swagger UI](https://download.qbic.uni-tuebingen.de/swagger-ui/index.html) /
+    [OpenAPI document](https://download.qbic.uni-tuebingen.de/v3/api-docs), which serve as the single
+    source of truth for this schema.
 
-    ![URLs downloaded](images/raw_data_download_URL_downloaded.png){.screenshot}
+## Download the files
 
-## Download via command line
+All download endpoints require basic command line/terminal knowledge.
+The data will be downloaded into the directory in which the command is run — please ensure it is the
+correct directory and has enough free space before running the download.
 
-You'll need a terminal to run the download commands. If you haven't used one before — don't worry. Just copy, paste, and press Enter.
+We show the two popular command line clients [cURL](https://curl.se/docs/manpage.html) and
+[GNU Wget](https://www.gnu.org/software/wget/), of course you can use any other software that
+supports HTTP.
 
-=== "Open terminal on Mac"
+!!! warning "Directory structure is not preserved automatically"
+    When downloading files individually or in parallel, **the original directory structure of the
+    dataset is not preserved**. All files are saved to your current working directory, regardless of
+    their original location within the dataset.
+    
+    If your dataset contains files organized in subdirectories (e.g., `raw_data/reads.fastq.gz` and
+    `metadata/sample_info.csv`), they will all end up in the same directory after download.
+    
+    To restore the original structure, you need to use a script that reads each file's `path` field
+    from the manifest and recreates the directory tree locally. See
+    [Reconstruct the dataset tree locally](#reconstruct-the-dataset-tree-locally) for details.
 
-    Click the magnifying glass (top right) or press `Cmd + Space`, type `Terminal`, and select the Terminal app.
+### Download a single file
 
-    ![Mac terminal](images/data_download_mac_command_line.png)
-
-=== "Open terminal on Windows"
-
-    Click the magnifying glass in the taskbar, type `Terminal`, and select the Terminal app.
-
-    ![Windows terminal](images/data_download_windows_command_line.png)
-
-!!! warning "Download location"
-    Files download to the directory you're currently in. Make sure it's the right folder and has enough free space.
-
-### Single measurement
-
-Replace `<ACCESS_TOKEN>` with your PAT and `<MEASUREMENT_URL>` with the URL from the download list.
+Download a single file via its download URL (the value of `_links.download.href` from the manifest)
+as the **FILE_URL**:
 
 === "curl"
 
     ```bash
-    curl --fail -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" <MEASUREMENT_URL>
+    curl --fail -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" <FILE_URL>
     ```
 
 === "wget"
 
     ```bash
-    wget --content-disposition --trust-server-names --header "Authorization: Bearer <ACCESS_TOKEN>" <MEASUREMENT_URL>
+    wget --content-disposition --trust-server-names --header "Authorization: Bearer <ACCESS_TOKEN>" <FILE_URL>
     ```
 
-### Multiple measurements
+For example, to download the first file of measurement **MSQ7645002AL-182987406699583** (the file `raw_data/reads.fastq.gz`):
 
-Create a text file with one URL per line (or use the file from the [URL generation step](#generate-download-urls)).
+=== "curl"
+
+    ``` bash
+    curl -OJ -H "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583/files/0
+    ```
+
+=== "wget"
+
+    ``` bash
+    wget --content-disposition --trust-server-names --header "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583/files/0
+    ```
+
+### Resuming interrupted downloads
+
+Large file downloads can be interrupted due to network issues, timeouts, or manual cancellation. The download API supports HTTP byte range requests, allowing you to resume downloads from where they left off instead of starting over.
+
+#### Using curl to resume downloads
+
+curl can automatically resume interrupted downloads using the `-C -` (continue) flag:
+
+```bash
+curl -C - -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" <FILE_URL>
+```
+
+The `-C -` flag tells curl to automatically determine where the download was interrupted and resume from that byte offset.
+
+**Example workflow:**
+
+1. Start the download:
+   ```bash
+   curl -OJ -H "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583/files/0
+   ```
+
+2. If the download is interrupted (e.g., network failure), simply run the same command with `-C -`:
+   ```bash
+   curl -C - -OJ -H "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583/files/0
+   ```
+
+#### Using wget to resume downloads
+
+wget supports resuming with the `-c` (continue) flag:
+
+```bash
+wget -c --content-disposition --trust-server-names --header "Authorization: Bearer <ACCESS_TOKEN>" <FILE_URL>
+```
+
+**Example workflow:**
+
+1. Start the download:
+   ```bash
+   wget --content-disposition --trust-server-names --header "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583/files/0
+   ```
+
+2. If interrupted, resume with `-c`:
+   ```bash
+   wget -c --content-disposition --trust-server-names --header "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583/files/0
+   ```
+
+#### Manual byte range requests
+
+For advanced use cases, you can manually specify byte ranges using the `Range` header:
+
+```bash
+curl -H "Range: bytes=1000-" -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" <FILE_URL>
+```
+
+This requests the file starting from byte 1000 to the end. You can also specify end ranges:
+
+```bash
+curl -H "Range: bytes=0-999" -OJ -H "Authorization: Bearer <ACCESS_TOKEN>" <FILE_URL>
+```
+
+This downloads only the first 1000 bytes (bytes 0-999).
+
+!!! tip "Checking file size before download"
+    You can check the total file size before downloading by using a HEAD request:
+    
+    ```bash
+    curl -I -H "Authorization: Bearer <ACCESS_TOKEN>" <FILE_URL>
+    ```
+    
+    Look for the `Content-Length` header in the response to see the total file size in bytes.
+
+### Download multiple files in parallel
+
+To download **all files** of a measurement in one command, put all file URLs (the
+`_links.download.href` values of the manifest) into a text file — one URL per line.
+To download the files of **multiple measurements**, combine the file URLs of their respective
+manifests in the same text file.
+
+~~~txt
+<FILE_URL_1>
+<FILE_URL_2>
+~~~
+
+!!! warning
+    To ensure character validity in the text file, please format it in the *UTF-8* format.
+
+Then adapt the command accordingly:
 
 === "curl"
 
@@ -113,15 +251,15 @@ Create a text file with one URL per line (or use the file from the [URL generati
 
 === "wget"
 
-    ```bash
-    wget --content-disposition --trust-server-names --header "Authorization: Bearer <ACCESS_TOKEN>" -i download_urls.txt
+    ``` bash
+    wget --content-disposition --trust-server-names --header "Authorization: Bearer v71E00f750Z78oBW4SKs90Vrd39h98eG" https://download.qbic.uni-tuebingen.de/measurements/MSQ7645002AL-182987406699583
     ```
 
-!!! warning "File encoding"
-    The URL text file must be UTF-8 encoded.
+!!! warning "Limitations of the ZIP archive endpoint"
+    While this endpoint is still available, it has significant limitations compared to the file-based download:
 
----
+    - **No resume support**: If the download is interrupted, you must start over from the beginning. The file-based endpoints support HTTP byte range requests for resuming interrupted downloads (see [Resuming interrupted downloads](#resuming-interrupted-downloads)).
+    - **Not recommended for large datasets**: For datasets larger than **20 GB**, use the [file-based download workflow](#download-the-files) instead. The download is a single long-running stream. For very large datasets, the connection is more likely to be interrupted, and without resume support, you must restart the entire download from the beginning.
+    - **No parallel downloads**: The entire dataset is transferred as a single stream. The file-based endpoints allow downloading multiple files in parallel.
 
-## What's next
-
-➡ [Manage project access](../project/project_access.md)
+    For better reliability and performance, especially with large datasets, use the file-based download workflow described above.
